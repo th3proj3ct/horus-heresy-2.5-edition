@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0ad0-7f34-68df-4f35" name="Legion Astartes - Wargear" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0ad0-7f34-68df-4f35" name="Legion Astartes - Wargear" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Augury scanner" hidden="false" id="1b8a-7d3d-14df-50a0">
       <profiles>
@@ -10,6 +10,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Combat Shield" hidden="false" id="072d-0125-b360-4c6e">
       <profiles>
@@ -40,6 +43,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vexilla" hidden="false" id="058c-dc3f-cdae-6999">
       <profiles>
@@ -50,6 +56,9 @@
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+      </costs>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Breacher Charges" hidden="false" id="3a8b-1b43-4c9b-bac8">
       <profiles>

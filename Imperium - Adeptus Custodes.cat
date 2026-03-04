@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e0ce-cff3-58b8-92e7" name="Imperium - Adeptus Custodes" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e0ce-cff3-58b8-92e7" name="Imperium - Adeptus Custodes" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Legio Custodes" id="d79b-4db3-a1cb-e711" hidden="false">
       <infoLinks>
@@ -63,9 +63,9 @@
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
                 <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
-                <characteristic name="W" typeId="5d83-b210-acf7-2361">2</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
-                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
                 <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
                 <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
                 <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
@@ -90,6 +90,12 @@
             </infoLink>
             <infoLink name="Lightning Blows" id="5c99-a505-6d5e-fbaa" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
             <infoLink name="Chosen Warriors" id="3cd6-3caa-9bc7-1779" hidden="false" type="rule" targetId="a295-5e23-13af-d42c"/>
+            <infoLink name="Vanguard (X)" id="9a66-0c64-5d0b-99f4" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Misericordia" hidden="false" id="872c-72db-f23c-ca8d" type="selectionEntry" targetId="c657-92f3-0e2f-47be">
@@ -100,11 +106,11 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="cf4b-107a-3945-c6d7" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="cf4b-107a-3945-c6d7" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="0b2e-2957-e77b-8722" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="45"/>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="55"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -277,9 +283,9 @@
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
                 <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
-                <characteristic name="W" typeId="5d83-b210-acf7-2361">2</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
-                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
                 <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
                 <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
                 <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
@@ -310,6 +316,12 @@
               </modifiers>
             </infoLink>
             <infoLink name="Chosen Warriors" id="27e7-76ac-7c78-091f" hidden="false" type="rule" targetId="a295-5e23-13af-d42c"/>
+            <infoLink name="Vanguard (X)" id="c483-d8a7-596f-5eb7" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Misericordia" hidden="false" id="1d68-8c8f-82c0-bc03" type="selectionEntry" targetId="c657-92f3-0e2f-47be">
@@ -320,11 +332,11 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="5518-aa79-5e51-52a8" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="5518-aa79-5e51-52a8" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="1ef0-f084-0ebe-4e96" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="50"/>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="65"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -380,9 +392,9 @@
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
                 <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">6</characteristic>
-                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">4</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
-                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
                 <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
                 <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
                 <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
@@ -414,6 +426,12 @@
             </infoLink>
             <infoLink name="Chosen Warriors" id="3423-8e13-a23f-b8c3" hidden="false" type="rule" targetId="a295-5e23-13af-d42c"/>
             <infoLink name="Implacable Advance" id="1182-e2a2-6a92-fbc0" hidden="false" type="rule" targetId="7fb3-6133-feb0-e764"/>
+            <infoLink name="Vanguard (X)" id="262c-9daa-72f0-e076" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Misericordia" hidden="false" id="930d-fc20-53c6-94ea" type="selectionEntry" targetId="c657-92f3-0e2f-47be">
@@ -483,6 +501,10 @@
                           <description>The Ranged Strength of attacks made as part of an Overwatch Reaction are modified by -1 when resolving Wound Tests against a Unit that includes one or more Models with a tarsus buckler.</description>
                         </rule>
                       </rules>
+                      <constraints>
+                        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="46f3-c0ed-e94c-4d87" includeChildSelections="false"/>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5d2c-b5e7-9b2a-8415" includeChildSelections="false"/>
+                      </constraints>
                     </selectionEntry>
                     <selectionEntry type="upgrade" import="true" name="Kinetic Destroyer" hidden="false" id="ed1f-8efb-38ac-bcce">
                       <profiles>
@@ -525,12 +547,7 @@
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink import="true" name="Guardian Spear" hidden="false" id="6359-6300-e0e9-37b3" type="selectionEntry" targetId="7873-5289-aecb-763f">
-                  <constraints>
-                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="65ea-9f32-654e-df31" includeChildSelections="false"/>
-                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ce6-3904-404e-ba35" includeChildSelections="false"/>
-                  </constraints>
-                </entryLink>
+                <entryLink import="true" name="Guardian Spear" hidden="false" id="6359-6300-e0e9-37b3" type="selectionEntry" targetId="7873-5289-aecb-763f"/>
               </entryLinks>
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dd4f-ed9f-d626-bb52" includeChildSelections="false"/>
@@ -558,20 +575,20 @@
                 <attribute name="INV" typeId="7fef-b0ea-c53e-129c">6+</attribute>
               </attributes>
               <characteristics>
-                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Light, Antigrav, Skirmish)</characteristic>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Antigrav, Skirmish)</characteristic>
                 <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">14</characteristic>
                 <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
                 <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
-                <characteristic name="W" typeId="5d83-b210-acf7-2361">2</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
-                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
                 <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
                 <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
                 <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
                 <characteristic name="IN" typeId="8855-af7b-d9c2-228f">8</characteristic>
-                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">3+</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
                 <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">6+</characteristic>
               </characteristics>
             </profile>
@@ -592,6 +609,12 @@
             <infoLink name="Lightning Blows" id="8f2d-ce64-4985-7dfd" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
             <infoLink name="Deep Strike" id="2133-09be-5b30-54a0" hidden="false" type="rule" targetId="8444-d183-3984-f12a"/>
             <infoLink name="Chosen Warriors" id="5901-b2fc-fb93-1fd2" hidden="false" type="rule" targetId="a295-5e23-13af-d42c"/>
+            <infoLink name="Vanguard (X)" id="45dd-be68-860f-05cc" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Misericordia" hidden="false" id="c4dc-1507-33f3-66af" type="selectionEntry" targetId="c657-92f3-0e2f-47be">
@@ -602,11 +625,11 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="3e6c-ad25-dd8c-8b34" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="3e6c-ad25-dd8c-8b34" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="e6ea-2e54-16cf-8985" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="55"/>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="65"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -615,7 +638,6 @@
         <categoryLink targetId="dc1e-9850-77b6-3671" id="9746-3819-7ef5-5de2" primary="false" name="Antigrav Model Sub-Type"/>
         <categoryLink targetId="004b-f7b9-8d86-ecf0" id="01e9-3c29-78a7-a757" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="1c58-b337-dacb-f43f" id="6643-cab2-96ba-4167" primary="false" name="Skirmish Model Sub-Type"/>
-        <categoryLink targetId="65da-4619-5544-e9b7" id="b458-0a01-b947-2369" primary="false" name="Light Sub-type"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Sagittarum Guard Sodality" hidden="false" id="55a1-b9e9-5b63-eec0">
@@ -647,9 +669,9 @@
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
                 <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
-                <characteristic name="W" typeId="5d83-b210-acf7-2361">2</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
-                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
                 <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
                 <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
                 <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
@@ -673,6 +695,12 @@
               <comment>1</comment>
             </infoLink>
             <infoLink name="Chosen Warriors" id="0489-dc56-14e7-3c98" hidden="false" type="rule" targetId="a295-5e23-13af-d42c"/>
+            <infoLink name="Vanguard (X)" id="2fba-8794-376a-6985" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Adrastus Bolt Caliver" hidden="false" id="b859-736e-10d9-13cb">
@@ -689,10 +717,10 @@
                   </attributes>
                   <characteristics>
                     <characteristic name="R" typeId="c686-829c-aef5-ccf2">36</characteristic>
-                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">2</characteristic>
-                    <characteristic name="S" typeId="591a-4268-a46f-9af6">6</characteristic>
-                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">4</characteristic>
-                    <characteristic name="D" typeId="770e-2783-e159-33e6">2</characteristic>
+                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">3</characteristic>
+                    <characteristic name="S" typeId="591a-4268-a46f-9af6">5</characteristic>
+                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">3</characteristic>
+                    <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
                     <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Breaching (6+), Heavy (FP). Combi</characteristic>
                     <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Bolt</characteristic>
                   </characteristics>
@@ -745,6 +773,10 @@
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbd5-8f8e-57d2-e63a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="51ba-71cc-1684-36cd" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
           <entryLinks>
@@ -756,11 +788,11 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="1905-1ca5-0e87-d38a" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="1905-1ca5-0e87-d38a" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="da78-892f-3eba-70e1" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="45"/>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="55"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -860,9 +892,9 @@
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
                 <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">6</characteristic>
-                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">4</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
-                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
                 <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
                 <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
                 <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
@@ -889,6 +921,12 @@
             <infoLink name="Slow and Purposeful" id="b00f-e076-ccea-a4ac" hidden="false" type="rule" targetId="37f5-d5c4-d064-2bd9"/>
             <infoLink name="Chosen Warriors" id="d2fd-3c16-f983-768f" hidden="false" type="rule" targetId="a295-5e23-13af-d42c"/>
             <infoLink name="Implacable Advance" id="9cae-4664-3d23-a3f5" hidden="false" type="rule" targetId="7fb3-6133-feb0-e764"/>
+            <infoLink name="Vanguard (X)" id="7d6f-8000-b805-f7fe" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Misericordia" hidden="false" id="2915-2c72-e47b-2682" type="selectionEntry" targetId="c657-92f3-0e2f-47be">
@@ -943,9 +981,9 @@
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
                 <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
-                <characteristic name="W" typeId="5d83-b210-acf7-2361">2</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
-                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
                 <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
                 <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
                 <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
@@ -970,6 +1008,12 @@
             </infoLink>
             <infoLink name="Lightning Blows" id="52af-2f9d-524e-4e6b" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
             <infoLink name="Chosen Warriors" id="fb12-ff29-e0e0-c934" hidden="false" type="rule" targetId="a295-5e23-13af-d42c"/>
+            <infoLink name="Vanguard (X)" id="36e0-9695-a62e-18fb" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Sentinel Warblade" hidden="false" id="b385-d387-0602-083f" type="selectionEntry" targetId="a688-19d2-1a47-3570">
@@ -986,11 +1030,11 @@
             </entryLink>
           </entryLinks>
           <constraints>
-            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="7032-622d-d6d1-d5b3" includeChildSelections="false"/>
+            <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="7032-622d-d6d1-d5b3" includeChildSelections="false"/>
             <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="05a2-4b48-2aa4-7b74" includeChildSelections="false"/>
           </constraints>
           <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="40"/>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="55"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1014,6 +1058,17 @@
             <attribute name="Transport Capacity" typeId="d100-b938-fd3e-f054">12</attribute>
             <attribute name="Access Points" typeId="9a8b-7ab0-4781-f034">Rear</attribute>
           </attributes>
+          <characteristics>
+            <characteristic name="Type" typeId="3646-a1e5-48f3-39ea">Vehicle (Antigrav, Transport)</characteristic>
+            <characteristic name="M" typeId="e16d-5e4d-b689-54ee">12</characteristic>
+            <characteristic name="BS" typeId="5c14-5c7d-d525-1c7d">5</characteristic>
+            <characteristic name="Front Armour" typeId="b107-5398-ba70-264e">14</characteristic>
+            <characteristic name="Side Armour" typeId="c2e5-e62c-4ac0-28a1">14</characteristic>
+            <characteristic name="Rear Armour" typeId="78a9-c3a8-d1c3-c6f8">12</characteristic>
+            <characteristic name="HP" typeId="b123-d331-1d6f-8c5a">8</characteristic>
+            <characteristic name="Transport Capacity" typeId="d100-b938-fd3e-f054">12</characteristic>
+            <characteristic name="Access Points" typeId="9a8b-7ab0-4781-f034">Rear</characteristic>
+          </characteristics>
         </profile>
       </profiles>
       <costs>
@@ -1109,7 +1164,7 @@
           <modifiers>
             <modifier type="set" value="Deadly Demise (6+)" field="name"/>
           </modifiers>
-          <comment>1</comment>
+          <comment>6</comment>
         </infoLink>
         <infoLink name="Assault Vehicle" id="25ad-203a-8f6d-dc03" hidden="false" type="rule" targetId="b34e-013b-4c53-468d"/>
       </infoLinks>
@@ -1236,7 +1291,7 @@
                     <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">2</characteristic>
                     <characteristic name="S" typeId="591a-4268-a46f-9af6">10</characteristic>
                     <characteristic name="AP" typeId="e137-b19a-087a-f2e7">2</characteristic>
-                    <characteristic name="D" typeId="770e-2783-e159-33e6">2</characteristic>
+                    <characteristic name="D" typeId="770e-2783-e159-33e6">3</characteristic>
                     <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Ordnance (D), Armourbane</characteristic>
                     <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Las</characteristic>
                   </characteristics>
@@ -1312,7 +1367,7 @@
                 <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">8</characteristic>
                 <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
-                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">8</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">7</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">7</characteristic>
                 <characteristic name="W" typeId="5d83-b210-acf7-2361">6</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">4</characteristic>
@@ -1354,6 +1409,12 @@
                 <modifier type="set" value="Feel No Pain (6+)" field="name"/>
               </modifiers>
               <comment>6</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="5325-1597-8419-766c" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
             </infoLink>
           </infoLinks>
           <selectionEntryGroups>
@@ -1492,7 +1553,7 @@
       <selectionEntries>
         <selectionEntry type="upgrade" import="true" name="Contemptor-Galatus Dreadnought" hidden="false" id="41c8-9dc2-e538-f997">
           <profiles>
-            <profile name="Contemptor-Achillus Dreadnought" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="91ac-b43d-df9f-1061">
+            <profile name="Contemptor-Galatus Dreadnought" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="91ac-b43d-df9f-1061">
               <attributes>
                 <attribute name="Type" typeId="c6d3-582c-0125-3afd">Walker</attribute>
                 <attribute name="M" typeId="d2c1-69ea-7ad8-0c75">8</attribute>
@@ -1515,7 +1576,7 @@
                 <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">8</characteristic>
                 <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
-                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">8</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">7</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">7</characteristic>
                 <characteristic name="W" typeId="5d83-b210-acf7-2361">6</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">4</characteristic>
@@ -1525,7 +1586,7 @@
                 <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">9</characteristic>
                 <characteristic name="IN" typeId="8855-af7b-d9c2-228f">5</characteristic>
                 <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
-                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">5+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">4+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1557,6 +1618,12 @@
                 <modifier type="set" value="Feel No Pain (6+)" field="name"/>
               </modifiers>
               <comment>6</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="0d7d-5cbe-3627-4b91" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
             </infoLink>
           </infoLinks>
           <selectionEntries>
@@ -1813,6 +1880,12 @@
             <modifier type="set" value="Feel No Pain (6+)" field="name"/>
           </modifiers>
         </infoLink>
+        <infoLink name="Vanguard (X)" id="6884-3022-0541-330a" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+          <comment>3</comment>
+          <modifiers>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Arm Weapons" id="199e-60fc-85dd-1ced" hidden="false">
@@ -2009,6 +2082,12 @@
           <comment>2</comment>
         </infoLink>
         <infoLink name="Lightning Blows" id="5ae2-752a-5930-4745" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
+        <infoLink name="Vanguard (X)" id="32ce-8b29-dbbe-69a4" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+          <comment>3</comment>
+          <modifiers>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink targetId="004b-f7b9-8d86-ecf0" id="141f-45aa-2d85-77a7" primary="false" name="Infantry Model Type"/>
@@ -2130,6 +2209,12 @@
                 <modifier type="set" value="Feel No Pain (6+)" field="name"/>
               </modifiers>
               <comment>6</comment>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="f894-4885-03d4-5a14" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
             </infoLink>
           </infoLinks>
           <selectionEntries>
@@ -2253,6 +2338,12 @@
           <comment>1</comment>
         </infoLink>
         <infoLink name="Lightning Blows" id="1494-2628-ab6e-7324" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
+        <infoLink name="Vanguard (X)" id="696f-6328-66ab-bd20" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+          <comment>3</comment>
+          <modifiers>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Misericordia" hidden="false" id="56bc-49cc-393a-b348" type="selectionEntry" targetId="c657-92f3-0e2f-47be">
@@ -2335,6 +2426,7 @@
         <categoryLink targetId="004b-f7b9-8d86-ecf0" id="3783-224d-f6c9-a5f1" primary="false" name="Infantry Model Type"/>
         <categoryLink targetId="1c58-b337-dacb-f43f" id="0160-f273-d32b-7e6c" primary="false" name="Skirmish Model Sub-Type"/>
         <categoryLink targetId="4371-3d18-320a-1928" id="2a43-56ea-dc14-4c4b" primary="false" name="Vexilus"/>
+        <categoryLink targetId="097f-883b-71dc-aa4b" id="d768-e484-0291-ec72" primary="false" name="Specialist"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vertus Praetor Sodality" hidden="false" id="5c15-0685-5f6b-bed2">
@@ -2366,9 +2458,9 @@
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
                 <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
                 <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
-                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">4</characteristic>
                 <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
-                <characteristic name="A" typeId="f152-fc99-0cad-3056">2</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
                 <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
                 <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
                 <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
@@ -2379,7 +2471,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="65"/>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="75"/>
           </costs>
           <infoLinks>
             <infoLink name="Deep Strike" id="4b0d-835e-e2e2-1dcf" hidden="false" type="rule" targetId="8444-d183-3984-f12a"/>
@@ -2396,6 +2488,12 @@
               <comment>1</comment>
             </infoLink>
             <infoLink name="Lightning Blows" id="9c9f-c77c-9f99-d633" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
+            <infoLink name="Vanguard (X)" id="0548-da98-a6d3-e578" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+            </infoLink>
           </infoLinks>
           <entryLinks>
             <entryLink import="true" name="Solarite Power Lance" hidden="false" id="f32d-9263-81ea-53cc" type="selectionEntry" targetId="dd1c-7012-eab9-f883">
@@ -2433,7 +2531,6 @@
         <categoryLink targetId="7fe2-da76-e07f-4f75" id="9351-187c-f8bb-339e" primary="false" name="Cavalry Unit Type"/>
         <categoryLink targetId="18e7-244d-8b18-8fff" id="d241-bd1d-a67f-a4ae" primary="true" name="Fast Attack"/>
         <categoryLink targetId="dc1e-9850-77b6-3671" id="0016-fcfa-2225-4edd" primary="false" name="Antigrav Model Sub-Type"/>
-        <categoryLink targetId="9971-93b6-fe3d-0b16" id="5632-0d01-c1c2-bc46" primary="false" name="Biker"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Vexilus Praetor in Allarus Terminator Armour" hidden="false" id="70f8-19ce-d54c-f1ac">
@@ -2499,6 +2596,12 @@
           <comment>2</comment>
         </infoLink>
         <infoLink name="Implacable Advance" id="86a0-ffbc-8bd4-f8f6" hidden="false" type="rule" targetId="7fb3-6133-feb0-e764"/>
+        <infoLink name="Vanguard (X)" id="3a98-d459-a6c8-70e4" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+          <comment>3</comment>
+          <modifiers>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <entryLinks>
         <entryLink import="true" name="Misericordia" hidden="false" id="5a8f-fb7a-9599-f5cb" type="selectionEntry" targetId="c657-92f3-0e2f-47be">
@@ -2577,6 +2680,7 @@
         <categoryLink targetId="1c58-b337-dacb-f43f" id="dd47-7495-107f-9fca" primary="false" name="Skirmish Model Sub-Type"/>
         <categoryLink targetId="4371-3d18-320a-1928" id="aa4e-a767-a4bc-88e5" primary="false" name="Vexilus"/>
         <categoryLink targetId="ea08-8a00-9c30-3f00" id="bd95-055c-7d5c-b281" primary="false" name="Terminator"/>
+        <categoryLink targetId="097f-883b-71dc-aa4b" id="c074-e5df-fe28-845b" primary="false" name="Specialist"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Blade Champion" hidden="false" id="a748-654a-0059-94aa">
@@ -2606,14 +2710,14 @@
             <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
             <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
             <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
-            <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
+            <characteristic name="W" typeId="5d83-b210-acf7-2361">4</characteristic>
             <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
-            <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
+            <characteristic name="A" typeId="f152-fc99-0cad-3056">5</characteristic>
             <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
             <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
             <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">9</characteristic>
             <characteristic name="IN" typeId="8855-af7b-d9c2-228f">9</characteristic>
-            <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">3+</characteristic>
+            <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
             <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">5+</characteristic>
           </characteristics>
         </profile>
@@ -2635,6 +2739,12 @@
           <comment>2</comment>
         </infoLink>
         <infoLink name="Lightning Blows" id="99a6-f3ac-045f-b44b" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
+        <infoLink name="Vanguard (X)" id="217e-0ded-b408-f4e4" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+          <comment>3</comment>
+          <modifiers>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Infantry Model Type" hidden="false" id="4b45-3830-e56f-3920" targetId="004b-f7b9-8d86-ecf0" primary="false"/>
@@ -2806,6 +2916,12 @@ During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, i
           <comment>2</comment>
         </infoLink>
         <infoLink name="Lightning Blows" id="2edd-089d-68dd-27f6" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
+        <infoLink name="Vanguard (X)" id="1fd0-f009-90ab-0b28" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+          <comment>3</comment>
+          <modifiers>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Infantry Model Type" hidden="false" id="90d0-2bf5-7750-49e5" targetId="004b-f7b9-8d86-ecf0" primary="false"/>
@@ -2904,6 +3020,12 @@ During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, i
           <comment>2</comment>
         </infoLink>
         <infoLink name="Lightning Blows" id="c8ae-0c8d-de01-6712" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
+        <infoLink name="Vanguard (X)" id="ce47-240e-3817-5f82" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+          <comment>3</comment>
+          <modifiers>
+            <modifier type="set" value="Vanguard (3)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <categoryLinks>
         <categoryLink name="Character" hidden="false" id="0242-7c02-6061-baed" targetId="f80d-9049-d669-c650" primary="false"/>
@@ -3097,7 +3219,7 @@ During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, i
             <characteristic name="I" typeId="93cf-082c-7341-87f7">-3</characteristic>
             <characteristic name="A" typeId="a356-7e7a-c37d-b824">-1</characteristic>
             <characteristic name="S" typeId="33a1-3481-5543-fce1">+5</characteristic>
-            <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">3</characteristic>
+            <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
             <characteristic name="D" typeId="3802-23d3-f9b9-863b">3</characteristic>
             <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Armour-Breaker (4+), Armourbane</characteristic>
             <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
@@ -3567,7 +3689,7 @@ During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, i
             <characteristic name="A" typeId="a356-7e7a-c37d-b824">0</characteristic>
             <characteristic name="S" typeId="33a1-3481-5543-fce1">+5</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
-            <characteristic name="D" typeId="3802-23d3-f9b9-863b">3</characteristic>
+            <characteristic name="D" typeId="3802-23d3-f9b9-863b">4</characteristic>
             <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Impact (AM), Critical Hit (6+), Armourbane</characteristic>
             <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
           </characteristics>
@@ -3585,7 +3707,7 @@ During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, i
           <characteristics>
             <characteristic name="I" typeId="93cf-082c-7341-87f7">-1</characteristic>
             <characteristic name="A" typeId="a356-7e7a-c37d-b824">User</characteristic>
-            <characteristic name="S" typeId="33a1-3481-5543-fce1">USer</characteristic>
+            <characteristic name="S" typeId="33a1-3481-5543-fce1">User</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
             <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
             <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Critical Hit (6+)</characteristic>
@@ -3645,9 +3767,9 @@ Any Reserves Test may only be modified by a single arae-shrike in this manner.</
         <profile name="Salvo Launcher" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="52c9-fdc3-45e1-6fed">
           <characteristics>
             <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
-            <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+            <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">2</characteristic>
             <characteristic name="S" typeId="591a-4268-a46f-9af6">8</characteristic>
-            <characteristic name="AP" typeId="e137-b19a-087a-f2e7">4</characteristic>
+            <characteristic name="AP" typeId="e137-b19a-087a-f2e7">3</characteristic>
             <characteristic name="D" typeId="770e-2783-e159-33e6">2</characteristic>
             <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Armourbane</characteristic>
             <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Missile</characteristic>
@@ -3677,7 +3799,7 @@ Any Reserves Test may only be modified by a single arae-shrike in this manner.</
             <characteristic name="AP" typeId="e137-b19a-087a-f2e7">4</characteristic>
             <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
             <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Rapid Fire (3), Shred</characteristic>
-            <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Bolt</characteristic>
+            <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Assault, Bolt</characteristic>
           </characteristics>
           <attributes>
             <attribute name="R" typeId="c686-829c-aef5-ccf2">18&quot;</attribute>
