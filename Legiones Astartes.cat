@@ -2000,6 +2000,7 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
                 </modifier>
               </modifiers>
             </entryLink>
+            <entryLink import="true" name="Enhancements" hidden="false" id="6e04-df91-4c4f-760a" type="selectionEntryGroup" targetId="de6f-17bd-8c9f-d02b"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="Jump Pack Praetor" field="name">
@@ -5263,6 +5264,341 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a343-787f-a2c7-66cd" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2666-2315-4da3-8043" includeChildSelections="false"/>
       </constraints>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Warlord Traits" id="b504-36b5-ec50-476b" hidden="false" sortIndex="1">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Blood Angels" id="7395-2700-3642-dec3" hidden="true">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Gift of Foresight" hidden="false" id="ca51-3805-4377-ea19">
+              <profiles>
+                <profile name="Gift of Foresight" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d333-5366-bbee-4dce">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This heroic warrior bears a glimmering of Sanguinius’prophetic gifts. Flashes of foresight allow him to parry and weave around his enemy’s blows with supernatural speed and skill.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">In each turn, you can re-roll one hit roll, one wound roll and one saving throw made for this WARLORD.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Speed of the Primarch" hidden="false" id="9c4e-da14-7f36-51f3">
+              <profiles>
+                <profile name="Speed of the Primarch" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d9cf-adf1-61df-ec2d">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Such is this warlords speed, it is as if the Primarch himself fights alongside his sons.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Increase the Initiative of the Warlord by 1.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditions>
+                <condition type="instanceOf" value="1" field="forces" scope="force" childId="6506-3e22-a625-e340" shared="true" includeChildSelections="true"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3a7f-5414-5201-a94f" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d88-68b3-392e-8d94" includeChildSelections="false"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="The Imperium&apos;s Sword" hidden="false" id="251f-1585-528b-7888">
+          <profiles>
+            <profile name="The Imperium&apos;s Sword" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="645c-5769-16c8-c171">
+              <characteristics>
+                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This warlord hurls himself forwards with unbridled ferocity, cutting down the foe like a reaping whirlwind.</characteristic>
+                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">-Each time this WARLORD fights, if it made a charge move, then until that fight is resolved, add 1 to its Strength and Attacks characteristics.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Champion of Humanity" hidden="false" id="33fd-6ef9-ada9-4c21">
+          <profiles>
+            <profile name="Champion of Humanity" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="3b81-a131-fa5f-9950">
+              <characteristics>
+                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This commander has slain enemy generals beyond counting.</characteristic>
+                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">-Each time this WARLORD fights, if it is within Engagement Range of any enemy CHARACTER units, then until that fight is resolved, add 1 to this Warlord’s Attacks characteristic.
+-Each time this WARLORD makes a melee attack against a CHARACTER unit, add 1 to that attack’s hit roll and wound roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Fear Made Manifest" hidden="false" id="2c82-e1a4-1de1-cda3">
+          <profiles>
+            <profile name="Fear Made Manifest" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="ccbb-14f1-8d59-c504">
+              <characteristics>
+                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">The Emperor’s enemies quail beneath this champion’s wrathful gaze.</characteristic>
+                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">This warlord gains the Fear (1) ability</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Fear (X)" id="fdee-402a-ecf5-2495" hidden="false" type="rule" targetId="0b8e-22b9-4a68-a71e">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="set" value="Fear (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Iron Resolve" hidden="false" id="1c75-2c3b-da08-08e9">
+          <profiles>
+            <profile name="Iron Resolve" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="7d67-e4ea-002a-5419">
+              <characteristics>
+                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">-Add 1 to the Wounds characteristic of this WARLORD.
+-Each time this WARLORD would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Feel No Pain (X)" id="620e-8011-5339-821f" hidden="false" type="rule" targetId="87a8-00fa-b0a6-d3cd">
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <comment>Feel No Pain (6+)</comment>
+                </modifier>
+              </modifiers>
+              <comment>6</comment>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Rites of War" hidden="false" id="786c-4ca4-706c-b6ee">
+          <profiles>
+            <profile name="Rites of War" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="14e1-9aa6-8e77-e79f">
+              <characteristics>
+                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This commander and his warriors have vowed to secure victory.</characteristic>
+                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">While this WARLORD is leading a unit, at the start of the command phase choose one of the following to apply to its unit:
+- Until the end of this Turn, Models in that Unit gain the Line (1) Special Rule (and lose the Vanguard (X) Special Rule if they had it).
+- Until the end of this Turn, Models in that Unit gain the Vanguard (1) Special Rule (and lose the Line (X) Special Rule if they had it.)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Storm of Fire" hidden="false" id="cbc1-733c-fe59-95cd">
+          <profiles>
+            <profile name="Storm of Fire" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="33f4-1b50-a43b-edfe">
+              <characteristics>
+                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This warlord expertly guides his warriors’ fire.</characteristic>
+                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">While this WARLORD is leading a unit, ranged weapons equipped by model gain the Sustained Hits (1) ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Sustained Hits" id="5002-e395-c4a4-f97d" hidden="false" type="rule" targetId="fb14-3e48-e04d-d790">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="set" value="Sustained Hits (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Enhancements" id="de6f-17bd-8c9f-d02b" hidden="false" sortIndex="2">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Relic Weapons" id="0c9f-85b2-e8c4-a727" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Benediction of Fury" hidden="true" id="e9a6-be5b-4a4d-a552">
+              <profiles>
+                <profile name="Benediction of Fury" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="5d5c-1ecf-2144-1ed4">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Borne on a dozen bloody and hard-fought crusades, this weapons unique empathokinetic circuitry has absorbed the bellicosity and righteous wrath of every Chaplain who has ever wielded it. As a result, it now strikes with the force of a thunderbolt.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">CHAPLAIN model only. This Relic replaces a Crozius Arcanum and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Benediction of Fury" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="3c6a-4e80-2235-a233">
+                  <characteristics>
+                    <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
+                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
+                    <characteristic name="S" typeId="33a1-3481-5543-fce1">+3</characteristic>
+                    <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">3</characteristic>
+                    <characteristic name="D" typeId="3802-23d3-f9b9-863b">2</characteristic>
+                    <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Breaching (5+)</characteristic>
+                    <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Bellicos Bolter" hidden="true" id="4bd1-d5cf-0509-28b1">
+              <profiles>
+                <profile name="Bellicos Boltgun" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="b824-8ec9-3be0-58f8">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">The forge world of Bellicos was a hidden weapons-testing facility given dispensation to practice near heretical levels of technological innovation. These weapons are regarded with a borderline religious reverence for their bellicose lethality, and to wield one is considered a paramount honour.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a bolter only. This Relic replaces a bolter and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Bellicos Boltgun" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="f4dc-a0d7-3294-cf07">
+                  <characteristics>
+                    <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
+                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">4</characteristic>
+                    <characteristic name="S" typeId="591a-4268-a46f-9af6">5</characteristic>
+                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">5</characteristic>
+                    <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+                    <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">-</characteristic>
+                    <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Bolt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Purgatorus" hidden="true" id="4d60-acd0-bd5e-28f9">
+              <profiles>
+                <profile name="Purgatorus" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d11e-73c2-53e8-7b26">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This bolt pistol is a true work of the artificers art. Since its forging in M35, many battle-brothers have used the pistol to purge traitors, tyrants and heretics from the Emperor’s realm. The weapon’s machine spirit is wrathful, its aim inescapable; in many ways, Purgatorus epitomises the very warriors who wield it.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a bolt pistol. This Relic replaces a bolt pistol and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Purgatorus" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="45ee-b996-4132-8033">
+                  <characteristics>
+                    <characteristic name="R" typeId="c686-829c-aef5-ccf2">12</characteristic>
+                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">2</characteristic>
+                    <characteristic name="S" typeId="591a-4268-a46f-9af6">4</characteristic>
+                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">3</characteristic>
+                    <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+                    <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Pistol</characteristic>
+                    <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Assault, Bolt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Assault" id="a3a4-c293-f709-2e2c" hidden="false" type="rule" targetId="99b5-315b-d2d8-c199"/>
+                <infoLink name="Pistol" id="577c-7a28-acc9-e8a3" hidden="false" type="rule" targetId="0531-9362-4b90-3ac9"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea66-764a-ed62-0744" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Teeth of Terra" hidden="true" id="486c-cdb6-87fa-5eac">
+              <profiles>
+                <profile name="Teeth of Terra" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="7fba-4f3f-feb1-fa55">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">The origins of the Teeth of Terra lie shrouded in mystery. Mentions of this large, obsidian-toothed chainsword can be found dotted throughout the histories of many Space Marine Chapters, yet the weapon itself can be traced to no artisans hand, nor can it be found in any Chapter’s Armoury save in times of the greatest need. What is certain is that, when wielded in battle by a true hero of the Imperium, the Teeth of Terra strikes with the force of a thunderbolt, leaving a bloody trail of broken bodies in its wake.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a chainsword only. This Relic replaces a chainsword and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Teeth of Terra" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="2274-1668-2b58-7fe2">
+                  <characteristics>
+                    <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
+                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">+3</characteristic>
+                    <characteristic name="S" typeId="33a1-3481-5543-fce1">S</characteristic>
+                    <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">5</characteristic>
+                    <characteristic name="D" typeId="3802-23d3-f9b9-863b">2</characteristic>
+                    <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Shred</characteristic>
+                    <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Chain</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Shred" id="cca8-5e1b-adcc-ba29" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="67d6-6fcb-dea3-6851" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Burning Blade" hidden="true" id="8b67-b939-4e0d-2683">
+              <profiles>
+                <profile name="The Burning Blade" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="271a-bd06-1f07-9615">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This ancient broadsword is so large and dense that no mere Human could lift it, let alone wield it in battle. It was recovered from the wreckage of Horus’ battle barge, the only unblemished artefact in a chamber crawling with the filthy taint of Chaos. Some artificers have posited that it is the Master of Mankind’s greatness that shines out from its sacred steel. In the heat of battle, the sword blazes so brightly that it can melt through even the thickest armour.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a power sword only. This Relic replaces a power sword and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="The Burning Blade" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="dff9-26c6-06e5-63e6">
+                  <characteristics>
+                    <characteristic name="I" typeId="93cf-082c-7341-87f7">User</characteristic>
+                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">User</characteristic>
+                    <characteristic name="S" typeId="33a1-3481-5543-fce1">User</characteristic>
+                    <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
+                    <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
+                    <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Aflame (1)</characteristic>
+                    <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="43bf-840b-fe42-d2b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Blood Angels" id="8d9f-0fb0-27d2-ee71" hidden="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hammer of Baal" hidden="true" id="dcfd-2dab-0a0f-7e46">
+                  <profiles>
+                    <profile name="Hammer of Baal" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="bab0-4cc1-f377-6c14">
+                      <characteristics>
+                        <characteristic name="I" typeId="93cf-082c-7341-87f7">-2</characteristic>
+                        <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
+                        <characteristic name="S" typeId="33a1-3481-5543-fce1">+4</characteristic>
+                        <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
+                        <characteristic name="D" typeId="3802-23d3-f9b9-863b">2</characteristic>
+                        <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">-</characteristic>
+                        <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Hammer of Baal" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="0026-a6bb-4554-74a9">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with thunder hammer only. This Relic replaces a thunder hammer and has the following profile:</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="5d90-0beb-144a-477f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="6506-3e22-a625-e340" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Relic Armour" id="b56a-490c-f065-5378" hidden="false"/>
+        <selectionEntryGroup name="Artifacts" id="d7e0-6f3e-83c2-6a43" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Tome of Malcador" hidden="false" id="ba27-a094-49e1-810d">
+              <profiles>
+                <profile name="Tome of Malcador" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="b7bb-7220-66e8-f37e">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Malcador the Sigillite was the trusted aide of the Emperor himself. The most potent Human psyker of the time, the tome he penned on the nature of reality enhances the mind of the reader.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">LIBRARIAN model only. The bearer knows one additional psychic power from any discipline it has access to.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <entryLinks>
