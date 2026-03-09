@@ -29,8 +29,11 @@
             </profile>
           </profiles>
           <entryLinks>
-            <entryLink import="true" name="Relics" hidden="false" id="2291-bae2-364c-6d8b" type="selectionEntryGroup" targetId="de6f-17bd-8c9f-d02b" sortIndex="1"/>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="cc05-cb06-82f6-94cc" type="selectionEntryGroup" targetId="b504-36b5-ec50-476b" sortIndex="2"/>
+            <entryLink import="true" name="Enhancements" hidden="false" id="689b-8fb1-3897-2fcb" type="selectionEntry" targetId="b29f-945d-c201-9024">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="8d89-9a1d-81db-f10b" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Options" id="db03-4a57-f948-26c7" hidden="false">
@@ -418,6 +421,13 @@
       <categoryLinks>
         <categoryLink targetId="b1a6-ca9c-ed8b-e309" id="98ad-b9fb-2ed9-cbd3" primary="false" name="Walker Model Type"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink import="true" name="Havoc launcher" hidden="false" id="1199-9f85-9cf7-f248" type="selectionEntry" targetId="c6f1-13a9-b844-e8da">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Leviathan Dreadnought" hidden="false" id="ee85-b2a7-4c1e-6e83" sortIndex="53">
       <selectionEntries>
@@ -1783,18 +1793,6 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
             </profile>
           </profiles>
           <selectionEntryGroups>
-            <selectionEntryGroup name="Jump Pack" id="899a-215e-b92c-e068" hidden="false" flatten="true">
-              <entryLinks>
-                <entryLink import="true" name="Jump Pack" hidden="false" id="d898-0e73-427a-33ad" type="selectionEntry" targetId="7cc3-abfb-8528-0f0b" sortIndex="1">
-                  <costs>
-                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2805-4d2f-709f-4c53"/>
-              </constraints>
-            </selectionEntryGroup>
             <selectionEntryGroup name="Options" id="7fe8-1df8-0bba-5345" hidden="false">
               <comment>May exchange bolter/bolt pistol for:</comment>
               <entryLinks>
@@ -1971,48 +1969,69 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
                 </modifier>
               </modifiers>
             </selectionEntryGroup>
+            <selectionEntryGroup name="Optional Wargear" id="8df4-f961-016c-e40e" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Breacher Charges" hidden="false" id="9d95-dcca-51b4-fbc9" type="selectionEntry" targetId="3a8b-1b43-4c9b-bac8">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c98-c9a8-d2c9-8f1d"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Cyber-familiar" hidden="false" id="418a-cbb4-9997-8db9" type="selectionEntry" targetId="ca29-a190-77af-6562">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aff2-0b86-22f9-a348" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="unit" childId="7cc3-abfb-8528-0f0b" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Melta Bombs" hidden="false" id="5e03-d728-039b-235f" type="selectionEntry" targetId="c4d3-e682-d107-cb23">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a44a-6eef-c6a8-52c3" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Jump Pack" id="899a-215e-b92c-e068" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Jump Pack" hidden="false" id="d898-0e73-427a-33ad" type="selectionEntry" targetId="7cc3-abfb-8528-0f0b" sortIndex="1">
+                      <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2805-4d2f-709f-4c53"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Melta Bombs" hidden="false" id="5e03-d728-039b-235f" type="selectionEntry" targetId="c4d3-e682-d107-cb23">
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
-              </costs>
+            <entryLink import="true" name="Enhancements" hidden="false" id="1698-c36c-d6de-aebe" type="selectionEntry" targetId="b29f-945d-c201-9024" sortIndex="1">
               <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a44a-6eef-c6a8-52c3" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0717-da08-71c6-04b0" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Breacher Charges" hidden="false" id="9d95-dcca-51b4-fbc9" type="selectionEntry" targetId="3a8b-1b43-4c9b-bac8">
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c98-c9a8-d2c9-8f1d"/>
-              </constraints>
-            </entryLink>
-            <entryLink import="true" name="Cyber-familiar" hidden="false" id="418a-cbb4-9997-8db9" type="selectionEntry" targetId="ca29-a190-77af-6562">
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
-                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aff2-0b86-22f9-a348" includeChildSelections="false"/>
-              </constraints>
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="equalTo" value="1" field="selections" scope="unit" childId="7cc3-abfb-8528-0f0b" shared="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-            </entryLink>
-            <entryLink import="true" name="Relics" hidden="false" id="6e04-df91-4c4f-760a" type="selectionEntryGroup" targetId="de6f-17bd-8c9f-d02b" sortIndex="1"/>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="202d-245f-22c8-3a6c" type="selectionEntryGroup" targetId="b504-36b5-ec50-476b" sortIndex="2"/>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="Jump Pack Praetor" field="name">
@@ -2897,8 +2916,11 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4cd6-0593-ca82-07bf" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="7255-40f1-4281-e22a" type="selectionEntryGroup" targetId="b504-36b5-ec50-476b" sortIndex="2"/>
-            <entryLink import="true" name="Relics" hidden="false" id="66d0-caed-7e55-aee4" type="selectionEntryGroup" targetId="de6f-17bd-8c9f-d02b" sortIndex="1"/>
+            <entryLink import="true" name="Enhancements" hidden="false" id="0f27-cfca-4533-a91b" type="selectionEntry" targetId="b29f-945d-c201-9024" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9a7c-81a1-1ce7-bdc7" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntries>
             <selectionEntry type="upgrade" import="true" name="Saturnine teleportation transponder" hidden="false" id="7239-4d52-076d-92b1">
@@ -3499,8 +3521,6 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a41c-37c4-04dd-40ae" includeChildSelections="false"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Relics" hidden="false" id="62c2-bcc1-f0ad-fdb0" type="selectionEntryGroup" targetId="de6f-17bd-8c9f-d02b" sortIndex="1"/>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="9d74-82d8-8d30-51d1" type="selectionEntryGroup" targetId="b504-36b5-ec50-476b" sortIndex="2"/>
             <entryLink import="true" name="Breacher Charges" hidden="false" id="46dc-4771-d906-2e5d" type="selectionEntry" targetId="3a8b-1b43-4c9b-bac8">
               <costs>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
@@ -3522,6 +3542,11 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb5c-0a60-f7d1-50c3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Enhancements" hidden="false" id="403f-590c-8cc4-083b" type="selectionEntry" targetId="b29f-945d-c201-9024" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1b38-87f4-9d3f-4632" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -3639,8 +3664,6 @@ If a Model with this Special Rule is in Reserves, if that Model and every other 
             <categoryLink name="Command Model Sub-type" hidden="false" id="0d31-e928-9e0d-3fd9" targetId="079c-7444-31e3-6a1a" primary="false"/>
           </categoryLinks>
           <entryLinks>
-            <entryLink import="true" name="Relics" hidden="false" id="1de8-fffe-746d-1855" type="selectionEntryGroup" targetId="de6f-17bd-8c9f-d02b" sortIndex="1"/>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="6679-0096-23f1-b792" type="selectionEntryGroup" targetId="b504-36b5-ec50-476b" sortIndex="2"/>
             <entryLink import="true" name="Bolt pistol" hidden="false" id="2f3c-ab04-d05d-87b8" type="selectionEntry" targetId="ea66-764a-ed62-0744">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9b48-10eb-94b1-f3a2" includeChildSelections="false" automatic="true"/>
@@ -3665,6 +3688,11 @@ If a Model with this Special Rule is in Reserves, if that Model and every other 
               </costs>
               <constraints>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5e28-de42-e9e0-5833" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Enhancements" hidden="false" id="6287-759d-13dc-8995" type="selectionEntry" targetId="b29f-945d-c201-9024" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac5f-cb25-73f7-fbba" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4237,7 +4265,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               </constraints>
             </entryLink>
             <entryLink import="true" name="Relics" hidden="false" id="7c22-6750-88fd-8fbf" type="selectionEntryGroup" targetId="de6f-17bd-8c9f-d02b" sortIndex="1"/>
-            <entryLink import="true" name="Warlord Traits" hidden="false" id="a1b7-fd3b-7b2e-5fb0" type="selectionEntryGroup" targetId="b504-36b5-ec50-476b" sortIndex="2"/>
+            <entryLink import="true" name="Heroic Traits" hidden="false" id="a1b7-fd3b-7b2e-5fb0" type="selectionEntryGroup" targetId="b504-36b5-ec50-476b" sortIndex="2"/>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="This Model may have its power axe exchanged for " id="1bf3-1b69-510d-da81" hidden="false" sortIndex="2" defaultSelectionEntryId="7c42-ebc6-4d80-bbc1">
@@ -4728,6 +4756,1061 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </selectionEntryGroups>
         </selectionEntry>
       </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Centurion" hidden="false" id="cee1-7634-391f-017c">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Centurion" hidden="false" id="3d1d-202b-1c95-2448">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon Options" id="a015-d20e-8cc6-daec" hidden="false">
+              <comment>May exchange bolter/bolt pistol for:</comment>
+              <entryLinks>
+                <entryLink import="true" name="Pair of Lightning Claws" hidden="false" id="ed9a-6011-c9eb-1eaf" type="selectionEntry" targetId="c7fb-ff34-a0fa-7de0">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bb51-1240-b7ff-88ef" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="baea-2483-1fe4-028e" includeChildSelections="false"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="May exchange bolter for:" id="0807-c32e-dc47-fd97" hidden="false" sortIndex="0" defaultSelectionEntryId="6c81-0bfe-8e5b-d222">
+                  <entryLinks>
+                    <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="b616-9012-4e07-c2d4" type="selectionEntryGroup" targetId="eb84-9f9d-3c73-f0a1" sortIndex="5">
+                      <comment>Exchange bolter for</comment>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Combi-weapons" hidden="false" id="c52d-1b93-22d5-d953" type="selectionEntryGroup" targetId="b719-76b9-7990-d567">
+                      <comment>Exchange bolter for</comment>
+                    </entryLink>
+                    <entryLink import="true" name="Paragon Blade" hidden="false" id="eb6c-0aea-2b0f-1856" type="selectionEntry" targetId="4a4e-75e7-346c-d358" sortIndex="4">
+                      <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Bolter" hidden="false" id="1bbb-2118-85fc-9345" type="selectionEntry" targetId="692d-a712-c4ef-f30b" sortIndex="1">
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="53f8-663b-e65d-5e85" automatic="true"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="false" id="480c-d9b3-53c4-4e52" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="a868-4e29-64a3-8331"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="480c-d9b3-53c4-4e52">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c7fb-ff34-a0fa-7de0" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="0" field="a868-4e29-64a3-8331">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c7fb-ff34-a0fa-7de0" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+                <selectionEntryGroup name="May exchange Bolt pistol for:" id="bded-f5e9-c1ad-43c0" hidden="false" defaultSelectionEntryId="43d6-a430-ef8f-774d" sortIndex="0">
+                  <entryLinks>
+                    <entryLink import="true" name="Bolt pistol" hidden="false" id="3d94-44d0-38c9-639f" type="selectionEntry" targetId="ea66-764a-ed62-0744" sortIndex="1">
+                      <costs>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+                      </costs>
+                      <modifiers>
+                        <modifier type="set" value="Bolt pistol (default)" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7b61-471d-a208-4b78" automatic="true"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink import="true" name="Paragon Blade" hidden="false" id="8344-579e-ac11-5d7a" type="selectionEntry" targetId="4a4e-75e7-346c-d358" sortIndex="6">
+                      <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+                        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="15"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink import="true" name="Legion Officer Wargear" hidden="false" id="4817-5574-5b47-8780" type="selectionEntryGroup" targetId="eb84-9f9d-3c73-f0a1" sortIndex="8">
+                      <comment>Exchange bolt pistol for</comment>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f47d-f24e-2437-f833"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e48-2e90-c036-e4b6"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="0" field="f47d-f24e-2437-f833">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c7fb-ff34-a0fa-7de0" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                    <modifier type="set" value="0" field="0e48-2e90-c036-e4b6">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="parent" childId="c7fb-ff34-a0fa-7de0" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <modifiers>
+                <modifier type="set" value="1" field="baea-2483-1fe4-028e">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition type="equalTo" value="1" field="selections" scope="parent" childId="c7fb-ff34-a0fa-7de0" shared="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="May have one of the following selected for it:" id="3f72-fe5c-ee77-ce42" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Bayonet" hidden="false" id="ffb9-d2dc-8f1b-2105" type="selectionEntry" targetId="6e41-bd1a-08fe-4171">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="45f1-6327-9777-81ac"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Chain Bayonet" hidden="false" id="31e7-d251-f84d-98b5" type="selectionEntry" targetId="42af-34a1-67bc-86e8">
+                  <costs>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3799-ccea-c54f-8865"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ac55-4781-f63a-c31a" automatic="true"/>
+                <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="3679-8bf5-66fc-9b39" automatic="true"/>
+              </constraints>
+              <modifiers>
+                <modifier type="set" value="true" field="hidden">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="ac55-4781-f63a-c31a">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" value="0" field="3679-8bf5-66fc-9b39">
+                  <conditionGroups>
+                    <conditionGroup type="and">
+                      <conditions>
+                        <condition type="equalTo" value="0" field="selections" scope="model" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Command Upgrade" id="2ebe-34cf-bc64-76d5" hidden="false" defaultSelectionEntryId="0910-f3fc-9a0b-13f5" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Praetor" hidden="false" id="2f23-89d0-9bd2-5ea8">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="9b13-078c-f8f7-9db4" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="40"/>
+                  </costs>
+                  <profiles>
+                    <profile name="Praetor" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="e3ae-9da9-0d6d-3ee6">
+                      <characteristics>
+                        <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Command)</characteristic>
+                        <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">7</characteristic>
+                        <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">6</characteristic>
+                        <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
+                        <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">4</characteristic>
+                        <characteristic name="T" typeId="2303-39d8-5a6d-99b0">4</characteristic>
+                        <characteristic name="W" typeId="5d83-b210-acf7-2361">4</characteristic>
+                        <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
+                        <characteristic name="A" typeId="f152-fc99-0cad-3056">5</characteristic>
+                        <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
+                        <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">9</characteristic>
+                        <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">9</characteristic>
+                        <characteristic name="IN" typeId="8855-af7b-d9c2-228f">9</characteristic>
+                        <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
+                        <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">4+</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="12" field="d2c1-69ea-7ad8-0c75">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="model" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="prepend" value="Jump Pack" field="name">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="model" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="replace" value=", Antigrav)" field="c6d3-582c-0125-3afd" arg=")">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="model" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Centurion" hidden="false" id="0910-f3fc-9a0b-13f5">
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="force" shared="true" id="851f-928c-bb4d-82cb" includeChildSelections="true"/>
+                  </constraints>
+                  <profiles>
+                    <profile name="Centurion" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="5cf3-3008-6f0f-986b">
+                      <characteristics>
+                        <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Command)</characteristic>
+                        <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">7</characteristic>
+                        <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
+                        <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
+                        <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">4</characteristic>
+                        <characteristic name="T" typeId="2303-39d8-5a6d-99b0">4</characteristic>
+                        <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
+                        <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
+                        <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
+                        <characteristic name="LD" typeId="563f-b333-e8af-d093">9</characteristic>
+                        <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">8</characteristic>
+                        <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
+                        <characteristic name="IN" typeId="8855-af7b-d9c2-228f">8</characteristic>
+                        <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
+                        <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">5+</characteristic>
+                      </characteristics>
+                      <modifiers>
+                        <modifier type="set" value="12" field="d2c1-69ea-7ad8-0c75">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="model" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="replace" value=", Antigrav)" field="c6d3-582c-0125-3afd" arg=")">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="model" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                        <modifier type="prepend" value="Jump Pack" field="name">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="model" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </profile>
+                  </profiles>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f27-bf64-a521-898a" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="80a1-a341-6a94-5a71" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Optional Wargear" id="ce0d-d328-d7fd-e0b0" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Breacher Charges" hidden="false" id="f5ff-ba04-40bd-1efb" type="selectionEntry" targetId="3a8b-1b43-4c9b-bac8">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c638-7cbe-9d62-37e3"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Cyber-familiar" hidden="false" id="a80c-dc6a-c8b1-33b6" type="selectionEntry" targetId="ca29-a190-77af-6562">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b96d-9409-559a-fd09" includeChildSelections="false"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="equalTo" value="1" field="selections" scope="unit" childId="7cc3-abfb-8528-0f0b" shared="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink import="true" name="Melta Bombs" hidden="false" id="b35c-7884-a56e-0d36" type="selectionEntry" targetId="c4d3-e682-d107-cb23">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="37d2-7967-881e-70eb" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Jump Pack" id="fe40-b339-c73b-1cba" hidden="false" flatten="true">
+                  <entryLinks>
+                    <entryLink import="true" name="Jump Pack" hidden="false" id="9b50-beb1-34a7-aa07" type="selectionEntry" targetId="7cc3-abfb-8528-0f0b" sortIndex="1">
+                      <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a18-c3d1-4294-c6b6"/>
+                  </constraints>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Enhancements" hidden="false" id="d0c7-c549-4e72-280f" type="selectionEntry" targetId="b29f-945d-c201-9024" sortIndex="2"/>
+          </entryLinks>
+          <modifiers>
+            <modifier type="add" value="dc1e-9850-77b6-3671" field="category">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="prepend" value="Jump Pack " field="name">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="equalTo" value="1" field="selections" scope="unit" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="05f9-c665-5011-7d06" targetId="004b-f7b9-8d86-ecf0" primary="false"/>
+            <categoryLink name="Command Model Sub-type" hidden="false" id="9256-90bf-22a9-6b3f" targetId="079c-7444-31e3-6a1a" primary="false"/>
+          </categoryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="452f-da06-a831-0fdc" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="508a-490d-bb78-6ab7" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="80"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Enhancements" hidden="false" id="b29f-945d-c201-9024">
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Heroic Traits" id="b504-36b5-ec50-476b" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Blood Angels" id="7395-2700-3642-dec3" hidden="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Gift of Foresight" hidden="false" id="ca51-3805-4377-ea19">
+                  <profiles>
+                    <profile name="Gift of Foresight" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d333-5366-bbee-4dce">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This heroic warrior bears a glimmering of Sanguinius’prophetic gifts. Flashes of foresight allow him to parry and weave around his enemy’s blows with supernatural speed and skill.</characteristic>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">In each turn, you can re-roll one hit roll, one wound roll and one saving throw made for this model.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="30"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f481-6379-357d-48b6" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Speed of the Primarch" hidden="false" id="9c4e-da14-7f36-51f3">
+                  <profiles>
+                    <profile name="Speed of the Primarch" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d9cf-adf1-61df-ec2d">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Such is this warlords speed, it is as if the Primarch himself fights alongside his sons.</characteristic>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Increase the Initiative of this model by 2.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3779-aaba-0c5a-c876" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Soulwarden" hidden="false" id="2a55-45bd-8025-7f34">
+                  <profiles>
+                    <profile name="Soulwarden" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="a703-3a82-63c3-98dd">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">TODO</characteristic>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Increase the Willpower characteristic of all units within 6&quot; of this model by 1, up to a maximum of 10.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c53f-6d69-184e-ffcc" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="6506-3e22-a625-e340" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Imperial Fists" id="7395-2700-3642-dec3" hidden="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Siege Master" hidden="false" id="ca51-3805-4377-ea19">
+                  <profiles>
+                    <profile name="Siege Master" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d333-5366-bbee-4dce">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">TODO</characteristic>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">When resolving an attack made by this model against a Building or Vehicle unit, add 2 to the Strength characteristic of that attack.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f481-6379-357d-48b6" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Architect of War" hidden="false" id="9c4e-da14-7f36-51f3">
+                  <profiles>
+                    <profile name="Architect of War" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d9cf-adf1-61df-ec2d">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">TODO</characteristic>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Improve the cover save of all models in this model&apos;s unit by 1.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3779-aaba-0c5a-c876" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Indomitable" hidden="false" id="70e1-bb67-ee8c-015a">
+                  <profiles>
+                    <profile name="Indomitable" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="99f5-3dd8-d36d-9014">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">TODO</characteristic>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Unmodified wound rolls of 1-3 always fail against this model.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ad6b-7222-9a37-768a" includeChildSelections="true"/>
+                  </constraints>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="35"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="5135-150c-aa34-250a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d88-68b3-392e-8d94" includeChildSelections="false"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="The Imperium&apos;s Sword" hidden="false" id="251f-1585-528b-7888">
+              <profiles>
+                <profile name="The Imperium&apos;s Sword" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="645c-5769-16c8-c171">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This warlord hurls himself forwards with unbridled ferocity, cutting down the foe like a reaping whirlwind.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">-Each time this model fights, if it made a charge move, then until that fight is resolved, add 1 to its Strength and Attacks characteristics.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e350-8e48-d4f6-b351" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Champion of Humanity" hidden="false" id="33fd-6ef9-ada9-4c21">
+              <profiles>
+                <profile name="Champion of Humanity" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="3b81-a131-fa5f-9950">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This commander has slain enemy generals beyond counting.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">-Each time this model fights, if it is within Engagement Range of any enemy CHARACTER units, then until that fight is resolved, add 1 to this Warlord’s Attacks characteristic.
+-Each time this model makes a melee attack against a CHARACTER unit, add 1 to that attack’s hit roll and wound roll.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="35"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d2be-9769-bb19-fb6c" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Fear Made Manifest" hidden="false" id="2c82-e1a4-1de1-cda3">
+              <profiles>
+                <profile name="Fear Made Manifest" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="ccbb-14f1-8d59-c504">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">The Emperor’s enemies quail beneath this champion’s wrathful gaze.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">This model gains the Fear (1) ability</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Fear (X)" id="fdee-402a-ecf5-2495" hidden="false" type="rule" targetId="0b8e-22b9-4a68-a71e">
+                  <comment>1</comment>
+                  <modifiers>
+                    <modifier type="set" value="Fear (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1e3-c8f3-6225-99e6" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Iron Resolve" hidden="false" id="1c75-2c3b-da08-08e9">
+              <profiles>
+                <profile name="Iron Resolve" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="7d67-e4ea-002a-5419">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">-Add 1 to the Wounds characteristic of this model.
+-Each time this model would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Feel No Pain (X)" id="620e-8011-5339-821f" hidden="false" type="rule" targetId="87a8-00fa-b0a6-d3cd">
+                  <modifiers>
+                    <modifier type="set" value="true" field="hidden">
+                      <comment>Feel No Pain (6+)</comment>
+                    </modifier>
+                  </modifiers>
+                  <comment>6</comment>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dbf2-3103-7b30-32dc" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Rites of War" hidden="false" id="786c-4ca4-706c-b6ee">
+              <profiles>
+                <profile name="Rites of War" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="14e1-9aa6-8e77-e79f">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This commander and his warriors have vowed to secure victory.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">While this model is leading a unit, at the start of the command phase choose one of the following to apply to its unit:
+- Until the end of this Turn, Models in that Unit gain the Line (1) Special Rule (and lose the Vanguard (X) Special Rule if they had it).
+- Until the end of this Turn, Models in that Unit gain the Vanguard (1) Special Rule (and lose the Line (X) Special Rule if they had it.)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="30"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="64c9-ca23-096c-c6c5" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Storm of Fire" hidden="false" id="cbc1-733c-fe59-95cd">
+              <profiles>
+                <profile name="Storm of Fire" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="33f4-1b50-a43b-edfe">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This warlord expertly guides his warriors’ fire.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">While this model is leading a unit, ranged weapons equipped by model gain the Sustained Hits (1) ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Sustained Hits" id="5002-e395-c4a4-f97d" hidden="false" type="rule" targetId="fb14-3e48-e04d-d790">
+                  <comment>1</comment>
+                  <modifiers>
+                    <modifier type="set" value="Sustained Hits (1)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="25"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="19fb-7a29-dd6e-615e" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup name="Relics" id="de6f-17bd-8c9f-d02b" hidden="false">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Blood Angels" id="8d9f-0fb0-27d2-ee71" hidden="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Hammer of Baal" hidden="true" id="dcfd-2dab-0a0f-7e46">
+                  <profiles>
+                    <profile name="Hammer of Baal" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="bab0-4cc1-f377-6c14">
+                      <characteristics>
+                        <characteristic name="I" typeId="93cf-082c-7341-87f7">-2</characteristic>
+                        <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
+                        <characteristic name="S" typeId="33a1-3481-5543-fce1">+4</characteristic>
+                        <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
+                        <characteristic name="D" typeId="3802-23d3-f9b9-863b">2</characteristic>
+                        <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">-</characteristic>
+                        <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Hammer of Baal" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="0026-a6bb-4554-74a9">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with thunder hammer only. This Relic replaces a thunder hammer and has the following profile:</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="5d90-0beb-144a-477f" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="25"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed6d-d089-a8ba-658b" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="The Angel&apos;s Wing" hidden="true" id="3398-27bb-9c7f-24ee">
+                  <profiles>
+                    <profile name="The Angel&apos;s Wing" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="32ee-2b2a-d5c5-5a4a">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">JUMP PACK model only. You can re-roll failed charge rolls for a model equipped with the Angel’s Wing, and your opponent cannot fire Overwatch against them.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="30"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="661e-ec9f-2185-01a4" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="6506-3e22-a625-e340" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Imperial Fists" id="6ecc-5509-965b-4de8" hidden="true">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Gatekeeper Bolts" hidden="true" id="bfce-84c6-93cc-4fd3">
+                  <profiles>
+                    <profile name="Gatekeeper Bolts" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="9cca-0821-b286-f061">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with Bolt weapon only. TODO</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Gatekeeper Bolts" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="c8c7-df48-5add-7d59">
+                      <characteristics>
+                        <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
+                        <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+                        <characteristic name="S" typeId="591a-4268-a46f-9af6">10</characteristic>
+                        <characteristic name="AP" typeId="e137-b19a-087a-f2e7">5</characteristic>
+                        <characteristic name="D" typeId="770e-2783-e159-33e6">2</characteristic>
+                        <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Armourbane, Heavy (D)</characteristic>
+                        <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea66-764a-ed62-0744" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="443d-e528-f389-d936" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="2822-2fdf-15ec-e222" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="59a6-a99e-bc3e-6301" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Fist of Vengeance" hidden="true" id="bcbf-8ea9-f3f4-8b9e">
+                  <profiles>
+                    <profile name="Fist of Vengeance" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="1b08-b9cc-b2b9-7301">
+                      <characteristics>
+                        <characteristic name="I" typeId="93cf-082c-7341-87f7">-3</characteristic>
+                        <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
+                        <characteristic name="S" typeId="33a1-3481-5543-fce1">+4</characteristic>
+                        <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
+                        <characteristic name="D" typeId="3802-23d3-f9b9-863b">3</characteristic>
+                        <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">-</characteristic>
+                        <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
+                      </characteristics>
+                    </profile>
+                    <profile name="Fist of Vengeance" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="72b9-cc32-97df-bc78">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                  </costs>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="d0da-7b41-cd84-89f2" shared="true" includeChildSelections="true"/>
+                            <condition type="atLeast" value="1" field="selections" scope="parent" childId="e284-8c73-f5c8-d5b6" shared="true" includeChildSelections="true"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0b2f-2867-63fd-ffb4" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Duty&apos;s Burden" hidden="true" id="dcfd-2dab-0a0f-7e46">
+                  <profiles>
+                    <profile name="Duty&apos;s Burden" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="fe82-c265-c01f-458c">
+                      <characteristics>
+                        <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
+                        <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">3</characteristic>
+                        <characteristic name="S" typeId="591a-4268-a46f-9af6">4</characteristic>
+                        <characteristic name="AP" typeId="e137-b19a-087a-f2e7">4</characteristic>
+                        <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+                        <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Heavy (S), Heavy (AP)</characteristic>
+                        <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1"/>
+                      </characteristics>
+                    </profile>
+                    <profile name="Duty&apos;s Burden" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="6c49-358b-97a2-785a">
+                      <characteristics>
+                        <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+                        <characteristic name="Description" typeId="516b-bc6f-e52f-aced"/>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <modifiers>
+                    <modifier type="set" value="false" field="hidden">
+                      <conditions>
+                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed6d-d089-a8ba-658b" includeChildSelections="true"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="5135-150c-aa34-250a" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bellicos Bolter" hidden="true" id="4bd1-d5cf-0509-28b1">
+              <profiles>
+                <profile name="Bellicos Bolter" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="b824-8ec9-3be0-58f8">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">The forge world of Bellicos was a hidden weapons-testing facility given dispensation to practice near heretical levels of technological innovation. These weapons are regarded with a borderline religious reverence for their bellicose lethality, and to wield one is considered a paramount honour.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a bolter only. This Relic replaces a bolter and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Bellicos Bolter" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="f4dc-a0d7-3294-cf07">
+                  <characteristics>
+                    <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
+                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">4</characteristic>
+                    <characteristic name="S" typeId="591a-4268-a46f-9af6">5</characteristic>
+                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">5</characteristic>
+                    <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+                    <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">-</characteristic>
+                    <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Bolt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8423-5d4b-a6d8-2b3e" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Benediction of Fury" hidden="true" id="e9a6-be5b-4a4d-a552">
+              <profiles>
+                <profile name="Benediction of Fury" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="5d5c-1ecf-2144-1ed4">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Borne on a dozen bloody and hard-fought crusades, this weapons unique empathokinetic circuitry has absorbed the bellicosity and righteous wrath of every Chaplain who has ever wielded it. As a result, it now strikes with the force of a thunderbolt.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">CHAPLAIN model only. This Relic replaces a Crozius Arcanum and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Benediction of Fury" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="3c6a-4e80-2235-a233">
+                  <characteristics>
+                    <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
+                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
+                    <characteristic name="S" typeId="33a1-3481-5543-fce1">+3</characteristic>
+                    <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">3</characteristic>
+                    <characteristic name="D" typeId="3802-23d3-f9b9-863b">2</characteristic>
+                    <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Breaching (5+)</characteristic>
+                    <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f1ee-fea7-acca-d81f" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Purgatorus" hidden="true" id="4d60-acd0-bd5e-28f9">
+              <profiles>
+                <profile name="Purgatorus" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d11e-73c2-53e8-7b26">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This bolt pistol is a true work of the artificers art. Since its forging in M35, many battle-brothers have used the pistol to purge traitors, tyrants and heretics from the Emperor’s realm. The weapon’s machine spirit is wrathful, its aim inescapable; in many ways, Purgatorus epitomises the very warriors who wield it.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a bolt pistol. This Relic replaces a bolt pistol and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Purgatorus" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="45ee-b996-4132-8033">
+                  <characteristics>
+                    <characteristic name="R" typeId="c686-829c-aef5-ccf2">12</characteristic>
+                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">2</characteristic>
+                    <characteristic name="S" typeId="591a-4268-a46f-9af6">4</characteristic>
+                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">3</characteristic>
+                    <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+                    <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Pistol</characteristic>
+                    <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Assault, Bolt</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Assault" id="a3a4-c293-f709-2e2c" hidden="false" type="rule" targetId="99b5-315b-d2d8-c199"/>
+                <infoLink name="Pistol" id="577c-7a28-acc9-e8a3" hidden="false" type="rule" targetId="0531-9362-4b90-3ac9"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea66-764a-ed62-0744" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4194-d319-0c88-255c" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Teeth of Terra" hidden="true" id="486c-cdb6-87fa-5eac">
+              <profiles>
+                <profile name="Teeth of Terra" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="7fba-4f3f-feb1-fa55">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">The origins of the Teeth of Terra lie shrouded in mystery. Mentions of this large, obsidian-toothed chainsword can be found dotted throughout the histories of many Space Marine Chapters, yet the weapon itself can be traced to no artisans hand, nor can it be found in any Chapter’s Armoury save in times of the greatest need. What is certain is that, when wielded in battle by a true hero of the Imperium, the Teeth of Terra strikes with the force of a thunderbolt, leaving a bloody trail of broken bodies in its wake.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a chainsword only. This Relic replaces a chainsword and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="Teeth of Terra" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="2274-1668-2b58-7fe2">
+                  <characteristics>
+                    <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
+                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">+3</characteristic>
+                    <characteristic name="S" typeId="33a1-3481-5543-fce1">S</characteristic>
+                    <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">5</characteristic>
+                    <characteristic name="D" typeId="3802-23d3-f9b9-863b">2</characteristic>
+                    <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Shred</characteristic>
+                    <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Chain</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Shred" id="cca8-5e1b-adcc-ba29" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
+              </infoLinks>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="67d6-6fcb-dea3-6851" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="062f-c1bb-6926-65a1" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Burning Blade" hidden="true" id="8b67-b939-4e0d-2683">
+              <profiles>
+                <profile name="The Burning Blade" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="271a-bd06-1f07-9615">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This ancient broadsword is so large and dense that no mere Human could lift it, let alone wield it in battle. It was recovered from the wreckage of Horus’ battle barge, the only unblemished artefact in a chamber crawling with the filthy taint of Chaos. Some artificers have posited that it is the Master of Mankind’s greatness that shines out from its sacred steel. In the heat of battle, the sword blazes so brightly that it can melt through even the thickest armour.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a power sword only. This Relic replaces a power sword and has the following profile:</characteristic>
+                  </characteristics>
+                </profile>
+                <profile name="The Burning Blade" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="dff9-26c6-06e5-63e6">
+                  <characteristics>
+                    <characteristic name="I" typeId="93cf-082c-7341-87f7">User</characteristic>
+                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">User</characteristic>
+                    <characteristic name="S" typeId="33a1-3481-5543-fce1">User</characteristic>
+                    <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
+                    <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
+                    <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Aflame (1)</characteristic>
+                    <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="43bf-840b-fe42-d2b9" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" value="10" field="64d7-ccd2-e4b7-b956">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="27bb-b3f8-a434-91c2" shared="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="46b3-19c1-89df-be80" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="The Honour Vehement" hidden="false" id="8f19-8756-d268-cba8">
+              <profiles>
+                <profile name="The Honour Vehement" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="631e-87fe-d8fd-e4bd">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">A single stanza of script, the original of which was said to have been penned by the Emperor himself, the Honour Vehement is typically inscribed on thrice-blessed parchment and affixed with a purity seal upon its bearer’s armour. So potent is the inspirational value of the Emperor’s own evocation of wrath that not only those who bear it, but all their battlebrothers alongside them, are driven into a relentless killing fury.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Models in this unit have the Impact (A) ability.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Impact (X)" id="3d25-bd40-b00e-a19d" hidden="false" type="rule" targetId="6499-61b9-e3b6-b748">
+                  <modifiers>
+                    <modifier type="set" value="Impact (A)" field="name"/>
+                  </modifiers>
+                  <comment>A</comment>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="35"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dedc-3d91-f825-dcfc" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+            <selectionEntry type="upgrade" import="true" name="Tome of Malcador" hidden="true" id="ba27-a094-49e1-810d">
+              <profiles>
+                <profile name="Tome of Malcador" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="b7bb-7220-66e8-f37e">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Malcador the Sigillite was the trusted aide of the Emperor himself. The most potent Human psyker of the time, the tome he penned on the nature of reality enhances the mind of the reader.</characteristic>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">LIBRARIAN model only. The bearer knows one additional psychic power from any discipline it has access to.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+              </costs>
+              <modifiers>
+                <modifier type="set" value="false" field="hidden">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="selections" scope="parent" childId="b4c6-ff6f-cc96-02c2" shared="true" includeChildSelections="true"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e688-ef8f-f468-7a67" includeChildSelections="true"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9038-0f0d-54ed-8348" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <constraints>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e0a8-c380-d8db-e5ae" includeChildSelections="false"/>
+      </constraints>
     </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
@@ -5332,6 +6415,23 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
             <modifier type="prepend" value="Pintle Mounted " field="name"/>
           </modifiers>
         </entryLink>
+        <entryLink import="true" name="Iliastus Assault Cannon" hidden="true" id="3710-9ef2-4dbb-a697" type="selectionEntry" targetId="30c7-8b0f-bbd7-785a">
+          <modifiers>
+            <modifier type="set" value="false" field="hidden">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition type="instanceOf" value="1" field="forces" scope="force" childId="6506-3e22-a625-e340" shared="true" includeChildSelections="true" includeChildForces="true"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" value="Pintle Mounted Iliastus assault cannon" field="name"/>
+          </modifiers>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+          </costs>
+        </entryLink>
       </entryLinks>
       <modifiers>
         <modifier type="set" value="0" field="2179-9b6e-ae2f-baa3">
@@ -5370,683 +6470,6 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
       <constraints>
         <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a343-787f-a2c7-66cd" includeChildSelections="false"/>
         <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="2666-2315-4da3-8043" includeChildSelections="false"/>
-      </constraints>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Heroic Traits" id="b504-36b5-ec50-476b" hidden="false" sortIndex="1">
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Blood Angels" id="7395-2700-3642-dec3" hidden="true">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Gift of Foresight" hidden="false" id="ca51-3805-4377-ea19">
-              <profiles>
-                <profile name="Gift of Foresight" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d333-5366-bbee-4dce">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This heroic warrior bears a glimmering of Sanguinius’prophetic gifts. Flashes of foresight allow him to parry and weave around his enemy’s blows with supernatural speed and skill.</characteristic>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">In each turn, you can re-roll one hit roll, one wound roll and one saving throw made for this model.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="30"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f481-6379-357d-48b6" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Speed of the Primarch" hidden="false" id="9c4e-da14-7f36-51f3">
-              <profiles>
-                <profile name="Speed of the Primarch" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d9cf-adf1-61df-ec2d">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Such is this warlords speed, it is as if the Primarch himself fights alongside his sons.</characteristic>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Increase the Initiative of this model by 2.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3779-aaba-0c5a-c876" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Soulwarden" hidden="false" id="2a55-45bd-8025-7f34">
-              <profiles>
-                <profile name="Soulwarden" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="a703-3a82-63c3-98dd">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">TODO</characteristic>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Increase the Willpower characteristic of all units within 6&quot; of this model by 1, up to a maximum of 10.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c53f-6d69-184e-ffcc" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="forces" scope="force" childId="6506-3e22-a625-e340" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Imperial Fists" id="7395-2700-3642-dec3" hidden="true">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Siege Master" hidden="false" id="ca51-3805-4377-ea19">
-              <profiles>
-                <profile name="Siege Master" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d333-5366-bbee-4dce">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">TODO</characteristic>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">When resolving an attack made by this model against a Building or Vehicle unit, add 2 to the Strength characteristic of that attack.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f481-6379-357d-48b6" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Architect of War" hidden="false" id="9c4e-da14-7f36-51f3">
-              <profiles>
-                <profile name="Architect of War" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d9cf-adf1-61df-ec2d">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">TODO</characteristic>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Improve the cover save of all models in this model&apos;s unit by 1.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="3779-aaba-0c5a-c876" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Indomitable" hidden="false" id="70e1-bb67-ee8c-015a">
-              <profiles>
-                <profile name="Indomitable" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="99f5-3dd8-d36d-9014">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">TODO</characteristic>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Unmodified wound rolls of 1-3 always fail against this model.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ad6b-7222-9a37-768a" includeChildSelections="true"/>
-              </constraints>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="35"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="forces" scope="force" childId="5135-150c-aa34-250a" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d88-68b3-392e-8d94" includeChildSelections="false"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="The Imperium&apos;s Sword" hidden="false" id="251f-1585-528b-7888">
-          <profiles>
-            <profile name="The Imperium&apos;s Sword" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="645c-5769-16c8-c171">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This warlord hurls himself forwards with unbridled ferocity, cutting down the foe like a reaping whirlwind.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">-Each time this model fights, if it made a charge move, then until that fight is resolved, add 1 to its Strength and Attacks characteristics.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e350-8e48-d4f6-b351" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Champion of Humanity" hidden="false" id="33fd-6ef9-ada9-4c21">
-          <profiles>
-            <profile name="Champion of Humanity" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="3b81-a131-fa5f-9950">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This commander has slain enemy generals beyond counting.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">-Each time this model fights, if it is within Engagement Range of any enemy CHARACTER units, then until that fight is resolved, add 1 to this Warlord’s Attacks characteristic.
--Each time this model makes a melee attack against a CHARACTER unit, add 1 to that attack’s hit roll and wound roll.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="35"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="d2be-9769-bb19-fb6c" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Fear Made Manifest" hidden="false" id="2c82-e1a4-1de1-cda3">
-          <profiles>
-            <profile name="Fear Made Manifest" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="ccbb-14f1-8d59-c504">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">The Emperor’s enemies quail beneath this champion’s wrathful gaze.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">This model gains the Fear (1) ability</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Fear (X)" id="fdee-402a-ecf5-2495" hidden="false" type="rule" targetId="0b8e-22b9-4a68-a71e">
-              <comment>1</comment>
-              <modifiers>
-                <modifier type="set" value="Fear (1)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="c1e3-c8f3-6225-99e6" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Iron Resolve" hidden="false" id="1c75-2c3b-da08-08e9">
-          <profiles>
-            <profile name="Iron Resolve" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="7d67-e4ea-002a-5419">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">-Add 1 to the Wounds characteristic of this model.
--Each time this model would lose a wound, roll one D6: on a 6, that wound is not lost.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Feel No Pain (X)" id="620e-8011-5339-821f" hidden="false" type="rule" targetId="87a8-00fa-b0a6-d3cd">
-              <modifiers>
-                <modifier type="set" value="true" field="hidden">
-                  <comment>Feel No Pain (6+)</comment>
-                </modifier>
-              </modifiers>
-              <comment>6</comment>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dbf2-3103-7b30-32dc" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Rites of War" hidden="false" id="786c-4ca4-706c-b6ee">
-          <profiles>
-            <profile name="Rites of War" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="14e1-9aa6-8e77-e79f">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This commander and his warriors have vowed to secure victory.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">While this model is leading a unit, at the start of the command phase choose one of the following to apply to its unit:
-- Until the end of this Turn, Models in that Unit gain the Line (1) Special Rule (and lose the Vanguard (X) Special Rule if they had it).
-- Until the end of this Turn, Models in that Unit gain the Vanguard (1) Special Rule (and lose the Line (X) Special Rule if they had it.)</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="30"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="64c9-ca23-096c-c6c5" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Storm of Fire" hidden="false" id="cbc1-733c-fe59-95cd">
-          <profiles>
-            <profile name="Storm of Fire" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="33f4-1b50-a43b-edfe">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This warlord expertly guides his warriors’ fire.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">While this model is leading a unit, ranged weapons equipped by model gain the Sustained Hits (1) ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Sustained Hits" id="5002-e395-c4a4-f97d" hidden="false" type="rule" targetId="fb14-3e48-e04d-d790">
-              <comment>1</comment>
-              <modifiers>
-                <modifier type="set" value="Sustained Hits (1)" field="name"/>
-              </modifiers>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="25"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="19fb-7a29-dd6e-615e" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup name="Relics" id="de6f-17bd-8c9f-d02b" hidden="false" sortIndex="2">
-      <selectionEntryGroups>
-        <selectionEntryGroup name="Blood Angels" id="8d9f-0fb0-27d2-ee71" hidden="true">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Hammer of Baal" hidden="true" id="dcfd-2dab-0a0f-7e46">
-              <profiles>
-                <profile name="Hammer of Baal" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="bab0-4cc1-f377-6c14">
-                  <characteristics>
-                    <characteristic name="I" typeId="93cf-082c-7341-87f7">-2</characteristic>
-                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
-                    <characteristic name="S" typeId="33a1-3481-5543-fce1">+4</characteristic>
-                    <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
-                    <characteristic name="D" typeId="3802-23d3-f9b9-863b">2</characteristic>
-                    <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">-</characteristic>
-                    <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Hammer of Baal" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="0026-a6bb-4554-74a9">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with thunder hammer only. This Relic replaces a thunder hammer and has the following profile:</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="5d90-0beb-144a-477f" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="25"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed6d-d089-a8ba-658b" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="The Angel&apos;s Wing" hidden="true" id="3398-27bb-9c7f-24ee">
-              <profiles>
-                <profile name="The Angel&apos;s Wing" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="32ee-2b2a-d5c5-5a4a">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">JUMP PACK model only. You can re-roll failed charge rolls for a model equipped with the Angel’s Wing, and your opponent cannot fire Overwatch against them.</characteristic>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="30"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="7cc3-abfb-8528-0f0b" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="661e-ec9f-2185-01a4" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="forces" scope="force" childId="6506-3e22-a625-e340" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-        <selectionEntryGroup name="Imperial Fists" id="6ecc-5509-965b-4de8" hidden="true">
-          <selectionEntries>
-            <selectionEntry type="upgrade" import="true" name="Gatekeeper Bolts" hidden="true" id="bfce-84c6-93cc-4fd3">
-              <profiles>
-                <profile name="Gatekeeper Bolts" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="9cca-0821-b286-f061">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with Bolt weapon only. TODO</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Gatekeeper Bolts" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="c8c7-df48-5add-7d59">
-                  <characteristics>
-                    <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
-                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
-                    <characteristic name="S" typeId="591a-4268-a46f-9af6">10</characteristic>
-                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">5</characteristic>
-                    <characteristic name="D" typeId="770e-2783-e159-33e6">2</characteristic>
-                    <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Armourbane, Heavy (D)</characteristic>
-                    <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea66-764a-ed62-0744" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="443d-e528-f389-d936" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="2822-2fdf-15ec-e222" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="59a6-a99e-bc3e-6301" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Fist of Vengeance" hidden="true" id="bcbf-8ea9-f3f4-8b9e">
-              <profiles>
-                <profile name="Fist of Vengeance" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="1b08-b9cc-b2b9-7301">
-                  <characteristics>
-                    <characteristic name="I" typeId="93cf-082c-7341-87f7">-3</characteristic>
-                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
-                    <characteristic name="S" typeId="33a1-3481-5543-fce1">+4</characteristic>
-                    <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
-                    <characteristic name="D" typeId="3802-23d3-f9b9-863b">3</characteristic>
-                    <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">-</characteristic>
-                    <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
-                  </characteristics>
-                </profile>
-                <profile name="Fist of Vengeance" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="72b9-cc32-97df-bc78">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
-              </costs>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditionGroups>
-                    <conditionGroup type="or">
-                      <conditions>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="d0da-7b41-cd84-89f2" shared="true" includeChildSelections="true"/>
-                        <condition type="atLeast" value="1" field="selections" scope="parent" childId="e284-8c73-f5c8-d5b6" shared="true" includeChildSelections="true"/>
-                      </conditions>
-                    </conditionGroup>
-                  </conditionGroups>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="0b2f-2867-63fd-ffb4" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-            <selectionEntry type="upgrade" import="true" name="Duty&apos;s Burden" hidden="true" id="dcfd-2dab-0a0f-7e46">
-              <profiles>
-                <profile name="Duty&apos;s Burden" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="fe82-c265-c01f-458c">
-                  <characteristics>
-                    <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
-                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">3</characteristic>
-                    <characteristic name="S" typeId="591a-4268-a46f-9af6">4</characteristic>
-                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">4</characteristic>
-                    <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
-                    <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Heavy (S), Heavy (AP)</characteristic>
-                    <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1"/>
-                  </characteristics>
-                </profile>
-                <profile name="Duty&apos;s Burden" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="6c49-358b-97a2-785a">
-                  <characteristics>
-                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
-                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced"/>
-                  </characteristics>
-                </profile>
-              </profiles>
-              <modifiers>
-                <modifier type="set" value="false" field="hidden">
-                  <conditions>
-                    <condition type="atLeast" value="1" field="selections" scope="parent" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
-              <costs>
-                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
-              </costs>
-              <constraints>
-                <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="ed6d-d089-a8ba-658b" includeChildSelections="true"/>
-              </constraints>
-            </selectionEntry>
-          </selectionEntries>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="forces" scope="force" childId="5135-150c-aa34-250a" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
-      <selectionEntries>
-        <selectionEntry type="upgrade" import="true" name="Bellicos Bolter" hidden="true" id="4bd1-d5cf-0509-28b1">
-          <profiles>
-            <profile name="Bellicos Bolter" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="b824-8ec9-3be0-58f8">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">The forge world of Bellicos was a hidden weapons-testing facility given dispensation to practice near heretical levels of technological innovation. These weapons are regarded with a borderline religious reverence for their bellicose lethality, and to wield one is considered a paramount honour.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a bolter only. This Relic replaces a bolter and has the following profile:</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Bellicos Bolter" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="f4dc-a0d7-3294-cf07">
-              <characteristics>
-                <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
-                <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">4</characteristic>
-                <characteristic name="S" typeId="591a-4268-a46f-9af6">5</characteristic>
-                <characteristic name="AP" typeId="e137-b19a-087a-f2e7">5</characteristic>
-                <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
-                <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">-</characteristic>
-                <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Bolt</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="692d-a712-c4ef-f30b" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="8423-5d4b-a6d8-2b3e" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Benediction of Fury" hidden="true" id="e9a6-be5b-4a4d-a552">
-          <profiles>
-            <profile name="Benediction of Fury" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="5d5c-1ecf-2144-1ed4">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Borne on a dozen bloody and hard-fought crusades, this weapons unique empathokinetic circuitry has absorbed the bellicosity and righteous wrath of every Chaplain who has ever wielded it. As a result, it now strikes with the force of a thunderbolt.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">CHAPLAIN model only. This Relic replaces a Crozius Arcanum and has the following profile:</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Benediction of Fury" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="3c6a-4e80-2235-a233">
-              <characteristics>
-                <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
-                <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
-                <characteristic name="S" typeId="33a1-3481-5543-fce1">+3</characteristic>
-                <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">3</characteristic>
-                <characteristic name="D" typeId="3802-23d3-f9b9-863b">2</characteristic>
-                <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Breaching (5+)</characteristic>
-                <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="f1ee-fea7-acca-d81f" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Purgatorus" hidden="true" id="4d60-acd0-bd5e-28f9">
-          <profiles>
-            <profile name="Purgatorus" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="d11e-73c2-53e8-7b26">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This bolt pistol is a true work of the artificers art. Since its forging in M35, many battle-brothers have used the pistol to purge traitors, tyrants and heretics from the Emperor’s realm. The weapon’s machine spirit is wrathful, its aim inescapable; in many ways, Purgatorus epitomises the very warriors who wield it.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a bolt pistol. This Relic replaces a bolt pistol and has the following profile:</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Purgatorus" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="45ee-b996-4132-8033">
-              <characteristics>
-                <characteristic name="R" typeId="c686-829c-aef5-ccf2">12</characteristic>
-                <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">2</characteristic>
-                <characteristic name="S" typeId="591a-4268-a46f-9af6">4</characteristic>
-                <characteristic name="AP" typeId="e137-b19a-087a-f2e7">3</characteristic>
-                <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
-                <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Pistol</characteristic>
-                <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Assault, Bolt</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Assault" id="a3a4-c293-f709-2e2c" hidden="false" type="rule" targetId="99b5-315b-d2d8-c199"/>
-            <infoLink name="Pistol" id="577c-7a28-acc9-e8a3" hidden="false" type="rule" targetId="0531-9362-4b90-3ac9"/>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="ea66-764a-ed62-0744" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="4194-d319-0c88-255c" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Teeth of Terra" hidden="true" id="486c-cdb6-87fa-5eac">
-          <profiles>
-            <profile name="Teeth of Terra" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="7fba-4f3f-feb1-fa55">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">The origins of the Teeth of Terra lie shrouded in mystery. Mentions of this large, obsidian-toothed chainsword can be found dotted throughout the histories of many Space Marine Chapters, yet the weapon itself can be traced to no artisans hand, nor can it be found in any Chapter’s Armoury save in times of the greatest need. What is certain is that, when wielded in battle by a true hero of the Imperium, the Teeth of Terra strikes with the force of a thunderbolt, leaving a bloody trail of broken bodies in its wake.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a chainsword only. This Relic replaces a chainsword and has the following profile:</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="Teeth of Terra" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="2274-1668-2b58-7fe2">
-              <characteristics>
-                <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
-                <characteristic name="A" typeId="a356-7e7a-c37d-b824">+3</characteristic>
-                <characteristic name="S" typeId="33a1-3481-5543-fce1">S</characteristic>
-                <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">5</characteristic>
-                <characteristic name="D" typeId="3802-23d3-f9b9-863b">2</characteristic>
-                <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Shred</characteristic>
-                <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Chain</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Shred" id="cca8-5e1b-adcc-ba29" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
-          </infoLinks>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="67d6-6fcb-dea3-6851" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="062f-c1bb-6926-65a1" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Burning Blade" hidden="true" id="8b67-b939-4e0d-2683">
-          <profiles>
-            <profile name="The Burning Blade" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="271a-bd06-1f07-9615">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">This ancient broadsword is so large and dense that no mere Human could lift it, let alone wield it in battle. It was recovered from the wreckage of Horus’ battle barge, the only unblemished artefact in a chamber crawling with the filthy taint of Chaos. Some artificers have posited that it is the Master of Mankind’s greatness that shines out from its sacred steel. In the heat of battle, the sword blazes so brightly that it can melt through even the thickest armour.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Model equipped with a power sword only. This Relic replaces a power sword and has the following profile:</characteristic>
-              </characteristics>
-            </profile>
-            <profile name="The Burning Blade" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="dff9-26c6-06e5-63e6">
-              <characteristics>
-                <characteristic name="I" typeId="93cf-082c-7341-87f7">User</characteristic>
-                <characteristic name="A" typeId="a356-7e7a-c37d-b824">User</characteristic>
-                <characteristic name="S" typeId="33a1-3481-5543-fce1">User</characteristic>
-                <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
-                <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
-                <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Aflame (1)</characteristic>
-                <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Power</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="atLeast" value="1" field="selections" scope="parent" childId="43bf-840b-fe42-d2b9" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-            <modifier type="set" value="10" field="64d7-ccd2-e4b7-b956">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="ancestor" childId="27bb-b3f8-a434-91c2" shared="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="46b3-19c1-89df-be80" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="The Honour Vehement" hidden="false" id="8f19-8756-d268-cba8">
-          <profiles>
-            <profile name="The Honour Vehement" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="631e-87fe-d8fd-e4bd">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">A single stanza of script, the original of which was said to have been penned by the Emperor himself, the Honour Vehement is typically inscribed on thrice-blessed parchment and affixed with a purity seal upon its bearer’s armour. So potent is the inspirational value of the Emperor’s own evocation of wrath that not only those who bear it, but all their battlebrothers alongside them, are driven into a relentless killing fury.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">Models in this unit have the Impact (A) ability.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink name="Impact (X)" id="3d25-bd40-b00e-a19d" hidden="false" type="rule" targetId="6499-61b9-e3b6-b748">
-              <modifiers>
-                <modifier type="set" value="Impact (A)" field="name"/>
-              </modifiers>
-              <comment>A</comment>
-            </infoLink>
-          </infoLinks>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="35"/>
-          </costs>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="dedc-3d91-f825-dcfc" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-        <selectionEntry type="upgrade" import="true" name="Tome of Malcador" hidden="true" id="ba27-a094-49e1-810d">
-          <profiles>
-            <profile name="Tome of Malcador" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="b7bb-7220-66e8-f37e">
-              <characteristics>
-                <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Malcador the Sigillite was the trusted aide of the Emperor himself. The most potent Human psyker of the time, the tome he penned on the nature of reality enhances the mind of the reader.</characteristic>
-                <characteristic name="Description" typeId="516b-bc6f-e52f-aced">LIBRARIAN model only. The bearer knows one additional psychic power from any discipline it has access to.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
-          </costs>
-          <modifiers>
-            <modifier type="set" value="false" field="hidden">
-              <conditions>
-                <condition type="instanceOf" value="1" field="selections" scope="parent" childId="b4c6-ff6f-cc96-02c2" shared="true" includeChildSelections="true"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint type="max" value="1" field="selections" scope="roster" shared="true" id="e688-ef8f-f468-7a67" includeChildSelections="true"/>
-          </constraints>
-        </selectionEntry>
-      </selectionEntries>
-      <constraints>
-        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9038-0f0d-54ed-8348" includeChildSelections="false"/>
       </constraints>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
@@ -6160,6 +6583,11 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
     <entryLink import="true" name="Cerberus Heavy Tank Destroyer" hidden="false" id="a514-69d3-259b-9345" type="selectionEntry" targetId="726e-9bbe-14b3-fee9">
       <categoryLinks>
         <categoryLink targetId="f15c-973e-a384-efe8" id="0cf9-6f2b-3fb6-d4e4" primary="true" name="Lord of War"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Centurion" hidden="false" id="6e10-c92f-cd36-2c00" type="selectionEntry" targetId="cee1-7634-391f-017c">
+      <categoryLinks>
+        <categoryLink targetId="59ce-22c6-9dcc-66a0" id="c3b5-2eba-dfe4-be94" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
