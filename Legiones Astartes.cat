@@ -2152,7 +2152,11 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink import="true" name="Enhancements" hidden="false" id="1698-c36c-d6de-aebe" type="selectionEntry" targetId="b29f-945d-c201-9024" sortIndex="1"/>
+            <entryLink import="true" name="Enhancements" hidden="false" id="1698-c36c-d6de-aebe" type="selectionEntry" targetId="b29f-945d-c201-9024" sortIndex="1">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2716-3072-4d0e-a95c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <modifiers>
             <modifier type="set" value="Jump Pack Praetor" field="name">
