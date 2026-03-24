@@ -358,12 +358,12 @@ Once per Battle, if a Unit with this Special Rule remains Stationary in the prev
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="4446-9c47-58a0-f440" includeChildSelections="false"/>
           </constraints>
           <entryLinks>
-            <entryLink import="true" name="Corvid Pattern Jump Pack" hidden="false" id="5964-c967-6039-4178" type="selectionEntry" targetId="3f94-3ed7-02ee-0c1b" sortIndex="4">
+            <entryLink import="true" name="Corvid Pattern Jump Pack" hidden="false" id="5964-c967-6039-4178" type="selectionEntry" targetId="f17f-e59e-3a22-69d5" sortIndex="4">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9c27-8974-60e1-6abd"/>
               </constraints>
             </entryLink>
-            <entryLink import="true" name="Pair of Raven&apos;s Talons" hidden="false" id="11f7-d3a9-2b64-aab9" type="selectionEntry" targetId="ab57-e7ca-3fc7-b256" sortIndex="1">
+            <entryLink import="true" name="Pair of Raven&apos;s Talons" hidden="false" id="11f7-d3a9-2b64-aab9" type="selectionEntry" targetId="6f0a-1120-eb79-8c98" sortIndex="1">
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d85a-5b5d-4b45-855e" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a175-7a1a-f6dd-e7f8" includeChildSelections="false"/>
