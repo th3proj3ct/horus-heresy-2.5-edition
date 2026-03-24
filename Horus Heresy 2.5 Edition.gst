@@ -143,6 +143,12 @@
             </modifier>
           </modifiers>
         </categoryLink>
+        <categoryLink name="Specialist" hidden="false" id="0594-cfe7-8e35-28a1" targetId="097f-883b-71dc-aa4b">
+          <constraints>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="fa18-1ef5-54c8-aa67"/>
+            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0018-da21-8144-6f93"/>
+          </constraints>
+        </categoryLink>
         <categoryLink name="Troops" hidden="false" id="3e35-aaf7-a442-de4c" targetId="026e-adc5-8a2e-1438">
           <constraints>
             <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d95c-2909-d6a0-9bdd"/>
@@ -168,12 +174,6 @@
           </constraints>
         </categoryLink>
         <categoryLink name="Dedicated Transport" hidden="false" id="b7b2-19cd-f742-5d3d" targetId="8676-3c26-63d0-821d"/>
-        <categoryLink name="Specialist" hidden="false" id="0594-cfe7-8e35-28a1" targetId="097f-883b-71dc-aa4b">
-          <constraints>
-            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="fa18-1ef5-54c8-aa67"/>
-            <constraint type="min" value="0" field="selections" scope="parent" shared="true" id="0018-da21-8144-6f93"/>
-          </constraints>
-        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry name="Allied Detachment" id="16b9-bab3-587c-8c5f" hidden="false">

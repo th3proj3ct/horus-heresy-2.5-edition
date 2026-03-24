@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="3ca8-a860-f80c-4eea" name="Psychic" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="2" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="3ca8-a860-f80c-4eea" name="Psychic" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType name="Psychic Ranged Weapon" id="32fd-5cc9-6bd4-aadf" hidden="false">
       <characteristicTypes>
@@ -96,8 +96,7 @@
                 <characteristic name="Summary" typeId="d5d9-2b47-769c-0ab9"/>
                 <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Shooting Phase</characteristic>
                 <characteristic name="Target" typeId="223f-5d11-179d-da08">One enemy unit within 18&quot; and visible to this Psyker</characteristic>
-                <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Roll a D6 and add it to this model&apos;s Willpower. Your opponent then rolls a D6 and adds it to that unit&apos;s Willpower. If your result is higher than your opponent&apos;s, the selected unit suffers D3 S8 AP2 D1 hits.</characteristic>
-                <characteristic name="Difficulty" typeId="0a8f-2803-6463-22f8">0</characteristic>
+                <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Roll a D6 and add it to this model&apos;s Willpower. Your opponent then rolls a D6 and adds it to that unit&apos;s Willpower. If your result is higher than your opponent&apos;s, the selected unit suffers D3+1 S8 AP2 D1 hits.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -125,14 +124,6 @@
         </selectionEntry>
         <selectionEntry type="upgrade" import="true" name="Psychic Fortress" hidden="false" id="cb88-eaeb-40ee-3a28">
           <profiles>
-            <profile name="Psychic Fortress" typeId="2419-f21d-c5b6-4c0e" typeName="Psychic Power" hidden="false" id="ec1d-7746-fb30-374b">
-              <characteristics>
-                <characteristic name="Summary" typeId="d5d9-2b47-769c-0ab9"/>
-                <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Movement Phase</characteristic>
-                <characteristic name="Target" typeId="223f-5d11-179d-da08">Self</characteristic>
-                <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the</characteristic>
-              </characteristics>
-            </profile>
             <profile name="Psychic Fortress" typeId="915d-f0d9-f8bc-757a" typeName="Psychic Reaction" hidden="false" id="e714-5bb3-4298-7116">
               <characteristics>
                 <characteristic name="Summary" typeId="1ce7-2504-85e7-02dc"/>
@@ -288,7 +279,7 @@
             <characteristic name="R" typeId="2b15-ca43-8eb8-7fa7">18</characteristic>
             <characteristic name="FP" typeId="2b24-1587-dfd1-36ae">1</characteristic>
             <characteristic name="RS" typeId="2a18-c220-27bd-3f44">5</characteristic>
-            <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">-</characteristic>
+            <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">3</characteristic>
             <characteristic name="D" typeId="0936-8dbc-8733-6a03">1</characteristic>
             <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Blast (3&quot;)</characteristic>
           </characteristics>

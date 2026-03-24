@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0be6-9b7d-689b-495b" name="Legiones Astartes" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0be6-9b7d-689b-495b" name="Legiones Astartes" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="unit" import="true" name="Praetor in Cataphractii Terminator Armour" hidden="false" id="8890-72f7-b04a-5a98" sortIndex="3">
       <costs>
@@ -499,6 +499,13 @@
           </costs>
         </entryLink>
       </entryLinks>
+      <infoLinks>
+        <infoLink name="Deadly Demise (X)" id="34b0-ade6-1fcf-acf2" hidden="false" type="rule" targetId="2e93-1323-bf4f-2bdd">
+          <modifiers>
+            <modifier type="set" value="Deadly Demise (5+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Leviathan Dreadnought" hidden="false" id="ee85-b2a7-4c1e-6e83" sortIndex="53">
       <selectionEntries>
@@ -630,13 +637,21 @@
           <modifiers>
             <modifier type="set" value="Bulky (7)" field="name"/>
           </modifiers>
+          <comment>7</comment>
         </infoLink>
         <infoLink name="Deadly Demise (X)" id="c09f-e275-4caf-c58f" hidden="false" type="rule" targetId="2e93-1323-bf4f-2bdd">
           <modifiers>
             <modifier type="set" value="Deadly Demise (5+)" field="name"/>
           </modifiers>
+          <comment>5</comment>
         </infoLink>
         <infoLink name="Implacable Advance" id="f85c-9cb9-bc0f-5a6e" hidden="false" type="rule" targetId="7fb3-6133-feb0-e764"/>
+        <infoLink name="Eternal Warrior (X)" id="92a9-2ee6-2aea-3253" hidden="false" type="rule" targetId="5ee0-9921-51da-aa91">
+          <modifiers>
+            <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+          </modifiers>
+          <comment>1</comment>
+        </infoLink>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup name="Weapon Options" id="9471-b387-8e1b-4b5a" hidden="false" sortIndex="2" defaultSelectionEntryId="d949-5b9f-f2dd-a0e4">
@@ -2359,7 +2374,7 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
                           <characteristics>
                             <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
                             <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
-                            <characteristic name="S" typeId="591a-4268-a46f-9af6">9</characteristic>
+                            <characteristic name="S" typeId="591a-4268-a46f-9af6">10</characteristic>
                             <characteristic name="AP" typeId="e137-b19a-087a-f2e7">2</characteristic>
                             <characteristic name="D" typeId="770e-2783-e159-33e6">3</characteristic>
                             <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Ordnance (D), Armourbane, Overload (1)</characteristic>
@@ -2749,7 +2764,7 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
         <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="30"/>
       </costs>
       <categoryLinks>
-        <categoryLink targetId="097f-883b-71dc-aa4b" id="9630-af98-e53b-01b3" primary="false" name="Specialist"/>
+        <categoryLink targetId="097f-883b-71dc-aa4b" id="9630-af98-e53b-01b3" primary="true" name="Specialist"/>
       </categoryLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Saturnine Terminator Squad" hidden="false" id="8f29-e97b-f20f-0fe1" sortIndex="31">
@@ -3344,7 +3359,7 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Saturnine Dreadnought" hidden="false" id="2fcd-4720-32c1-6d1e" sortIndex="56">
       <costs>
-        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="320"/>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="280"/>
       </costs>
       <selectionEntries>
         <selectionEntry type="model" import="true" name="Saturnine Dreadnought" hidden="false" id="70b4-ec80-e4c7-0d89">
@@ -3443,8 +3458,16 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
           <entryLinks>
             <entryLink import="true" name="Disintegrator cannon" hidden="false" id="32a7-6319-0842-c9a8" type="selectionEntry" targetId="b06e-ec5c-197f-28e6" sortIndex="1"/>
             <entryLink import="true" name="Heavy plasma bombard" hidden="false" id="0f8f-a94b-6f2b-31c7" type="selectionEntry" targetId="6de1-0e70-fc10-7336" sortIndex="2"/>
-            <entryLink import="true" name="Inversion Beamer" hidden="false" id="a320-5044-f926-8e19" type="selectionEntry" targetId="ae2a-e9f3-da44-954f" sortIndex="3"/>
-            <entryLink import="true" name="Graviton pulveriser" hidden="false" id="d9e7-cbaa-cdb4-f162" type="selectionEntry" targetId="d822-cc47-a613-54aa" sortIndex="4"/>
+            <entryLink import="true" name="Inversion Beamer" hidden="false" id="a320-5044-f926-8e19" type="selectionEntry" targetId="ae2a-e9f3-da44-954f" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+              </costs>
+            </entryLink>
+            <entryLink import="true" name="Graviton pulveriser" hidden="false" id="d9e7-cbaa-cdb4-f162" type="selectionEntry" targetId="d822-cc47-a613-54aa" sortIndex="4">
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+              </costs>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="db6d-5cee-f1e0-3047" includeChildSelections="false"/>
@@ -3456,16 +3479,19 @@ A Model with this Special Rule must be Deployed onto the Battlefield using the D
             <entryLink import="true" name="Heavy plasma bombard" hidden="false" id="1cc4-2c6a-d59d-8b46" type="selectionEntry" targetId="6de1-0e70-fc10-7336" sortIndex="1"/>
             <entryLink import="true" name="Disintegrator cannon" hidden="false" id="e8bc-5ba6-f340-0705" type="selectionEntry" targetId="b06e-ec5c-197f-28e6" sortIndex="2">
               <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="0"/>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Inversion Beamer" hidden="false" id="28d2-4897-eceb-34a3" type="selectionEntry" targetId="ae2a-e9f3-da44-954f" sortIndex="3">
               <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
             </entryLink>
             <entryLink import="true" name="Graviton pulveriser" hidden="false" id="8996-b8e4-944e-ffa2" type="selectionEntry" targetId="d822-cc47-a613-54aa" sortIndex="4">
               <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
                 <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
               </costs>
             </entryLink>
@@ -4885,12 +4911,18 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9bdf-28ac-dbbf-297a" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Smite" hidden="false" id="2d45-1601-373d-7b5a" type="selectionEntry" targetId="5cf4-b5fd-bb5c-65b0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="547f-b41d-1056-a9ee" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0681-5865-d7d2-e4e1" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <selectionEntryGroups>
             <selectionEntryGroup name="Psychic Disciplines" id="82ff-ebe4-3eb6-7232" hidden="false" sortIndex="6">
               <constraints>
-                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6bc4-ac13-ba4f-99c2" includeChildSelections="false"/>
-                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1d64-1170-ed11-aa36" includeChildSelections="false"/>
+                <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6bc4-ac13-ba4f-99c2" includeChildSelections="false"/>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="1d64-1170-ed11-aa36" includeChildSelections="false"/>
               </constraints>
               <entryLinks>
                 <entryLink import="true" name="Librarius Discipline" hidden="false" id="6482-c82a-2dd7-d952" type="selectionEntryGroup" targetId="74d0-69d5-c119-a0ca"/>
@@ -4905,7 +4937,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="85"/>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="80"/>
       </costs>
     </selectionEntry>
     <selectionEntry type="unit" import="true" name="Centurion" hidden="false" id="cee1-7634-391f-017c" sortIndex="4">
@@ -5986,7 +6018,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
         <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="50"/>
       </costs>
       <categoryLinks>
-        <categoryLink name="Specialist" hidden="false" id="4b83-dd8c-0767-11b0" targetId="097f-883b-71dc-aa4b" primary="false"/>
+        <categoryLink name="Specialist" hidden="false" id="4b83-dd8c-0767-11b0" targetId="097f-883b-71dc-aa4b" primary="true"/>
       </categoryLinks>
       <infoLinks>
         <infoLink name="Battlesmith (X)" id="d296-1562-991a-7605" hidden="false" type="rule" targetId="5567-e3e1-b90d-070d">
@@ -6014,7 +6046,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
                 <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
                 <characteristic name="LD" typeId="563f-b333-e8af-d093">8</characteristic>
                 <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">7</characteristic>
-                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">9</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">10</characteristic>
                 <characteristic name="IN" typeId="8855-af7b-d9c2-228f">8</characteristic>
                 <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
                 <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">4+</characteristic>
@@ -6054,6 +6086,12 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
               <constraints>
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1fed-de9e-9727-7aaf" includeChildSelections="false"/>
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e290-d07f-13da-86ca" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smite" hidden="false" id="7369-a136-f450-951c" type="selectionEntry" targetId="5cf4-b5fd-bb5c-65b0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="6f4a-1820-bb2b-4172" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0d45-fa7d-ac9c-1ad9" includeChildSelections="false"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -8133,6 +8171,11 @@ At the start of the Move Sub-Phase, the Controlling Player of a Model with this 
     <entryLink import="true" name="Reconnaissance Squad" hidden="false" id="ad30-92c6-c76d-ed7a" type="selectionEntry" targetId="5055-4afc-4694-ae41">
       <categoryLinks>
         <categoryLink targetId="18e7-244d-8b18-8fff" id="dc61-eb2b-eddc-13a9" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </entryLink>
+    <entryLink import="true" name="Chief Librarian" hidden="false" id="3124-bc4b-a7b6-d93e" type="selectionEntry" targetId="24e3-884d-4c83-535f">
+      <categoryLinks>
+        <categoryLink targetId="59ce-22c6-9dcc-66a0" id="f3a9-d51b-e8f3-048b" primary="true" name="Command"/>
       </categoryLinks>
     </entryLink>
   </entryLinks>
