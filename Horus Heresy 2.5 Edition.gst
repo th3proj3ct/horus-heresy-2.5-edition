@@ -126,6 +126,19 @@
     <categoryEntry name="Siege Breaker" id="fed1-db9b-82be-228c" hidden="false"/>
     <categoryEntry name="Specialist" id="097f-883b-71dc-aa4b" hidden="false"/>
     <categoryEntry name="Psyker" id="c3a8-5a01-e11e-36d6" hidden="false"/>
+    <categoryEntry name="Paragon Model Type" id="ec77-94d6-bd40-2cfb" hidden="false" publicationId="7d63-5df4-c656-52de" page="175">
+      <rules>
+        <rule name="Paragon Type" id="3abd-0aed-12ad-8b4f" hidden="false" publicationId="7d63-5df4-c656-52de" page="175">
+          <description>The following Rules apply to all Models with the Paragon Type:
+- Any Hits inflicted by a Model with the Paragon Type, as part of either Shooting Attacks or in close combat are allocated by the attacking Model&apos;s Controlling Player and not the Controlling Player of the Target Unit.
+- Models with the Paragon Type may join an leave a Unit that includes Models with the Infantry Type, and Models with the Infantry Type may join and leave a Unit that includes one or more Models with the Paragon Type.
+- Models with the Paragon Type may Embark and Disembark upon Models with the Transport Sub-Type.
+- A Model with the Paragon Type may Issue and Accept Challenges (see Rules for Challenges on page 256).
+- The Controlling Player of a Unit that include one or more Models with the Paragon Type may use the Characteristics of one of those Models to resolve any Characteristic Checks made for that Unit.
+- In Step 1 of the Resolution Sub-Phase, when deciding how many Models a Player controls in a Combat, a Model with the Paragon Type counts as a number of Models equal to that Model&apos;s Base Wounds Value.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
   </categoryEntries>
   <forceEntries>
     <forceEntry name="Primary Force" id="a7b6-b4fb-ac35-e8bf" hidden="false">
