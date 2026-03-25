@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="e0ce-cff3-58b8-92e7" name="Imperium - Adeptus Custodes" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="e0ce-cff3-58b8-92e7" name="Imperium - Adeptus Custodes" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="5" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <categoryEntries>
     <categoryEntry name="Legio Custodes" id="d79b-4db3-a1cb-e711" hidden="false">
       <infoLinks>
@@ -82,9 +82,9 @@
             <infoLink name="Lightning Blows" id="5c99-a505-6d5e-fbaa" hidden="false" type="rule" targetId="b72b-4f8f-f17e-a529"/>
             <infoLink name="Chosen Warriors" id="3cd6-3caa-9bc7-1779" hidden="false" type="rule" targetId="a295-5e23-13af-d42c"/>
             <infoLink name="Vanguard (X)" id="9a66-0c64-5d0b-99f4" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
-              <comment>3</comment>
+              <comment>2</comment>
               <modifiers>
-                <modifier type="set" value="Vanguard (3)" field="name"/>
+                <modifier type="set" value="Vanguard (2)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -391,7 +391,7 @@
                     <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="0"/>
                   </costs>
                   <selectionEntries>
-                    <selectionEntry type="upgrade" import="true" name="Tarsus Buckler" hidden="false" id="8c30-94b7-9e7a-543a">
+                    <selectionEntry type="upgrade" import="true" name="Tarsus Buckler" hidden="true" id="8c30-94b7-9e7a-543a">
                       <profiles>
                         <profile name="Tarsus Buckler" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="4680-7b74-d744-c697">
                           <characteristics>
@@ -562,9 +562,9 @@
             </infoLink>
             <infoLink name="Chosen Warriors" id="0489-dc56-14e7-3c98" hidden="false" type="rule" targetId="a295-5e23-13af-d42c"/>
             <infoLink name="Vanguard (X)" id="2fba-8794-376a-6985" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
-              <comment>3</comment>
+              <comment>2</comment>
               <modifiers>
-                <modifier type="set" value="Vanguard (3)" field="name"/>
+                <modifier type="set" value="Vanguard (2)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -930,7 +930,7 @@
             </infoLink>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="25"/>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -1145,9 +1145,9 @@
               <comment>6</comment>
             </infoLink>
             <infoLink name="Vanguard (X)" id="5325-1597-8419-766c" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
-              <comment>3</comment>
+              <comment>2</comment>
               <modifiers>
-                <modifier type="set" value="Vanguard (3)" field="name"/>
+                <modifier type="set" value="Vanguard (2)" field="name"/>
               </modifiers>
             </infoLink>
           </infoLinks>
@@ -1209,8 +1209,8 @@
                 </profile>
                 <profile name="Achillus Dreadspear" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="7cd4-5ac9-6035-975c">
                   <characteristics>
-                    <characteristic name="I" typeId="93cf-082c-7341-87f7">User</characteristic>
-                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">User</characteristic>
+                    <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
+                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
                     <characteristic name="S" typeId="33a1-3481-5543-fce1">+3</characteristic>
                     <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
                     <characteristic name="D" typeId="3802-23d3-f9b9-863b">3</characteristic>
@@ -1659,7 +1659,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="150"/>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="175"/>
       </costs>
       <infoLinks>
         <infoLink name="Bulky (X)" id="b95d-40c1-f735-9c6f" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
@@ -2119,7 +2119,7 @@
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="140"/>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="160"/>
       </costs>
       <infoLinks>
         <infoLink name="Bulky (X)" id="662c-fb62-5c4c-1e99" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
@@ -2249,7 +2249,7 @@ During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, i
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="165"/>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="195"/>
       </costs>
       <infoLinks>
         <infoLink name="Bulky (X)" id="aeb6-95d7-10fd-231c" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
@@ -2336,7 +2336,7 @@ During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, i
         </profile>
       </profiles>
       <costs>
-        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="170"/>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="205"/>
       </costs>
       <infoLinks>
         <infoLink name="Bulky (X)" id="ca73-3bf2-545a-957d" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
@@ -2400,8 +2400,8 @@ During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, i
       <profiles>
         <profile name="Guardian Spear" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="4c17-377c-0a7f-1495">
           <characteristics>
-            <characteristic name="I" typeId="93cf-082c-7341-87f7">User</characteristic>
-            <characteristic name="A" typeId="a356-7e7a-c37d-b824">User</characteristic>
+            <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
+            <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
             <characteristic name="S" typeId="33a1-3481-5543-fce1">+1</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
             <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
@@ -2506,7 +2506,7 @@ During the Challenge Sub-Phase, if a Model with this Special Rule is eligible, i
       <profiles>
         <profile name="Castellan Axe" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="8db7-515d-694b-e7ab">
           <characteristics>
-            <characteristic name="I" typeId="93cf-082c-7341-87f7">-3</characteristic>
+            <characteristic name="I" typeId="93cf-082c-7341-87f7">-4</characteristic>
             <characteristic name="A" typeId="a356-7e7a-c37d-b824">-2</characteristic>
             <characteristic name="S" typeId="33a1-3481-5543-fce1">+5</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
