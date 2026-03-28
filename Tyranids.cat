@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="false" id="aa01-6861-a3f3-427b" name="Tyranids" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="3" revision="1" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="false" id="aa01-6861-a3f3-427b" name="Tyranids" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="3" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry type="unit" import="true" name="Hive Tyrant" hidden="false" id="e2a9-5a6b-0e45-9cf0" sortIndex="2">
       <selectionEntries>
@@ -138,7 +138,7 @@
             </selectionEntry>
           </selectionEntries>
           <categoryLinks>
-            <categoryLink targetId="b1e4-8128-1b2c-4d12" id="1d78-86db-6e06-927b" primary="false" name="Monster"/>
+            <categoryLink targetId="b1e4-8128-1b2c-4d12" id="1d78-86db-6e06-927b" primary="false" name="Monster Model Type"/>
             <categoryLink targetId="b91d-4085-6c33-18b0" id="3120-2943-92ad-7872" primary="false" name="Swarm Leader"/>
             <categoryLink targetId="c3a8-5a01-e11e-36d6" id="e4b0-3aa1-c9e0-fe40" primary="false" name="Psyker"/>
             <categoryLink targetId="079c-7444-31e3-6a1a" id="735d-d8e8-4532-a17a" primary="false" name="Command Model Sub-type"/>
@@ -915,7 +915,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         <selectionEntry type="upgrade" import="true" name="Exocrine" hidden="false" id="d57c-1a8c-3ba9-7506">
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1919-0427-c642-2022" includeChildSelections="false"/>
-            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="511e-ee8a-620c-472c" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="511e-ee8a-620c-472c" includeChildSelections="false"/>
           </constraints>
           <categoryLinks>
             <categoryLink name="Monster Model Type" hidden="false" id="45ee-83f2-c16e-7f60" targetId="b1e4-8128-1b2c-4d12" primary="false"/>
@@ -1002,19 +1002,271 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
               </characteristics>
             </profile>
           </profiles>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="175"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="175"/>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="0"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="ef97-8ab0-4770-8ab4" targetId="a088-84e9-3af7-8255" primary="true"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Termagants" hidden="false" id="d72f-0c66-2045-a85f"/>
+    <selectionEntry type="unit" import="true" name="Termagant Brood" hidden="false" id="d72f-0c66-2045-a85f" sortIndex="20">
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="026e-adc5-8a2e-1438" id="8517-2a2f-f4ad-7266" primary="true" name="Troops"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Termagants" id="ffec-811c-e988-352d" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Termagant" hidden="false" id="fcca-6c30-df75-da6d">
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="4"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Infantry Model Type" hidden="false" id="fdcc-a582-9fc6-d4a9" targetId="004b-f7b9-8d86-ecf0" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Termagant" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="3487-76f3-f4d7-e74f">
+                  <characteristics>
+                    <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry</characteristic>
+                    <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">6</characteristic>
+                    <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">3</characteristic>
+                    <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">3</characteristic>
+                    <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">3</characteristic>
+                    <characteristic name="T" typeId="2303-39d8-5a6d-99b0">3</characteristic>
+                    <characteristic name="W" typeId="5d83-b210-acf7-2361">1</characteristic>
+                    <characteristic name="I" typeId="45f1-a353-bf92-e24d">4</characteristic>
+                    <characteristic name="A" typeId="f152-fc99-0cad-3056">1</characteristic>
+                    <characteristic name="LD" typeId="563f-b333-e8af-d093">6</characteristic>
+                    <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">6</characteristic>
+                    <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">6</characteristic>
+                    <characteristic name="IN" typeId="8855-af7b-d9c2-228f">5</characteristic>
+                    <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">6+</characteristic>
+                    <characteristic name="INV" typeId="7fef-b0ea-c53e-129c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <selectionEntryGroups>
+                <selectionEntryGroup name="Weapon" id="b48c-0637-74eb-19a3" hidden="false" defaultSelectionEntryId="0db6-e262-87d6-1c47">
+                  <entryLinks>
+                    <entryLink import="true" name="Fleshborer" hidden="false" id="0db6-e262-87d6-1c47" type="selectionEntry" targetId="e72e-974b-8fd3-5904"/>
+                    <entryLink import="true" name="Spinefists" hidden="false" id="faef-dfe1-39c2-eafa" type="selectionEntry" targetId="201d-c7a0-e602-a2e0"/>
+                    <entryLink import="true" name="Devourer" hidden="false" id="2a15-804d-75c4-98d3" type="selectionEntry" targetId="db57-bd35-6ced-7a5d">
+                      <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8a5-7d97-ee8e-767d" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b89e-f0ff-b6e6-23d7" includeChildSelections="false"/>
+                  </constraints>
+                  <selectionEntryGroups>
+                    <selectionEntryGroup name="Heavy Weapon" id="2159-727b-0aeb-6c1b" hidden="false">
+                      <selectionEntries>
+                        <selectionEntry type="upgrade" import="true" name="Shardlauncher" hidden="false" id="fb83-05aa-d50f-6971">
+                          <profiles>
+                            <profile name="Shardlauncher" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="d9a8-92d5-0edf-3f8a">
+                              <characteristics>
+                                <characteristic name="R" typeId="c686-829c-aef5-ccf2">18</characteristic>
+                                <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+                                <characteristic name="S" typeId="591a-4268-a46f-9af6">4</characteristic>
+                                <characteristic name="AP" typeId="e137-b19a-087a-f2e7">5</characteristic>
+                                <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+                                <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Blast (3&quot;), Heavy (FP), Pinning (1)</characteristic>
+                                <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1"/>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Blast (X)" id="a287-df15-6df3-431b" hidden="false" type="rule" targetId="8b6b-a464-227a-063a">
+                              <comment>3</comment>
+                              <modifiers>
+                                <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                              </modifiers>
+                            </infoLink>
+                            <infoLink name="Pinning (X)" id="6ac6-1f5c-2e58-ee5d" hidden="false" type="rule" targetId="0f0a-c20a-e712-42b3">
+                              <modifiers>
+                                <modifier type="set" value="Pinning (1)" field="name"/>
+                              </modifiers>
+                              <comment>1</comment>
+                            </infoLink>
+                            <infoLink name="Heavy (X)" id="0faf-7664-67f1-736c" hidden="false" type="rule" targetId="b0a4-11e4-8b30-9ce5">
+                              <comment>fp</comment>
+                              <modifiers>
+                                <modifier type="set" value="Heavy (FP)" field="name"/>
+                              </modifiers>
+                            </infoLink>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Spike rifle" hidden="false" id="b967-f05b-e243-d8b4">
+                          <profiles>
+                            <profile name="Spike rifle" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="d8fa-4bf4-734c-fd69">
+                              <characteristics>
+                                <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
+                                <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+                                <characteristic name="S" typeId="591a-4268-a46f-9af6">5</characteristic>
+                                <characteristic name="AP" typeId="e137-b19a-087a-f2e7">4</characteristic>
+                                <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+                                <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Breaching (6+), Heavy (RS), 
+Precision (5+)</characteristic>
+                                <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1"/>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Precision (X)" id="d14e-eafb-9c63-d924" hidden="false" type="rule" targetId="61a5-61cc-ed2a-d45b">
+                              <modifiers>
+                                <modifier type="set" value="Precision (5+)" field="name"/>
+                              </modifiers>
+                              <comment>5</comment>
+                            </infoLink>
+                            <infoLink name="Heavy (X)" id="2f12-776c-2be2-17a9" hidden="false" type="rule" targetId="b0a4-11e4-8b30-9ce5">
+                              <comment>RS</comment>
+                              <modifiers>
+                                <modifier type="set" value="Heavy (RS)" field="name"/>
+                              </modifiers>
+                            </infoLink>
+                            <infoLink name="Breaching (X)" id="e52e-56f8-3daa-a60d" hidden="false" type="rule" targetId="6b8b-c85d-3684-26f3">
+                              <comment>6</comment>
+                              <modifiers>
+                                <modifier type="set" value="Breaching (6+)" field="name"/>
+                              </modifiers>
+                            </infoLink>
+                          </infoLinks>
+                        </selectionEntry>
+                        <selectionEntry type="upgrade" import="true" name="Strangleweb" hidden="false" id="6d19-d322-7479-43cc">
+                          <profiles>
+                            <profile name="Strangleweb" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="8c35-9204-8475-eced">
+                              <characteristics>
+                                <characteristic name="R" typeId="c686-829c-aef5-ccf2">Template</characteristic>
+                                <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+                                <characteristic name="S" typeId="591a-4268-a46f-9af6">4</characteristic>
+                                <characteristic name="AP" typeId="e137-b19a-087a-f2e7">-</characteristic>
+                                <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+                                <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Template, Pinning (3)</characteristic>
+                                <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1"/>
+                              </characteristics>
+                            </profile>
+                          </profiles>
+                          <infoLinks>
+                            <infoLink name="Pinning (X)" id="2a4f-eb93-cb92-8aaf" hidden="false" type="rule" targetId="0f0a-c20a-e712-42b3">
+                              <modifiers>
+                                <modifier type="set" value="Pinning (3)" field="name"/>
+                              </modifiers>
+                              <comment>3</comment>
+                            </infoLink>
+                            <infoLink name="Template" id="3139-26ba-9ca0-456d" hidden="false" type="rule" targetId="be84-7b4d-1fdb-baa7"/>
+                          </infoLinks>
+                        </selectionEntry>
+                      </selectionEntries>
+                      <constraints>
+                        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ce50-872b-4458-02f5" includeChildSelections="false"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="increment" value="1" field="ce50-872b-4458-02f5">
+                          <repeats>
+                            <repeat value="10" repeats="1" field="selections" scope="ffec-811c-e988-352d" childId="model" shared="true" roundUp="false"/>
+                          </repeats>
+                        </modifier>
+                      </modifiers>
+                    </selectionEntryGroup>
+                  </selectionEntryGroups>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink import="true" name="Basic Mutations" hidden="false" id="1975-cf6e-7b3a-b543" type="selectionEntryGroup" targetId="2c38-53b3-d698-d855"/>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Instinctive Behavior (Lurk)" id="4251-66e9-b6f5-bf39" hidden="false" type="rule" targetId="62df-4991-d3d6-ee1d"/>
+        <infoLink name="Line (X)" id="6d1d-70c9-322c-ddc3" hidden="false" type="rule" targetId="6082-10a1-7474-e0cb">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Line (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Genestealer Brood" hidden="false" id="b8fd-ee4c-eccc-e84c">
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Genestealer" hidden="false" id="3a50-9ae7-15ef-9035">
+          <constraints>
+            <constraint type="min" value="5" field="selections" scope="parent" shared="true" id="9124-c854-ba8a-f60b" includeChildSelections="false"/>
+            <constraint type="max" value="20" field="selections" scope="parent" shared="true" id="52c5-8f0f-8df9-7695" includeChildSelections="false"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Rending claws" hidden="false" id="9a2f-e079-6b58-818e" type="selectionEntry" targetId="5514-735d-2dde-9b3e">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0e4b-ba7d-4665-cbc4" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0466-be21-d3de-cf38" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Basic Mutations" hidden="false" id="c33f-bb20-6fcb-7b11" type="selectionEntryGroup" targetId="2c38-53b3-d698-d855"/>
+          </entryLinks>
+          <categoryLinks>
+            <categoryLink targetId="004b-f7b9-8d86-ecf0" id="e22e-e728-38bf-c649" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="1c58-b337-dacb-f43f" id="13b8-ff77-0a12-1ae3" primary="false" name="Skirmish Model Sub-Type"/>
+            <categoryLink targetId="65da-4619-5544-e9b7" id="3337-f91d-5618-04e0" primary="false" name="Light Sub-type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Genestealer" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="4bc5-77e9-3a18-623e">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Skirmish, Light)</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">8</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">3</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">4</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">4</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">1</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">6</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">9</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">9</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">8</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">8</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">5+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Outflank" id="66f6-d9f8-b67d-69c6" hidden="false" type="rule" targetId="a8d8-df22-433f-a4d9"/>
+            <infoLink name="Move Through Cover" id="a796-0f08-5ed7-db0a" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98"/>
+            <infoLink name="Infiltrate (X)" id="90e8-cd1b-b034-f828" hidden="false" type="rule" targetId="ed2b-77e6-bd37-fee2">
+              <comment>9</comment>
+              <modifiers>
+                <modifier type="set" value="Infiltrate (9)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Vanguard (X)" id="ddcb-da67-f299-0c14" hidden="false" type="rule" targetId="7e76-335e-a632-c8ce">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Vanguard (3)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="260f-13de-24a7-e14a" id="2808-6e2e-0877-c22c" primary="true" name="Elites"/>
+      </categoryLinks>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
-    <selectionEntry type="upgrade" import="true" name="Monstrous scything talons" hidden="false" id="0008-fabe-9004-2828" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Monstrous scything talons" hidden="false" id="0008-fabe-9004-2828">
       <profiles>
         <profile name="Monstrous scything talons" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="6a70-ce10-b656-de99">
           <characteristics>
@@ -1037,7 +1289,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Scything talons" hidden="false" id="acaa-d4a2-48ae-7a77" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Scything talons" hidden="false" id="acaa-d4a2-48ae-7a77">
       <profiles>
         <profile name="Scything talons" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="27ed-9a78-784d-718f">
           <characteristics>
@@ -1052,7 +1304,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </profile>
       </profiles>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Rending claws" hidden="false" id="5514-735d-2dde-9b3e" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Rending claws" hidden="false" id="5514-735d-2dde-9b3e">
       <profiles>
         <profile name="Rending claws" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="9830-0fe6-b9a7-b618">
           <characteristics>
@@ -1081,7 +1333,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pair of monstrous boneswords" hidden="false" id="8d6e-523a-f2fd-bbd0" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Pair of monstrous boneswords" hidden="false" id="8d6e-523a-f2fd-bbd0">
       <profiles>
         <profile name="Pair of monstrous boneswords" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="01f4-1153-8a55-1105">
           <characteristics>
@@ -1104,7 +1356,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Monstrous bonesword and lashwhip" hidden="false" id="693b-b9b6-31f2-9f0d" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Monstrous bonesword and lashwhip" hidden="false" id="693b-b9b6-31f2-9f0d">
       <profiles>
         <profile name="Monstrous bonesword and lashwhip" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="8d66-be86-d8f8-1b08">
           <characteristics>
@@ -1127,7 +1379,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Crushing Claws" hidden="false" id="ebed-8e3b-d2be-876b" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Crushing Claws" hidden="false" id="ebed-8e3b-d2be-876b">
       <profiles>
         <profile name="Crushing Claws" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="516d-7ccb-c264-db35">
           <characteristics>
@@ -1151,7 +1403,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         <infoLink name="Armourbane" id="fd1b-e3eb-d5af-2d6e" hidden="false" type="rule" targetId="afa7-db8e-5165-e08b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Monstrous rending claws" hidden="false" id="beeb-e7bb-d30d-493c" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Monstrous rending claws" hidden="false" id="beeb-e7bb-d30d-493c">
       <profiles>
         <profile name="Monstrous rending claws" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="504a-8713-fc0e-f1ce">
           <characteristics>
@@ -1180,7 +1432,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Pair of boneswords" hidden="false" id="2776-1efe-0105-0c6d" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Pair of boneswords" hidden="false" id="2776-1efe-0105-0c6d">
       <profiles>
         <profile name="Pair of boneswords" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="eb40-5b43-fee4-b00f">
           <characteristics>
@@ -1209,7 +1461,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bonesword and lashwhip" hidden="false" id="2534-c0eb-a7a6-24d1" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Bonesword and lashwhip" hidden="false" id="2534-c0eb-a7a6-24d1">
       <profiles>
         <profile name="Bonesword and lashwhip" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="2bc3-3f1d-08ae-556e">
           <characteristics>
@@ -1238,7 +1490,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Gargantuan scything talons" hidden="false" id="75d4-5bc9-88e9-4c18" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Gargantuan scything talons" hidden="false" id="75d4-5bc9-88e9-4c18">
       <profiles>
         <profile name="Gargantuan scything talons" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="4641-532d-cb53-1270">
           <characteristics>
@@ -1262,7 +1514,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         <infoLink name="Armourbane" id="ae62-f065-03b1-0c01" hidden="false" type="rule" targetId="afa7-db8e-5165-e08b"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Heavy venom cannon" hidden="false" id="7fb8-c4d3-45fe-1c6b" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Heavy venom cannon" hidden="false" id="7fb8-c4d3-45fe-1c6b">
       <profiles>
         <profile name="Heavy venom cannon" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="9270-9bc3-0e2c-da2c">
           <characteristics>
@@ -1297,7 +1549,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Deathspitter" hidden="false" id="a821-2178-58f4-7d0b" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Deathspitter" hidden="false" id="a821-2178-58f4-7d0b">
       <profiles>
         <profile name="Deathspitter" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="7790-46cb-69ce-e115">
           <characteristics>
@@ -1315,7 +1567,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         <infoLink name="Assault" id="9dcf-ded5-504d-42f9" hidden="false" type="rule" targetId="99b5-315b-d2d8-c199"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Spinefists" hidden="false" id="201d-c7a0-e602-a2e0" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Spinefists" hidden="false" id="201d-c7a0-e602-a2e0">
       <profiles>
         <profile name="Spinefists" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="9c95-296d-2302-e046">
           <characteristics>
@@ -1333,7 +1585,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         <infoLink name="Assault" id="129a-6e56-adbb-36c5" hidden="false" type="rule" targetId="99b5-315b-d2d8-c199"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Fleshborer" hidden="false" id="e72e-974b-8fd3-5904" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Fleshborer" hidden="false" id="e72e-974b-8fd3-5904">
       <profiles>
         <profile name="Fleshborer" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="bbe7-265e-2663-41a8">
           <characteristics>
@@ -1351,7 +1603,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         <infoLink name="Assault" id="e78b-d532-d436-3145" hidden="false" type="rule" targetId="99b5-315b-d2d8-c199"/>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Devourer" hidden="false" id="db57-bd35-6ced-7a5d" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Devourer" hidden="false" id="db57-bd35-6ced-7a5d">
       <profiles>
         <profile name="Devourer" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="3026-6d0b-f39b-8b33">
           <characteristics>
@@ -1375,7 +1627,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Stranglethorn cannon" hidden="false" id="7326-cff9-3b5e-b138" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Stranglethorn cannon" hidden="false" id="7326-cff9-3b5e-b138">
       <profiles>
         <profile name="Stranglethorn cannon" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="3f47-5fc8-4bcb-c504">
           <characteristics>
@@ -1404,7 +1656,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Stinger salvo" hidden="false" id="89d9-cbc1-8e1d-b28b" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Stinger salvo" hidden="false" id="89d9-cbc1-8e1d-b28b">
       <profiles>
         <profile name="Stinger salvo" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="6e41-2ea4-fedc-4f15">
           <characteristics>
@@ -1427,7 +1679,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Barbed strangler" hidden="false" id="2974-07f3-30ab-6bfb" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Barbed strangler" hidden="false" id="2974-07f3-30ab-6bfb">
       <profiles>
         <profile name="Barbed strangler" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="af0c-6a56-8580-49e3">
           <characteristics>
@@ -1456,7 +1708,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Venom cannon" hidden="false" id="e506-0a37-5ce3-e077" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Venom cannon" hidden="false" id="e506-0a37-5ce3-e077">
       <profiles>
         <profile name="Venom cannon" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="5d2c-30f7-6aae-e5c8">
           <characteristics>
@@ -1491,7 +1743,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Bio-cannon" hidden="false" id="8be8-775c-7bd2-9f97" sortIndex="">
+    <selectionEntry type="upgrade" import="true" name="Bio-cannon" hidden="false" id="8be8-775c-7bd2-9f97">
       <profiles>
         <profile name="Bio-cannon" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="9a9c-7781-6675-04da">
           <characteristics>
@@ -1505,12 +1757,65 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Breaching (X)" id="378b-7502-1dbe-e4a2" hidden="false" type="rule" targetId="6b8b-c85d-3684-26f3">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Breaching (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Toxin Sacs" hidden="false" id="0d71-924c-33e3-95ee" sortIndex="84"/>
-    <selectionEntry type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="dc16-bfe8-b3fd-01cb" sortIndex="82"/>
-    <selectionEntry type="upgrade" import="true" name="Acid Blood" hidden="false" id="38ae-222f-f664-7c53" sortIndex="81"/>
-    <selectionEntry type="upgrade" import="true" name="Toxic Miasma" hidden="false" id="1604-aebe-9305-074d" sortIndex="80"/>
-    <selectionEntry type="upgrade" import="true" name="Regeneration" hidden="false" id="c93a-853d-5dd1-b908" sortIndex="83"/>
+    <selectionEntry type="upgrade" import="true" name="Toxin Sacs" hidden="false" id="0d71-924c-33e3-95ee" sortIndex="84">
+      <profiles>
+        <profile name="Toxin Sacs" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="bc77-4354-bd0e-a7b6">
+          <characteristics>
+            <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+            <characteristic name="Description" typeId="516b-bc6f-e52f-aced">A Model with Toxin Sacs and without the Monster Trait gains the Poisoned (4+) Special Rule for all Hits inflicted during the Fight Sub-Phase. A Model with Toxin Sacs and the Monster Trait instead gains the Critical Hit (6+) Special Rule for all Hits inflicted during the Fight Sub-Phase.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="dc16-bfe8-b3fd-01cb" sortIndex="82">
+      <profiles>
+        <profile name="Adrenal Glands" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="aaac-ff72-4d2d-375d">
+          <characteristics>
+            <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+            <characteristic name="Description" typeId="516b-bc6f-e52f-aced">A Model with Adrenal Glands gains the Impact (S and I) Special Rule.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Acid Blood" hidden="false" id="38ae-222f-f664-7c53" sortIndex="81">
+      <profiles>
+        <profile name="Acid Blood" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="22ed-dc1e-f98a-8540">
+          <characteristics>
+            <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+            <characteristic name="Description" typeId="516b-bc6f-e52f-aced">At the start of the Resolution Sub-Phase the Assault Phase, any enemy Units that were in Combat with a Model with Acid Blood must make a number of Initiative Tests equal to the number of Damage that the Model with Acid Blood suffered. Every failed Test causes the enemy unit to suffer a Wound with an AP of 2 and a Damage Characteristic of 1. No Cover Save or Damage Mitigation Roll may be made to discard this wound, but Invulnerable Saves may still be made. Models removed as a Casualty as a result of this, are counted towards Combat Resolution.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Toxic Miasma" hidden="false" id="1604-aebe-9305-074d" sortIndex="80">
+      <profiles>
+        <profile name="Toxic Miasma" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="ce07-fe86-8588-91a5">
+          <characteristics>
+            <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+            <characteristic name="Description" typeId="516b-bc6f-e52f-aced">During the Effects Sub-Phase of the End Phase, every Enemy Unit with Models in Base-to-Base Contact with a Model with Toxic Miasma must make a number of Toughness Tests equal to the amount of Models in Base-To-Base Contact. Every failed Test causes the enemy unit to suffer a wound with an AP of 2, a Damage Characteristic of 1, and the Phage (S) Special Rule. No Cover Save or Damage Mitigation Roll may be made to discard this wound, but Invulnerable Saves may still be made.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Regeneration" hidden="false" id="c93a-853d-5dd1-b908" sortIndex="83">
+      <profiles>
+        <profile name="Regeneration" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="1730-6999-58b2-1abd">
+          <characteristics>
+            <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+            <characteristic name="Description" typeId="516b-bc6f-e52f-aced">During the Effects Sub-Phase of the Start Phase, a Model with Regeneration can roll a number of Dice equal to the difference between the Model’s starting Wounds Characteristic and it’s current Wounds Characteristic. For every result of “6”, that Model increases it’s current Wounds Characteristic by one.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Lictor claws and talons" hidden="false" id="a521-0a14-a42a-5916">
       <profiles>
         <profile name="Lictor claws and talons" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="2710-b636-a815-1a22">
@@ -1599,26 +1904,41 @@ Models with this Special Rule have a Synapse range of X”. Friendly Units with 
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6a9d-dadd-8e6f-b2dd" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Acid Blood" hidden="false" id="ea9b-382e-0efe-e6db" type="selectionEntry" targetId="38ae-222f-f664-7c53">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="72ba-572b-c559-b46e" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Toxic Miasma" hidden="false" id="d540-cf1d-a60d-c1ae" type="selectionEntry" targetId="1604-aebe-9305-074d">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b285-a0ad-3760-8f50" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Adrenal Glands" hidden="false" id="968b-9970-5df0-32a5" type="selectionEntry" targetId="dc16-bfe8-b3fd-01cb">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5ac5-fb7c-70e3-0cba" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Regeneration" hidden="false" id="7f2a-b5bd-8c33-ebc1" type="selectionEntry" targetId="c93a-853d-5dd1-b908">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1fce-e681-6825-2299" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -1628,44 +1948,86 @@ Models with this Special Rule have a Synapse range of X”. Friendly Units with 
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6028-d640-2b9a-de55" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="1"/>
+          </costs>
         </entryLink>
         <entryLink import="true" name="Adrenal Glands" hidden="false" id="946d-5683-f4dd-ccaa" type="selectionEntry" targetId="dc16-bfe8-b3fd-01cb">
           <constraints>
             <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9e2c-1daa-a509-7316" includeChildSelections="false"/>
           </constraints>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="2"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Basic Bio-weapons" id="3e5a-5a94-8b5a-3080" hidden="false">
       <entryLinks>
         <entryLink import="true" name="Spinefists" hidden="false" id="9460-1047-e62b-12e5" type="selectionEntry" targetId="201d-c7a0-e602-a2e0"/>
-        <entryLink import="true" name="Deathspitter" hidden="false" id="579f-033e-0fae-4c05" type="selectionEntry" targetId="a821-2178-58f4-7d0b"/>
+        <entryLink import="true" name="Deathspitter" hidden="false" id="579f-033e-0fae-4c05" type="selectionEntry" targetId="a821-2178-58f4-7d0b">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+          </costs>
+        </entryLink>
         <entryLink import="true" name="Scything talons" hidden="false" id="71b8-3f00-86cf-fe27" type="selectionEntry" targetId="acaa-d4a2-48ae-7a77"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Basic Bio-cannon" id="19fa-fa91-0141-1fb9" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Barbed strangler" hidden="false" id="086a-6ad0-2036-3f0b" type="selectionEntry" targetId="2974-07f3-30ab-6bfb"/>
-        <entryLink import="true" name="Venom cannon" hidden="false" id="25b0-ab3e-19c0-a6b5" type="selectionEntry" targetId="e506-0a37-5ce3-e077"/>
+        <entryLink import="true" name="Barbed strangler" hidden="false" id="086a-6ad0-2036-3f0b" type="selectionEntry" targetId="2974-07f3-30ab-6bfb">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Venom cannon" hidden="false" id="25b0-ab3e-19c0-a6b5" type="selectionEntry" targetId="e506-0a37-5ce3-e077">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Melee Bio-weapon" id="cdc8-5918-f0fc-418a" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Bonesword and lashwhip" hidden="false" id="6f62-224e-fbde-30cb" type="selectionEntry" targetId="2534-c0eb-a7a6-24d1"/>
-        <entryLink import="true" name="Rending claws" hidden="false" id="3529-15be-574f-0b7a" type="selectionEntry" targetId="5514-735d-2dde-9b3e"/>
-        <entryLink import="true" name="Pair of boneswords" hidden="false" id="8dac-4460-8b50-fc0a" type="selectionEntry" targetId="2776-1efe-0105-0c6d"/>
+        <entryLink import="true" name="Bonesword and lashwhip" hidden="false" id="6f62-224e-fbde-30cb" type="selectionEntry" targetId="2534-c0eb-a7a6-24d1">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Rending claws" hidden="false" id="3529-15be-574f-0b7a" type="selectionEntry" targetId="5514-735d-2dde-9b3e">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Pair of boneswords" hidden="false" id="8dac-4460-8b50-fc0a" type="selectionEntry" targetId="2776-1efe-0105-0c6d">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Monstrous Bio-weapon" id="1692-2974-73ee-a2db" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Monstrous rending claws" hidden="false" id="3823-7bda-451d-2d0c" type="selectionEntry" targetId="beeb-e7bb-d30d-493c"/>
+        <entryLink import="true" name="Monstrous rending claws" hidden="false" id="3823-7bda-451d-2d0c" type="selectionEntry" targetId="beeb-e7bb-d30d-493c">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+          </costs>
+        </entryLink>
         <entryLink import="true" name="Monstrous scything talons" hidden="false" id="ba2f-e4ac-5bf8-7d28" type="selectionEntry" targetId="0008-fabe-9004-2828"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup name="Monstrous Bio-cannon" id="42e0-d82d-ba74-f555" hidden="false">
       <entryLinks>
-        <entryLink import="true" name="Stranglethorn cannon" hidden="false" id="0279-4850-da98-221c" type="selectionEntry" targetId="7326-cff9-3b5e-b138"/>
-        <entryLink import="true" name="Heavy venom cannon" hidden="false" id="6405-06a6-05e0-d436" type="selectionEntry" targetId="7fb8-c4d3-45fe-1c6b"/>
+        <entryLink import="true" name="Stranglethorn cannon" hidden="false" id="0279-4850-da98-221c" type="selectionEntry" targetId="7326-cff9-3b5e-b138">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+          </costs>
+        </entryLink>
+        <entryLink import="true" name="Heavy venom cannon" hidden="false" id="6405-06a6-05e0-d436" type="selectionEntry" targetId="7fb8-c4d3-45fe-1c6b">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
