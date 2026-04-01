@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="3ca8-a860-f80c-4eea" name="Psychic" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="2" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="3ca8-a860-f80c-4eea" name="Psychic" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="2" revision="4" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType name="Psychic Ranged Weapon" id="32fd-5cc9-6bd4-aadf" hidden="false">
       <characteristicTypes>
@@ -281,10 +281,20 @@
             <characteristic name="RS" typeId="2a18-c220-27bd-3f44">5</characteristic>
             <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">3</characteristic>
             <characteristic name="D" typeId="0936-8dbc-8733-6a03">1</characteristic>
-            <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Blast (3&quot;)</characteristic>
+            <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Blast (3&quot;), Smite</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <rules>
+        <rule name="Smite" id="eaea-9baa-9f2c-27e7" hidden="false">
+          <description>This ranged weapon may be fired even if the model already shot with other weapons this turn, without needing Firing Protocols ability.</description>
+        </rule>
+      </rules>
     </selectionEntry>
   </sharedSelectionEntries>
+  <sharedRules>
+    <rule name="Psyker (X)" id="316c-f713-737e-c142" hidden="false">
+      <description>A Psyker model can manifest and/or make psychic attacks with a number of abilities/weapons as specified by the (X) value in this rule.</description>
+    </rule>
+  </sharedRules>
 </catalogue>

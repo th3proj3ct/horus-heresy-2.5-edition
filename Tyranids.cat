@@ -149,6 +149,17 @@
           </constraints>
           <entryLinks>
             <entryLink import="true" name="Monstrous Mutations" hidden="false" id="a31d-070b-100c-c6eb" type="selectionEntryGroup" targetId="2316-d81a-5bcb-a63b"/>
+            <entryLink import="true" name="Hive Mind Discipline" hidden="false" id="9ea4-3ef0-b6e0-cb0f" type="selectionEntryGroup" targetId="64bf-972a-f8b7-8ad5">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="c313-c078-c020-e908" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smite" hidden="false" id="2a02-dffd-1695-1bdd" type="selectionEntry" targetId="5cf4-b5fd-bb5c-65b0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="dbe4-87f1-00fa-be89" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2a48-3e28-a376-a0b2" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntry>
       </selectionEntries>
@@ -179,6 +190,18 @@
           </modifiers>
         </infoLink>
         <infoLink name="Weapon Beast" id="a4b7-cf46-f56b-0ab2" hidden="false" type="rule" targetId="8ab5-0af0-af0a-fb0e"/>
+        <infoLink name="Deadly Demise (X)" id="3711-554a-2ceb-7f62" hidden="false" type="rule" targetId="2e93-1323-bf4f-2bdd">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Deadly Demise (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Psyker (X)" id="91c8-d99b-4064-f224" hidden="false" type="rule" targetId="316c-f713-737e-c142">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Psyker (2)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="190"/>
@@ -193,7 +216,7 @@
           <profiles>
             <profile name="The Swarmlord" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="fff5-dca0-24f0-3c5c">
               <characteristics>
-                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Monster (Command)</characteristic>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Monster (Command, Unique, Paragon)</characteristic>
                 <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">7</characteristic>
                 <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">7</characteristic>
                 <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">4</characteristic>
@@ -246,6 +269,17 @@
                 <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5afd-7cec-c3bc-e718" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hive Mind Discipline" hidden="false" id="4aef-8383-c195-bbeb" type="selectionEntryGroup" targetId="64bf-972a-f8b7-8ad5">
+              <constraints>
+                <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="764b-f270-4cc8-4a69" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smite" hidden="false" id="eb4e-41fb-0774-23e0" type="selectionEntry" targetId="5cf4-b5fd-bb5c-65b0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="7b61-dfee-4307-d69d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f27a-6e4a-66b7-d0e5" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ba2f-1ffa-575d-653b" includeChildSelections="false"/>
@@ -277,6 +311,18 @@
           <comment>1</comment>
           <modifiers>
             <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deadly Demise (X)" id="d19f-3d23-b563-8263" hidden="false" type="rule" targetId="2e93-1323-bf4f-2bdd">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Deadly Demise (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Psyker (X)" id="f6c6-738e-0d16-6f6c" hidden="false" type="rule" targetId="316c-f713-737e-c142">
+          <comment>2</comment>
+          <modifiers>
+            <modifier type="set" value="Psyker (2)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -342,6 +388,17 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c73a-5e24-fc01-2878" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hive Mind Discipline" hidden="false" id="a3e2-3188-d80e-b35e" type="selectionEntryGroup" targetId="64bf-972a-f8b7-8ad5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="016b-fe7c-a425-1501" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smite" hidden="false" id="dfdb-55b3-1322-e131" type="selectionEntry" targetId="5cf4-b5fd-bb5c-65b0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="96f8-c6ad-d792-2b8d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="6331-98e3-6e89-de25" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="cd91-88e4-2c87-edf8" includeChildSelections="false"/>
@@ -377,6 +434,12 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         </infoLink>
         <infoLink name="Outflank" id="32c7-ee97-62d1-816f" hidden="false" type="rule" targetId="a8d8-df22-433f-a4d9"/>
         <infoLink name="Implacable Advance" id="a491-42d1-76a6-fccf" hidden="false" type="rule" targetId="7fb3-6133-feb0-e764"/>
+        <infoLink name="Psyker (X)" id="177a-7eab-4582-e52d" hidden="false" type="rule" targetId="316c-f713-737e-c142">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Psyker (1)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <costs>
         <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="60"/>
@@ -428,6 +491,17 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
                 <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="be22-354b-235e-8790" includeChildSelections="false"/>
               </constraints>
             </entryLink>
+            <entryLink import="true" name="Hive Mind Discipline" hidden="false" id="38d6-3a13-a8b6-d8c0" type="selectionEntryGroup" targetId="64bf-972a-f8b7-8ad5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7246-b84b-1066-b19c" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smite" hidden="false" id="6547-357b-d157-0dee" type="selectionEntry" targetId="5cf4-b5fd-bb5c-65b0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f00a-291d-beef-1f81" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bf00-2866-9718-c9b2" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <constraints>
             <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5480-4bb3-dea9-3d59" includeChildSelections="false"/>
@@ -460,6 +534,12 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
           <comment>1</comment>
           <modifiers>
             <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Psyker (X)" id="d8e1-0ae7-ec39-05d7" hidden="false" type="rule" targetId="316c-f713-737e-c142">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Psyker (1)" field="name"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1003,12 +1083,12 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
             </profile>
           </profiles>
           <costs>
-            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="175"/>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="140"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="0"/>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
       </costs>
       <categoryLinks>
         <categoryLink name="Heavy Support" hidden="false" id="ef97-8ab0-4770-8ab4" targetId="a088-84e9-3af7-8255" primary="true"/>
@@ -1022,7 +1102,7 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
         <categoryLink targetId="026e-adc5-8a2e-1438" id="8517-2a2f-f4ad-7266" primary="true" name="Troops"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup name="Termagants" id="ffec-811c-e988-352d" hidden="false">
+        <selectionEntryGroup name="Termagants" id="ffec-811c-e988-352d" hidden="false" defaultSelectionEntryId="fcca-6c30-df75-da6d">
           <selectionEntries>
             <selectionEntry type="model" import="true" name="Termagant" hidden="false" id="fcca-6c30-df75-da6d">
               <costs>
@@ -1104,6 +1184,9 @@ In addition, while a Model with the Hive Lord Special Rule is on the Battlefield
                               </modifiers>
                             </infoLink>
                           </infoLinks>
+                          <costs>
+                            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Spike rifle" hidden="false" id="b967-f05b-e243-d8b4">
                           <profiles>
@@ -1140,6 +1223,9 @@ Precision (5+)</characteristic>
                               </modifiers>
                             </infoLink>
                           </infoLinks>
+                          <costs>
+                            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                          </costs>
                         </selectionEntry>
                         <selectionEntry type="upgrade" import="true" name="Strangleweb" hidden="false" id="6d19-d322-7479-43cc">
                           <profiles>
@@ -1164,15 +1250,18 @@ Precision (5+)</characteristic>
                             </infoLink>
                             <infoLink name="Template" id="3139-26ba-9ca0-456d" hidden="false" type="rule" targetId="be84-7b4d-1fdb-baa7"/>
                           </infoLinks>
+                          <costs>
+                            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                          </costs>
                         </selectionEntry>
                       </selectionEntries>
                       <constraints>
-                        <constraint type="max" value="0" field="selections" scope="parent" shared="true" id="ce50-872b-4458-02f5" includeChildSelections="false"/>
+                        <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="ce50-872b-4458-02f5" includeChildSelections="true"/>
                       </constraints>
                       <modifiers>
                         <modifier type="increment" value="1" field="ce50-872b-4458-02f5">
                           <repeats>
-                            <repeat value="10" repeats="1" field="selections" scope="ffec-811c-e988-352d" childId="model" shared="true" roundUp="false"/>
+                            <repeat value="10" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -1183,6 +1272,10 @@ Precision (5+)</characteristic>
               <entryLinks>
                 <entryLink import="true" name="Basic Mutations" hidden="false" id="1975-cf6e-7b3a-b543" type="selectionEntryGroup" targetId="2c38-53b3-d698-d855"/>
               </entryLinks>
+              <constraints>
+                <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="9757-c437-cd0d-2a1d" includeChildSelections="false"/>
+                <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="e5fa-a4d9-c75a-59c0" includeChildSelections="false"/>
+              </constraints>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -1197,7 +1290,7 @@ Precision (5+)</characteristic>
         </infoLink>
       </infoLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Genestealer Brood" hidden="false" id="b8fd-ee4c-eccc-e84c">
+    <selectionEntry type="upgrade" import="true" name="Genestealer Brood" hidden="false" id="b8fd-ee4c-eccc-e84c" sortIndex="30">
       <costs>
         <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
       </costs>
@@ -1258,10 +1351,1115 @@ Precision (5+)</characteristic>
               </modifiers>
             </infoLink>
           </infoLinks>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="14"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <categoryLinks>
         <categoryLink targetId="260f-13de-24a7-e14a" id="2808-6e2e-0877-c22c" primary="true" name="Elites"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Hive Guard Brood" hidden="false" id="1c03-4c2f-c840-b67f" sortIndex="62">
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="a088-84e9-3af7-8255" id="5aaf-d72a-d505-beca" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Hive Guard" hidden="false" id="f5c9-5ae0-e304-8d38">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Weapon" id="a8bf-a931-7a67-6373" hidden="false" defaultSelectionEntryId="c7b0-f439-3f22-3a54">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Impaler cannon" hidden="false" id="c7b0-f439-3f22-3a54">
+                  <profiles>
+                    <profile name="Impaler cannon" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="7ff7-149a-c8a2-529b">
+                      <characteristics>
+                        <characteristic name="R" typeId="c686-829c-aef5-ccf2">24</characteristic>
+                        <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">2</characteristic>
+                        <characteristic name="S" typeId="591a-4268-a46f-9af6">8</characteristic>
+                        <characteristic name="AP" typeId="e137-b19a-087a-f2e7">4</characteristic>
+                        <characteristic name="D" typeId="770e-2783-e159-33e6">2</characteristic>
+                        <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Armourbane, Barrage (0)</characteristic>
+                        <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Armourbane" id="bdae-66e6-2e07-4ce6" hidden="false" type="rule" targetId="afa7-db8e-5165-e08b"/>
+                    <infoLink name="Barrage (X)" id="97f1-599c-37f0-dcb2" hidden="false" type="rule" targetId="d916-ab56-b67b-dd12">
+                      <comment>0</comment>
+                      <modifiers>
+                        <modifier type="set" value="Barrage (0)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Shock cannon" hidden="false" id="6483-532b-54f8-58de">
+                  <profiles>
+                    <profile name="Shock cannon" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="0f5d-b0d8-0105-fb7b">
+                      <characteristics>
+                        <characteristic name="R" typeId="c686-829c-aef5-ccf2">18</characteristic>
+                        <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+                        <characteristic name="S" typeId="591a-4268-a46f-9af6">6</characteristic>
+                        <characteristic name="AP" typeId="e137-b19a-087a-f2e7">5</characteristic>
+                        <characteristic name="D" typeId="770e-2783-e159-33e6">2</characteristic>
+                        <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Blast (3&quot;), Breaching (6+), Shock (Suppressed), Suppressive (0)</characteristic>
+                        <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Breaching (X)" id="da2f-2dda-95f7-6b43" hidden="false" type="rule" targetId="6b8b-c85d-3684-26f3">
+                      <comment>6</comment>
+                      <modifiers>
+                        <modifier type="set" value="Breaching (6+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Shock (X)" id="9ccc-a656-e77d-df9c" hidden="false" type="rule" targetId="e390-9ef2-c903-d0c9">
+                      <comment>supp</comment>
+                      <modifiers>
+                        <modifier type="set" value="Shock (Suppressed)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Blast (X)" id="57e4-1576-e2f9-c447" hidden="false" type="rule" targetId="8b6b-a464-227a-063a">
+                      <comment>3</comment>
+                      <modifiers>
+                        <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink name="Suppressive (X)" id="c4e8-d5d6-901b-4290" hidden="false" type="rule" targetId="162b-405a-d989-89f9">
+                      <comment>0</comment>
+                      <modifiers>
+                        <modifier type="set" value="Suppressive (0)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="62ee-1638-a73d-a847" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="ddc9-7f84-57ae-df42" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <infoLinks>
+            <infoLink name="Armour-Breaker (X)" id="1e96-767f-ba38-28ac" hidden="false" type="rule" targetId="3e0f-f710-5526-4d8c">
+              <comment>5</comment>
+              <modifiers>
+                <modifier type="set" value="Armour-Breaker (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Bulky (X)" id="cd47-5413-f6af-264e" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (3)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Instinctive Behavior (Lurk)" id="100e-e3e5-69bc-b982" hidden="false" type="rule" targetId="62df-4991-d3d6-ee1d"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="35"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink targetId="004b-f7b9-8d86-ecf0" id="3967-ee97-cbbf-c659" primary="true" name="Infantry Model Type"/>
+          </categoryLinks>
+          <profiles>
+            <profile name="Hive Guard" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="d566-8191-17da-31bc">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">7</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">3</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">4</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">4</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">7</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">8</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">6</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">6</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">4+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="055f-915c-4b69-4685" includeChildSelections="false"/>
+            <constraint type="max" value="6" field="selections" scope="parent" shared="true" id="4e76-c5fc-794c-6431" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Biovore Brood" hidden="false" id="eb07-c290-c1ee-8fb3" sortIndex="63">
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="0"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Heavy Support" hidden="false" id="5e0d-09a6-4175-887b" targetId="a088-84e9-3af7-8255" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Biovore" hidden="false" id="118a-8f2a-cf28-28b6">
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="137e-5134-03d7-31a3" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+              <comment>4</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (4)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Instinctive Behavior (Lurk)" id="ddfc-2509-d48f-6a65" hidden="false" type="rule" targetId="62df-4991-d3d6-ee1d"/>
+          </infoLinks>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="40"/>
+          </costs>
+          <categoryLinks>
+            <categoryLink name="Infantry Model Type" hidden="false" id="47de-ef9f-67c3-8150" targetId="004b-f7b9-8d86-ecf0" primary="true"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Spore mine launcher" hidden="false" id="f596-f8d0-be22-0bbe">
+              <profiles>
+                <profile name="Spore mine launcher" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="b583-066c-a7ac-2a95">
+                  <characteristics>
+                    <characteristic name="R" typeId="c686-829c-aef5-ccf2">48</characteristic>
+                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+                    <characteristic name="S" typeId="591a-4268-a46f-9af6">6</characteristic>
+                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">4</characteristic>
+                    <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+                    <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Barrage (2), Blast (5&quot;), Spore Burst</characteristic>
+                    <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">-</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Blast (X)" id="368e-81f8-692b-e0cb" hidden="false" type="rule" targetId="8b6b-a464-227a-063a">
+                  <comment>5</comment>
+                  <modifiers>
+                    <modifier type="set" value="Blast (5&quot;)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Barrage (X)" id="4bf8-d84d-c631-7961" hidden="false" type="rule" targetId="d916-ab56-b67b-dd12">
+                  <comment>2</comment>
+                  <modifiers>
+                    <modifier type="set" value="Barrage (2)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <rules>
+                <rule name="Spore Burst" id="72a8-3008-e32f-78e1" hidden="false">
+                  <description>If, after a Scatter Roll is made for a weapon with this Special Rule, there are no Friendly or Enemy Models under the Blast Marker, place D3 Spore Mine Models anywhere under the Blast Marker. No Models may be placed within 1” of an Enemy Model, any Battlefield Edge or a piece of Impassable Terrain. Any Models that cannot be placed using these Rules must be Removed as a Casualty immediately. These act as a Spore Mine Cluster Unit for the rest of the game but Players can never score Victory points for the destruction of this Unit and they do not count as Units for the Last Man Standing Special Rule.</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="f523-5b35-9240-b68a" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3664-bd3b-a482-ef30" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Biovore" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="1d21-e705-3187-d513">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Heavy)</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">5</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">3</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">3</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">6</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">5</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">2</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">2</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">6</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">7</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">6</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">5</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">4+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Bio-Ammo" hidden="false" id="16c5-16aa-2723-b79f" type="selectionEntryGroup" targetId="1472-70bf-5849-00ac"/>
+          </entryLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b742-1949-ac48-bd22" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="c541-8cbd-f7a3-bdfa" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Spore Mine Cluster" hidden="false" id="3739-9579-fe69-bb45" sortIndex="80">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Spore Mine" hidden="false" id="bb8b-60cd-fa47-355c">
+          <categoryLinks>
+            <categoryLink targetId="dc1e-9850-77b6-3671" id="5b29-ccdf-a4f6-0cfc" primary="false" name="Antigrav Model Sub-Type"/>
+            <categoryLink targetId="004b-f7b9-8d86-ecf0" id="108e-f7c4-496c-c242" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+          </costs>
+          <profiles>
+            <profile name="Spore Mine" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="bd08-1239-99ac-cf50">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Antigrav)</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">4</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">-</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">-</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">1</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">2</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">1</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">-</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">1</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">1</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">1</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">1</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">-</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Bio-Ammo" hidden="false" id="a638-8f1b-f199-c8e9" type="selectionEntryGroup" targetId="1472-70bf-5849-00ac"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Heedless" id="f223-f6cb-e8a6-50ca" hidden="false" type="rule" targetId="21bf-7560-0297-fcd3"/>
+            <infoLink name="Expendable (X)" id="7dee-b9a0-e641-eb9c" hidden="false" type="rule" targetId="a1b7-e3d5-b8a0-298f">
+              <comment>4</comment>
+              <modifiers>
+                <modifier type="set" value="Expendable (4)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deadly Demise (X)" id="d84f-71da-e3e6-5888" hidden="false" type="rule" targetId="2e93-1323-bf4f-2bdd">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Deadly Demise (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deep Strike" id="c038-fdfd-3771-2a5e" hidden="false" type="rule" targetId="8444-d183-3984-f12a"/>
+          </infoLinks>
+          <rules>
+            <rule name="Floating Bomb" id="7be8-8fe1-527d-f06d" hidden="false">
+              <description>f a Charge Roll made for a Model with this Special Rule is failed, the Model is Removed as a Casualty, but immediately explodes as described in the Explodes (X) Special Rule. If a Charge Roll made for a Model with this Special Rule is successful, then at the end of Step 2 of the Fight Sub-Phase of that Combat, every Unit in that Combat suffers a number of automatic Hits equal to the total number of Wounds among all Models in the Unit which Charged. Each such Hit has a Strength of 8, an AP of 4 and a Damage of 2. Once these Hits have been fully resolved, the Model with this Special Rule is immediately Removed as a Casualty, and any version of the Explodes (X) Special Rule it has is ignored.</description>
+            </rule>
+          </rules>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="980f-90de-58be-6811" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="d38b-5583-3499-a848" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+      <categoryLinks>
+        <categoryLink targetId="18e7-244d-8b18-8fff" id="3ea4-cc18-7e42-abe7" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Maleceptor Brood" hidden="false" id="ebef-0a41-f81b-bbbb" sortIndex="31">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Maleceptor" hidden="false" id="8040-4e6b-9079-83c4">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ecd3-4380-6712-5ac8" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="0f49-2e8e-53e5-8987" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink name="Monster Model Type" hidden="false" id="1585-097c-587f-6d75" targetId="b1e4-8128-1b2c-4d12" primary="false"/>
+            <categoryLink targetId="c3a8-5a01-e11e-36d6" id="f3fe-458d-e8b9-2601" primary="false" name="Psyker"/>
+          </categoryLinks>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="3764-966e-42a8-5e38" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+              <modifiers>
+                <modifier type="set" value="Bulky (7)" field="name"/>
+              </modifiers>
+              <comment>7</comment>
+            </infoLink>
+            <infoLink name="Symbiotic Targeting" id="921c-6100-c338-c0b4" hidden="false" type="rule" targetId="ddc2-81fa-8a0b-751b"/>
+            <infoLink name="Move Through Cover" id="74ef-6105-9081-b052" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98"/>
+            <infoLink name="Shadow in the Warp (X)" id="ac5c-166f-71ec-2e5b" hidden="false" type="rule" targetId="3770-65f8-22dc-8b85">
+              <comment>8</comment>
+              <modifiers>
+                <modifier type="set" value="Shadow in the Warp (8)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Synapse Creature (X)" id="7eb8-4ea9-41b3-e186" hidden="false" type="rule" targetId="414d-fed2-22f0-3874">
+              <comment>12</comment>
+              <modifiers>
+                <modifier type="set" value="Synapse Creature (12)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Psyker (X)" id="c0f4-7ca5-dadc-03a2" hidden="false" type="rule" targetId="316c-f713-737e-c142">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Psyker (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <profiles>
+            <profile name="Maleceptor" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="0191-3dae-cb0b-ee4a">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Monster</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">7</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">4</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">4</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">7</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">7</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">7</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">9</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">9</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">10</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">6</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">3+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">5+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="160"/>
+          </costs>
+          <entryLinks>
+            <entryLink import="true" name="Psyker-Beast" hidden="false" id="427c-bec9-16e9-e4f9" type="selectionEntry" targetId="6048-8b89-718b-7b86">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="82f5-7d61-72b2-1fd2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="30c2-3ad2-9559-af41" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smite" hidden="false" id="1401-305f-e58b-efe7" type="selectionEntry" targetId="5cf4-b5fd-bb5c-65b0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="d696-c478-c3da-199e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a4aa-bec6-1756-3415" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="15"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="260f-13de-24a7-e14a" id="066b-b271-dea9-5775" primary="true" name="Elites"/>
+      </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Hormagaunt Brood" hidden="false" id="2c82-76e9-36d9-f165" sortIndex="21">
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink name="Troops" hidden="false" id="f2bd-2c12-2366-285e" targetId="026e-adc5-8a2e-1438" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Hormagaunts" id="8524-6913-da6f-cf35" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="model" import="true" name="Hormagaunt" hidden="false" id="9398-80e2-fb21-bc8d">
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink name="Infantry Model Type" hidden="false" id="ea76-ce3c-fde5-70f7" targetId="004b-f7b9-8d86-ecf0" primary="false"/>
+              </categoryLinks>
+              <profiles>
+                <profile name="Hormagaunt" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="ea6f-8b4b-86bb-b6de">
+                  <characteristics>
+                    <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry</characteristic>
+                    <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">8</characteristic>
+                    <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">3</characteristic>
+                    <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">3</characteristic>
+                    <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">3</characteristic>
+                    <characteristic name="T" typeId="2303-39d8-5a6d-99b0">3</characteristic>
+                    <characteristic name="W" typeId="5d83-b210-acf7-2361">1</characteristic>
+                    <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
+                    <characteristic name="A" typeId="f152-fc99-0cad-3056">2</characteristic>
+                    <characteristic name="LD" typeId="563f-b333-e8af-d093">6</characteristic>
+                    <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">6</characteristic>
+                    <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">6</characteristic>
+                    <characteristic name="IN" typeId="8855-af7b-d9c2-228f">5</characteristic>
+                    <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">6+</characteristic>
+                    <characteristic name="INV" typeId="7fef-b0ea-c53e-129c"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <entryLinks>
+                <entryLink import="true" name="Basic Mutations" hidden="false" id="f1f0-e201-a1fd-2d8c" type="selectionEntryGroup" targetId="2c38-53b3-d698-d855"/>
+                <entryLink import="true" name="Scything talons" hidden="false" id="b9c6-b886-fe87-1d50" type="selectionEntry" targetId="acaa-d4a2-48ae-7a77">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="57fd-77da-1fc3-867a" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5163-fe8a-7959-df9f" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="10" field="selections" scope="parent" shared="true" id="0dfc-74b6-9211-616d" includeChildSelections="false"/>
+                <constraint type="max" value="30" field="selections" scope="parent" shared="true" id="44f9-c108-ff7b-69a6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Instinctive Behavior (Feed)" id="bd09-4175-f3f0-29f2" hidden="false" type="rule" targetId="af6e-fee8-0e26-77d9"/>
+        <infoLink name="Line (X)" id="48cd-b8e9-149f-2999" hidden="false" type="rule" targetId="6082-10a1-7474-e0cb">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Line (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Move Through Cover" id="9b93-115b-e4e6-8ef0" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Screamer Killer Brood" hidden="false" id="8f38-852c-ab8d-e00d" sortIndex="64">
+      <categoryLinks>
+        <categoryLink targetId="a088-84e9-3af7-8255" id="82d9-76d4-1a00-d52e" primary="true" name="Heavy Support"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Screamer Killer" hidden="false" id="9cad-e0ab-7e7b-5a96">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Bio-plasma" hidden="false" id="d776-5d8a-0f49-2250">
+              <profiles>
+                <profile name="Bio-plasma" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="fcbf-1d32-14fa-f55f">
+                  <characteristics>
+                    <characteristic name="R" typeId="c686-829c-aef5-ccf2">18</characteristic>
+                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+                    <characteristic name="S" typeId="591a-4268-a46f-9af6">7</characteristic>
+                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">4</characteristic>
+                    <characteristic name="D" typeId="770e-2783-e159-33e6">2</characteristic>
+                    <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Blast (3&quot;), Breaching (4+)</characteristic>
+                    <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Assault, Plasma</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink name="Blast (X)" id="0b5f-79f7-3cde-1c98" hidden="false" type="rule" targetId="8b6b-a464-227a-063a">
+                  <comment>3</comment>
+                  <modifiers>
+                    <modifier type="set" value="Blast (3&quot;)" field="name"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink name="Breaching (X)" id="73dd-4315-af0a-2a2c" hidden="false" type="rule" targetId="6b8b-c85d-3684-26f3">
+                  <comment>5</comment>
+                  <modifiers>
+                    <modifier type="set" value="Breaching (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1d59-bb1a-69f1-800f" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4f2e-fd1a-c8bc-857f" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="95"/>
+          </costs>
+          <profiles>
+            <profile name="Screamer Killer" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="adda-2553-914a-9f76">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Monster</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">7</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">4</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">3</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">7</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">6</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">5</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">3</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">5</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">7</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">7</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">6</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">4</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">3+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <entryLinks>
+            <entryLink import="true" name="Monstrous scything talons" hidden="false" id="bacf-93c6-ebe0-e4bc" type="selectionEntry" targetId="0008-fabe-9004-2828"/>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="7f1c-cd1e-d3dc-ebf0" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+              <comment>5</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (5)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Implacable Advance" id="36b1-4b39-3c39-c294" hidden="false" type="rule" targetId="7fb3-6133-feb0-e764"/>
+            <infoLink name="Impact (X)" id="7690-c1fc-c370-a095" hidden="false" type="rule" targetId="6499-61b9-e3b6-b748">
+              <comment>s</comment>
+              <modifiers>
+                <modifier type="set" value="Impact (S)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Move Through Cover" id="6261-ef66-ef8c-e970" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98"/>
+            <infoLink name="Deadly Demise (X)" id="99ff-c6dc-f7b5-ba84" hidden="false" type="rule" targetId="2e93-1323-bf4f-2bdd">
+              <comment>6+</comment>
+              <modifiers>
+                <modifier type="set" value="Deadly Demise (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="ae8a-eaa8-0a0e-eea7" includeChildSelections="false"/>
+            <constraint type="max" value="3" field="selections" scope="parent" shared="true" id="aaf1-91d2-c76d-6191" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Norn Emissary" hidden="false" id="62c3-19b6-d434-4df6" sortIndex="32">
+      <categoryLinks>
+        <categoryLink targetId="260f-13de-24a7-e14a" id="76dc-e10f-1374-e614" primary="true" name="Elites"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Norn Emissary" hidden="false" id="3cdd-75f0-f0b8-828c">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8c33-6b76-f555-fef6" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e71c-a007-75f6-e9f3" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Norn Emissary" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="1512-0677-5e69-e34d">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Monster</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">10</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">8</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">8</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">14</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">4</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">6</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">10</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">9</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink targetId="b1e4-8128-1b2c-4d12" id="162f-17aa-eecb-91d6" primary="false" name="Monster Model Type"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Psychic Tendril" hidden="false" id="a623-c684-a850-b0ff">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Neuroparasite" hidden="false" id="71f4-f3cf-29ff-873b">
+                  <profiles>
+                    <profile name="Neuroparasite" typeId="32fd-5cc9-6bd4-aadf" typeName="Psychic Ranged Weapon" hidden="false" id="767a-3a42-c882-60a2">
+                      <characteristics>
+                        <characteristic name="R" typeId="2b15-ca43-8eb8-7fa7">18</characteristic>
+                        <characteristic name="FP" typeId="2b24-1587-dfd1-36ae">2</characteristic>
+                        <characteristic name="RS" typeId="2a18-c220-27bd-3f44">8</characteristic>
+                        <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">2</characteristic>
+                        <characteristic name="D" typeId="0936-8dbc-8733-6a03">2</characteristic>
+                        <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Precision (3+)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Precision (X)" id="9543-cac2-e635-df4e" hidden="false" type="rule" targetId="61a5-61cc-ed2a-d45b">
+                      <comment>3</comment>
+                      <modifiers>
+                        <modifier type="set" value="Precision (3+)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="eca1-7cc7-fc31-ab78" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2b76-80dd-0244-4c9e" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Neuroblast" hidden="false" id="5e84-079d-5935-855a">
+                  <profiles>
+                    <profile name="Neuroblast" typeId="32fd-5cc9-6bd4-aadf" typeName="Psychic Ranged Weapon" hidden="false" id="f6b7-e7a7-6071-fd1d">
+                      <characteristics>
+                        <characteristic name="R" typeId="2b15-ca43-8eb8-7fa7">18</characteristic>
+                        <characteristic name="FP" typeId="2b24-1587-dfd1-36ae">1</characteristic>
+                        <characteristic name="RS" typeId="2a18-c220-27bd-3f44">5</characteristic>
+                        <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">4</characteristic>
+                        <characteristic name="D" typeId="0936-8dbc-8733-6a03">1</characteristic>
+                        <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Blast (5&quot;)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Blast (X)" id="db9b-309b-bdc2-e76f" hidden="false" type="rule" targetId="8b6b-a464-227a-063a">
+                      <comment>5</comment>
+                      <modifiers>
+                        <modifier type="set" value="Blast (5&quot;)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21ec-519c-b243-55ea" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b954-2820-c65c-4601" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Neurolance" hidden="false" id="5563-a64d-108d-26b0">
+                  <profiles>
+                    <profile name="Neurolance" typeId="32fd-5cc9-6bd4-aadf" typeName="Psychic Ranged Weapon" hidden="false" id="da9f-4a97-fc51-72b1">
+                      <characteristics>
+                        <characteristic name="R" typeId="2b15-ca43-8eb8-7fa7">18</characteristic>
+                        <characteristic name="FP" typeId="2b24-1587-dfd1-36ae">1</characteristic>
+                        <characteristic name="RS" typeId="2a18-c220-27bd-3f44">10</characteristic>
+                        <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">2</characteristic>
+                        <characteristic name="D" typeId="0936-8dbc-8733-6a03">3</characteristic>
+                        <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Armourbane, Shock (Suppressed)</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink name="Armourbane" id="82c8-0f2e-e4b8-aa0a" hidden="false" type="rule" targetId="afa7-db8e-5165-e08b"/>
+                    <infoLink name="Shock (X)" id="d244-9ade-6608-2df2" hidden="false" type="rule" targetId="e390-9ef2-c903-d0c9">
+                      <comment>supp</comment>
+                      <modifiers>
+                        <modifier type="set" value="Shock (Suppressed)" field="name"/>
+                      </modifiers>
+                    </infoLink>
+                  </infoLinks>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcd2-8f38-ecd8-5fce" includeChildSelections="false"/>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8388-31f8-f44a-1abd" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fcce-70f8-67ac-9044" includeChildSelections="false"/>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0807-03b9-ef14-3ef5" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Monstrous rending claws" hidden="false" id="62bc-99a8-266e-9a81" type="selectionEntry" targetId="beeb-e7bb-d30d-493c">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5e0b-209e-6f7c-15ee" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7598-f353-a01b-93e2" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Monstrous scything talons" hidden="false" id="895f-694a-fe71-51e2" type="selectionEntry" targetId="0008-fabe-9004-2828">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="5fbd-9e23-67b5-d716" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b414-42a7-2efa-a7f8" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Hive Mind Discipline" hidden="false" id="e797-1d4e-39e7-7cb4" type="selectionEntryGroup" targetId="64bf-972a-f8b7-8ad5">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="cc6d-819d-aa7c-5bd1" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Smite" hidden="false" id="b170-563b-c777-a0d6" type="selectionEntry" targetId="5cf4-b5fd-bb5c-65b0">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9365-884b-e425-a6b2" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="537f-001b-d431-d623" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Implacable Advance" id="bd9e-cad4-960f-5286" hidden="false" type="rule" targetId="7fb3-6133-feb0-e764"/>
+            <infoLink name="Move Through Cover" id="c608-66cf-6884-1e09" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98"/>
+            <infoLink name="Bulky (X)" id="13e9-ffa7-fc53-5f28" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+              <comment>7</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (7)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Synapse Creature (X)" id="ad7f-244f-9352-1339" hidden="false" type="rule" targetId="414d-fed2-22f0-3874">
+              <comment>18</comment>
+              <modifiers>
+                <modifier type="set" value="Synapse Creature (18)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Shadow in the Warp (X)" id="523b-599d-7761-36f4" hidden="false" type="rule" targetId="3770-65f8-22dc-8b85">
+              <comment>18</comment>
+              <modifiers>
+                <modifier type="set" value="Shadow in the Warp (18)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deadly Demise (X)" id="2b6c-3d46-4874-0fc6" hidden="false" type="rule" targetId="2e93-1323-bf4f-2bdd">
+              <comment>6+</comment>
+              <modifiers>
+                <modifier type="set" value="Deadly Demise (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Feel No Pain (X)" id="a754-56f4-6a86-6c8d" hidden="false" type="rule" targetId="87a8-00fa-b0a6-d3cd">
+              <comment>5</comment>
+              <modifiers>
+                <modifier type="set" value="Feel No Pain (5+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="89a2-adc6-1063-f45b" hidden="false" type="rule" targetId="5ee0-9921-51da-aa91">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Psyker (X)" id="3391-42ce-2fbc-1c22" hidden="false" type="rule" targetId="316c-f713-737e-c142">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="set" value="Psyker (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="375"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Norn Assimilator" hidden="false" id="537c-9224-aef7-ef7c" sortIndex="33">
+      <categoryLinks>
+        <categoryLink name="Elites" hidden="false" id="bf54-01af-6365-770a" targetId="260f-13de-24a7-e14a" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Norn Assimilator" hidden="false" id="65e0-bf5e-910e-4195">
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="8715-9713-4d5f-31cf" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5667-a14c-0e37-f64d" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Norn Assimilator" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="64e9-fb62-0bc9-ffd0">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Monster</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">10</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">5</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">8</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">8</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">14</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">4</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">6</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">10</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">9</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <categoryLinks>
+            <categoryLink name="Monster Model Type" hidden="false" id="c76b-c6db-65f5-cc23" targetId="b1e4-8128-1b2c-4d12" primary="false"/>
+          </categoryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Toxinjector Harpoon" hidden="false" id="e1a7-1e40-7e33-3daf">
+              <profiles>
+                <profile name="Toxinjector Harpoon" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="eb94-b54a-c29b-d533">
+                  <characteristics>
+                    <characteristic name="R" typeId="c686-829c-aef5-ccf2">12</characteristic>
+                    <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">2</characteristic>
+                    <characteristic name="S" typeId="591a-4268-a46f-9af6">10</characteristic>
+                    <characteristic name="AP" typeId="e137-b19a-087a-f2e7">3</characteristic>
+                    <characteristic name="D" typeId="770e-2783-e159-33e6">3</characteristic>
+                    <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Harpooned</characteristic>
+                    <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1"/>
+                  </characteristics>
+                </profile>
+                <profile name="Toxinjector Harpoon" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="7d3f-99d9-39b0-bd61">
+                  <characteristics>
+                    <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
+                    <characteristic name="A" typeId="a356-7e7a-c37d-b824">3</characteristic>
+                    <characteristic name="S" typeId="33a1-3481-5543-fce1">+2</characteristic>
+                    <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">3</characteristic>
+                    <characteristic name="D" typeId="3802-23d3-f9b9-863b">3</characteristic>
+                    <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Extra Attacks</characteristic>
+                    <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Breaching (5+)</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule name="Harpooned" id="4d57-356f-970a-e993" hidden="false">
+                  <description>After the bearer has shot with this weapon, select one MONSTER or VEHICLE unit hit by one or more of those attacks. Until the end of the turn, each time the bearer selects that unit as target of a charge, add 2 to the Charge roll</description>
+                </rule>
+              </rules>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e744-fb5c-de53-98ba" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="543f-7d19-776e-d66e" includeChildSelections="false"/>
+              </constraints>
+              <infoLinks>
+                <infoLink name="Extra Attacks" id="2780-27f6-ed04-9bf0" hidden="false" type="rule" targetId="115b-79dc-f723-d761"/>
+                <infoLink name="Breaching (X)" id="1b1c-2b9f-fbf2-216c" hidden="false" type="rule" targetId="6b8b-c85d-3684-26f3">
+                  <comment>5</comment>
+                  <modifiers>
+                    <modifier type="set" value="Breaching (5+)" field="name"/>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink import="true" name="Monstrous scything talons" hidden="false" id="fce3-f47b-1b76-e0ef" type="selectionEntry" targetId="0008-fabe-9004-2828">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="3454-12d5-df62-385e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1c1e-8d8c-c70d-5cd3" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <infoLinks>
+            <infoLink name="Implacable Advance" id="98e6-0079-d3d2-b5c0" hidden="false" type="rule" targetId="7fb3-6133-feb0-e764"/>
+            <infoLink name="Move Through Cover" id="f51c-0c3d-535c-817f" hidden="false" type="rule" targetId="44d9-f20d-00bf-dc98"/>
+            <infoLink name="Bulky (X)" id="2e6c-a5c4-0b5e-3816" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+              <comment>7</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (7)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deadly Demise (X)" id="ae56-f2d9-c715-f726" hidden="false" type="rule" targetId="2e93-1323-bf4f-2bdd">
+              <comment>6+</comment>
+              <modifiers>
+                <modifier type="set" value="Deadly Demise (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Synapse Creature (X)" id="e60a-25a4-1ef8-0dc5" hidden="false" type="rule" targetId="414d-fed2-22f0-3874">
+              <comment>18</comment>
+              <modifiers>
+                <modifier type="set" value="Synapse Creature (18)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Shadow in the Warp (X)" id="7d85-f846-5451-f6da" hidden="false" type="rule" targetId="3770-65f8-22dc-8b85">
+              <comment>18</comment>
+              <modifiers>
+                <modifier type="set" value="Shadow in the Warp (18)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Eternal Warrior (X)" id="f37f-75e0-056a-1dc5" hidden="false" type="rule" targetId="5ee0-9921-51da-aa91">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="375"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tyranid Warrior Brood" hidden="false" id="9f31-f8cf-7adf-bf5e" sortIndex="22">
+      <categoryLinks>
+        <categoryLink targetId="026e-adc5-8a2e-1438" id="dbad-6b78-d01f-e242" primary="true" name="Troops"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tyranid Warrior" hidden="false" id="f6d0-13a1-1e10-9db1">
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="c35f-6f26-5d43-8eb7" includeChildSelections="false"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="f38f-c173-85aa-198d" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Tyranid Warrior" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="a6ff-f32b-84c2-a8a8">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">7</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">4</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">3</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">3</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">4</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">9</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">9</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">7</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">7</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">4+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">-</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="7995-0e7d-44dc-08d1" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+              <modifiers>
+                <modifier type="set" value="Bulky (3)" field="name"/>
+              </modifiers>
+              <comment>3</comment>
+            </infoLink>
+            <infoLink name="Line (X)" id="ceea-b790-076e-3a3c" hidden="false" type="rule" targetId="6082-10a1-7474-e0cb">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="set" value="Line (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Shadow in the Warp (X)" id="2ede-b312-0d5a-8579" hidden="false" type="rule" targetId="3770-65f8-22dc-8b85">
+              <comment>8</comment>
+              <modifiers>
+                <modifier type="set" value="Shadow in the Warp (8)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Synapse Creature (X)" id="4e32-c241-38ed-f486" hidden="false" type="rule" targetId="414d-fed2-22f0-3874">
+              <comment>12</comment>
+              <modifiers>
+                <modifier type="set" value="Synapse Creature (12)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Weapon Beast" id="e57f-94e3-60ce-8b58" hidden="false" type="rule" targetId="8ab5-0af0-af0a-fb0e"/>
+          </infoLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged Weapon" id="15dc-85d7-77ea-8237" hidden="false" defaultSelectionEntryId="0947-5887-bf4f-42c3" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Devourer" hidden="false" id="0947-5887-bf4f-42c3" type="selectionEntry" targetId="db57-bd35-6ced-7a5d"/>
+                <entryLink import="true" name="Basic Bio-weapons" hidden="false" id="38f8-7692-84d9-3e1c" type="selectionEntryGroup" targetId="3e5a-5a94-8b5a-3080"/>
+                <entryLink import="true" name="Basic Bio-cannon" hidden="false" id="fffd-f0df-2cf2-7a64" type="selectionEntryGroup" targetId="19fa-fa91-0141-1fb9">
+                  <constraints>
+                    <constraint type="max" value="0" field="selections" scope="unit" shared="true" id="0d36-eebb-5158-a273" includeChildSelections="true"/>
+                  </constraints>
+                  <modifiers>
+                    <modifier type="increment" value="1" field="0d36-eebb-5158-a273">
+                      <repeats>
+                        <repeat value="3" repeats="1" field="selections" scope="unit" childId="model" shared="true" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="446e-a22e-8a81-152e" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="2823-84e4-fd8f-64a6" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon" id="3773-e7b0-9cc8-fed1" hidden="false" defaultSelectionEntryId="dc39-6cd8-b793-9ce3" sortIndex="2">
+              <entryLinks>
+                <entryLink import="true" name="Scything talons" hidden="false" id="dc39-6cd8-b793-9ce3" type="selectionEntry" targetId="acaa-d4a2-48ae-7a77"/>
+                <entryLink import="true" name="Melee Bio-weapon" hidden="false" id="28a2-9efb-f8ed-8815" type="selectionEntryGroup" targetId="cdc8-5918-f0fc-418a"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9287-0c7a-0c97-707d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b856-b3f7-bfd8-8733" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Basic Mutations" hidden="false" id="cb9a-cb2a-d398-7027" type="selectionEntryGroup" targetId="2c38-53b3-d698-d855" sortIndex="3"/>
+          </entryLinks>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
+    <selectionEntry type="unit" import="true" name="Tyranid Prime" hidden="false" id="d164-08ad-65c3-e453" sortIndex="5">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Tyranid Prime" hidden="false" id="8106-cb97-650e-a005">
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Ranged Weapon" id="584d-db06-369a-a404" hidden="false" defaultSelectionEntryId="0947-5887-bf4f-42c3">
+              <entryLinks>
+                <entryLink import="true" name="Devourer" hidden="false" id="c121-883d-ce35-b04b" type="selectionEntry" targetId="db57-bd35-6ced-7a5d"/>
+                <entryLink import="true" name="Basic Bio-weapons" hidden="false" id="8fdb-db54-4fa1-9ed4" type="selectionEntryGroup" targetId="3e5a-5a94-8b5a-3080"/>
+                <entryLink import="true" name="Basic Bio-cannon" hidden="false" id="ea7f-977d-8ca9-0e2e" type="selectionEntryGroup" targetId="19fa-fa91-0141-1fb9"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="0ae9-56ac-822a-5902" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="fa75-44b2-0918-40e4" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+            <selectionEntryGroup name="Melee Weapon" id="202a-e297-3e95-57cd" hidden="false" defaultSelectionEntryId="dc39-6cd8-b793-9ce3">
+              <entryLinks>
+                <entryLink import="true" name="Scything talons" hidden="false" id="8828-13f3-3adf-3b82" type="selectionEntry" targetId="acaa-d4a2-48ae-7a77"/>
+                <entryLink import="true" name="Melee Bio-weapon" hidden="false" id="1b2e-f922-6652-4c2a" type="selectionEntryGroup" targetId="cdc8-5918-f0fc-418a"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e8de-f109-4023-2d4d" includeChildSelections="false"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="46b2-31d2-0384-0aa9" includeChildSelections="false"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink import="true" name="Basic Mutations" hidden="false" id="1358-b7ab-bae1-06a6" type="selectionEntryGroup" targetId="2c38-53b3-d698-d855"/>
+          </entryLinks>
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Wings" hidden="false" id="e5ec-eb4d-b2a5-92fd">
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b66e-37fd-8d64-9658" includeChildSelections="false"/>
+              </constraints>
+              <profiles>
+                <profile name="Wings" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="20b3-7b0f-6baf-3947">
+                  <characteristics>
+                    <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
+                    <characteristic name="Description" typeId="516b-bc6f-e52f-aced">The unit gains a Movement of 12 and the Antigrav subtype</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="20"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="dc1e-9850-77b6-3671" id="e0fd-20ef-d031-a593" primary="false" name="Antigrav Model Sub-Type"/>
+              </categoryLinks>
+              <infoLinks>
+                <infoLink name="Deep Strike" id="7ead-7b68-f2da-2346" hidden="false" type="rule" targetId="8444-d183-3984-f12a"/>
+              </infoLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <profiles>
+            <profile name="Tyranid Prime" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="e770-681d-5046-5094">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Command)</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">7</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">3</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">5</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">4</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">5</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">10</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">10</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">7</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">7</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">3+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">6+</characteristic>
+              </characteristics>
+              <modifierGroups>
+                <modifierGroup type="and">
+                  <modifiers>
+                    <modifier type="set" value="12" field="d2c1-69ea-7ad8-0c75"/>
+                    <modifier type="replace" value=", Antigrav)" field="name" arg=")"/>
+                    <modifier type="prepend" value="Winged " field="name"/>
+                  </modifiers>
+                  <conditions>
+                    <condition type="atLeast" value="1" field="selections" scope="model" childId="e5ec-eb4d-b2a5-92fd" shared="true"/>
+                  </conditions>
+                </modifierGroup>
+              </modifierGroups>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="b316-5a96-01a1-49f7" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d454-bb50-f7ad-22a3" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="004b-f7b9-8d86-ecf0" id="1a69-4faa-b52e-47aa" primary="false" name="Infantry Model Type"/>
+          </categoryLinks>
+          <rules>
+            <rule name="Alpha Warrior" id="150b-b9ff-9c5b-275c" hidden="false">
+              <description>All Tyranid Warriors or Tyranid Shrikes Models in the same unit as a Tyranid Prime may use the Weapon Skill and Ballistic Skill of the joined Tyranid Prime rather than their own</description>
+            </rule>
+          </rules>
+          <infoLinks>
+            <infoLink name="Shadow in the Warp (X)" id="1660-f619-d331-556f" hidden="false" type="rule" targetId="3770-65f8-22dc-8b85">
+              <comment>12</comment>
+              <modifiers>
+                <modifier type="set" value="Shadow in the Warp (12)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Synapse Creature (X)" id="c38c-ac00-5ba3-adbb" hidden="false" type="rule" targetId="414d-fed2-22f0-3874">
+              <comment>12</comment>
+              <modifiers>
+                <modifier type="set" value="Synapse Creature (12)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Bulky (X)" id="3dfb-a7c4-7924-5c37" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+              <modifiers>
+                <modifier type="set" value="Bulky (3)" field="name"/>
+              </modifiers>
+              <comment>3</comment>
+            </infoLink>
+            <infoLink name="Weapon Beast" id="2ce8-9ab4-e921-d6f9" hidden="false" type="rule" targetId="8ab5-0af0-af0a-fb0e"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="80"/>
+      </costs>
+      <categoryLinks>
+        <categoryLink targetId="59ce-22c6-9dcc-66a0" id="db6a-1ca7-c643-1ae1" primary="true" name="Command"/>
       </categoryLinks>
     </selectionEntry>
   </selectionEntries>
@@ -1775,6 +2973,20 @@ Precision (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Poisoned (X)" id="37e4-17f2-5c11-5f79" hidden="false" type="rule" targetId="227e-f7c5-2aae-5932">
+          <comment>4+</comment>
+          <modifiers>
+            <modifier type="set" value="Poisoned (4+)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Critical Hit (X)" id="0776-4086-4d1b-3008" hidden="false" type="rule" targetId="57e4-1ff4-c160-0466">
+          <comment>6+</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Hit (6+" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Adrenal Glands" hidden="false" id="dc16-bfe8-b3fd-01cb" sortIndex="82">
       <profiles>
@@ -1785,6 +2997,14 @@ Precision (5+)</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Impact (X)" id="0cb8-0918-7ba4-bf2e" hidden="false" type="rule" targetId="6499-61b9-e3b6-b748">
+          <comment>s</comment>
+          <modifiers>
+            <modifier type="set" value="Impact (S)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Acid Blood" hidden="false" id="38ae-222f-f664-7c53" sortIndex="81">
       <profiles>
@@ -1852,9 +3072,79 @@ Precision (5+)</characteristic>
         <infoLink name="Shred" id="270d-3e8e-057d-2e47" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Psyker-Beast" hidden="false" id="6048-8b89-718b-7b86" sortIndex="89">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Warp burst" hidden="false" id="8e6c-7537-00cd-419b">
+          <profiles>
+            <profile name="Warp burst" typeId="32fd-5cc9-6bd4-aadf" typeName="Psychic Ranged Weapon" hidden="false" id="09ab-81dd-57dc-c81c">
+              <characteristics>
+                <characteristic name="R" typeId="2b15-ca43-8eb8-7fa7">24</characteristic>
+                <characteristic name="FP" typeId="2b24-1587-dfd1-36ae">1</characteristic>
+                <characteristic name="RS" typeId="2a18-c220-27bd-3f44">6</characteristic>
+                <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">3</characteristic>
+                <characteristic name="D" typeId="0936-8dbc-8733-6a03">1</characteristic>
+                <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Blast (3&quot;), Breaching (6+), Pinning (1)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast (X)" id="57e4-1576-e2f9-c447" hidden="false" type="rule" targetId="8b6b-a464-227a-063a">
+              <comment>3</comment>
+              <modifiers>
+                <modifier type="set" value="Blast (3&quot;)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Breaching (X)" id="0f3b-946b-d0ce-6935" hidden="false" type="rule" targetId="6b8b-c85d-3684-26f3">
+              <comment>6</comment>
+              <modifiers>
+                <modifier type="set" value="Breaching (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Pinning (X)" id="7b35-6f12-69d2-3ce1" hidden="false" type="rule" targetId="0f0a-c20a-e712-42b3">
+              <comment>1</comment>
+              <modifiers>
+                <modifier type="set" value="Pinning (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="e199-6d89-3ad6-3920" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="21de-4885-364f-6c4a" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Warp Lance" hidden="false" id="8b30-0f9d-28f7-bcf8">
+          <profiles>
+            <profile name="Warp Lance" typeId="32fd-5cc9-6bd4-aadf" typeName="Psychic Ranged Weapon" hidden="false" id="9555-68b3-ba07-19d8">
+              <characteristics>
+                <characteristic name="R" typeId="2b15-ca43-8eb8-7fa7">18</characteristic>
+                <characteristic name="FP" typeId="2b24-1587-dfd1-36ae">1</characteristic>
+                <characteristic name="RS" typeId="2a18-c220-27bd-3f44">10</characteristic>
+                <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">2</characteristic>
+                <characteristic name="D" typeId="0936-8dbc-8733-6a03">3</characteristic>
+                <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Armourbane, Shock (Suppressed)</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Shock (X)" id="9ccc-a656-e77d-df9c" hidden="false" type="rule" targetId="e390-9ef2-c903-d0c9">
+              <comment>supp</comment>
+              <modifiers>
+                <modifier type="set" value="Shock (Suppressed)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Armourbane" id="bdae-66e6-2e07-4ce6" hidden="false" type="rule" targetId="afa7-db8e-5165-e08b"/>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9972-d161-5a8f-7ab9" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="c033-06d0-a21c-a562" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="3de1-6143-a5d2-4db0" targetId="a2f9-617e-a8d9-a2a6"/>
+    <catalogueLink type="catalogue" name="New Catalogue (link)" id="b1f5-89f1-c5f4-9aa0" targetId="3ca8-a860-f80c-4eea"/>
   </catalogueLinks>
   <sharedRules>
     <rule name="Synapse Creature (X)" id="414d-fed2-22f0-3874" hidden="false">
@@ -1886,9 +3176,17 @@ Models with this Special Rule have a Synapse range of X”. Friendly Units with 
 
 - Feed: The unit may not make any Shooting Attacks. During the Movement Phase, the Unit must move towards any enemy units, moving as much of their movement as possible. And the unit must attempt a Charge if there is an Enemy Unit within range, and must target the closest Enemy Unit possible that is within its line of sight and is a valid target for a Charge. If two or more targets are equally close then the Controlling Player chooses which will be the target of the Charge</description>
     </rule>
+    <rule name="Battering Ram" id="4f8f-f52a-2741-e5f5" hidden="false"/>
   </sharedRules>
   <categoryEntries>
-    <categoryEntry name="Monster Model Type" id="b1e4-8128-1b2c-4d12" hidden="false"/>
+    <categoryEntry name="Monster Model Type" id="b1e4-8128-1b2c-4d12" hidden="false">
+      <rules>
+        <rule name="Monster Type" id="b699-e48c-96f8-a19c" hidden="false">
+          <description>The following Rules apply to all Models with the Walker Type:
+- In Step 1 of the Resolution Sub-Phase, when deciding how many Models a Player controls in a Combat, a Model with the Monster Type counts as a number of Models equal to that Model&apos;s Base Wounds Value.</description>
+        </rule>
+      </rules>
+    </categoryEntry>
     <categoryEntry name="Swarm Leader" id="b91d-4085-6c33-18b0" hidden="false">
       <rules>
         <rule name="Swarm Leader" id="cc03-55f5-b335-e8ac" hidden="false">
@@ -2030,5 +3328,158 @@ Models with this Special Rule have a Synapse range of X”. Friendly Units with 
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup name="Bio-Ammo" id="1472-70bf-5849-00ac" hidden="false" defaultSelectionEntryId="bc73-13de-d48d-8ad3">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Toxin" hidden="false" id="38eb-d850-3890-1416">
+          <infoLinks>
+            <infoLink name="Phage (X)" id="328d-4258-022c-5e5e" hidden="false" type="rule" targetId="bb4f-3f6d-880f-c7c1">
+              <modifiers>
+                <modifier type="set" value="Phage (T)" field="name"/>
+              </modifiers>
+              <comment>T</comment>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Bio-Acid" hidden="false" id="bc73-13de-d48d-8ad3">
+          <infoLinks>
+            <infoLink name="Breaching (X)" id="6221-cad2-b41d-37c6" hidden="false" type="rule" targetId="6b8b-c85d-3684-26f3">
+              <comment>6</comment>
+              <modifiers>
+                <modifier type="set" value="Breaching (6+)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Frag" hidden="false" id="dda8-e246-9f5e-7499">
+          <infoLinks>
+            <infoLink name="Shred" id="c658-5c46-8e6b-d457" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <constraints>
+        <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="af17-667f-98d5-a1c3" includeChildSelections="false"/>
+        <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="83d3-9c52-0f71-cf9b" includeChildSelections="false"/>
+      </constraints>
+      <rules>
+        <rule name="Bio-Ammo" id="434f-2fd8-1fea-cb62" hidden="false">
+          <description>When creating an Army Roster, a Player selecting a Unit with this Special Rule must also select one of the following options. All Models in the Unit must select the same option.
+
+
+A Model with the Bio-Ammo Special Rule then 
+gains the respective Special Rule for all Shooting Attacks made by that Model and for any Hits generated from the Explodes (X) Special Rule made by that Model. In addition, any Spore Mine Models generated by a Model with the Bio-Ammo Special Rule also have the same selected option as the Model which created the Spore Mine Models. (For example, if Biovore Brood that has selected Toxin  would have to generate a Spore Mine Cluster Unit, those Spore Mine models would also have the Toxin option selected for them</description>
+        </rule>
+      </rules>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Hive Mind Discipline" id="64bf-972a-f8b7-8ad5" hidden="false">
+      <selectionEntries>
+        <selectionEntry type="upgrade" import="true" name="Catalyst" hidden="false" id="6187-1314-f849-d18d">
+          <profiles>
+            <profile name="Catalyst" typeId="2419-f21d-c5b6-4c0e" typeName="Psychic Power" hidden="false" id="be1d-9f98-072b-f8fa">
+              <characteristics>
+                <characteristic name="Summary" typeId="d5d9-2b47-769c-0ab9"/>
+                <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Your Movement Phase</characteristic>
+                <characteristic name="Target" typeId="223f-5d11-179d-da08">Friendly Tyranid within Synapse Range of this PSYKER</characteristic>
+                <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the start of your next turn, models in that unit gain the Feel No Pain (5+) ability.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f382-5bec-3355-0bac" includeChildSelections="false"/>
+          </constraints>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="The Horror" hidden="false" id="8734-30d4-5d86-bd49">
+          <profiles>
+            <profile name="The Horror" typeId="2419-f21d-c5b6-4c0e" typeName="Psychic Power" hidden="false" id="ee7f-5ea6-e4c7-0714">
+              <characteristics>
+                <characteristic name="Summary" typeId="d5d9-2b47-769c-0ab9"/>
+                <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Your Movement Phase</characteristic>
+                <characteristic name="Target" typeId="223f-5d11-179d-da08">One friendly unit within Synapse Range of this Psyker</characteristic>
+                <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the start of your next turn, that unit gains the Fear (2) ability</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="979d-c651-f833-85e6" includeChildSelections="false"/>
+          </constraints>
+          <infoLinks>
+            <infoLink name="Fear (X)" id="8bea-21e4-831c-90f6" hidden="false" type="rule" targetId="0b8e-22b9-4a68-a71e">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Fear (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Neuroparasite" hidden="false" id="5369-f7ce-5436-60a7">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="1f4b-07db-ed5f-c886" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Neuroparasite" typeId="2419-f21d-c5b6-4c0e" typeName="Psychic Power" hidden="false" id="1ea3-71b8-f58d-7931">
+              <characteristics>
+                <characteristic name="Summary" typeId="d5d9-2b47-769c-0ab9"/>
+                <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Your Shooting Phase</characteristic>
+                <characteristic name="Target" typeId="223f-5d11-179d-da08">Enemy Character within Synapse Range of this PSYKER</characteristic>
+                <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">That character must make a Willpower check. If failed, it suffers 3 hits at S8 AP2 D1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Onslaught" hidden="false" id="872d-9a46-86ab-4521">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="bab5-55dd-c886-d9aa" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Onslaught" typeId="2419-f21d-c5b6-4c0e" typeName="Psychic Power" hidden="false" id="19d5-ad46-2de1-306e">
+              <characteristics>
+                <characteristic name="Summary" typeId="d5d9-2b47-769c-0ab9"/>
+                <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Your Movement Phase</characteristic>
+                <characteristic name="Target" typeId="223f-5d11-179d-da08">Friendly Tyranid within Synapse Range of this PSYKER</characteristic>
+                <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the end of the turn, models gain the benefit of Heavy (X) even if they moved, and may charge even if they performed a Run.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Paroxysm" hidden="false" id="2499-75c1-31a6-2423">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0560-6106-88fe-839d" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Paroxysm" typeId="2419-f21d-c5b6-4c0e" typeName="Psychic Power" hidden="false" id="b54d-f441-7775-1ced">
+              <characteristics>
+                <characteristic name="Summary" typeId="d5d9-2b47-769c-0ab9"/>
+                <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Your Shooting Phase</characteristic>
+                <characteristic name="Target" typeId="223f-5d11-179d-da08">One enemy unit within Synapse Range of this Psyker, or one enemy unit within 18&quot; of this Psyker</characteristic>
+                <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the start of your next turn, that unit cannot fire Overwatch, and each time a model in that unit makes a melee attack, subtract 1 from that attack&apos;s wound roll.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Psychic Scream" hidden="false" id="a578-62e1-8e83-be30">
+          <constraints>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f8cd-c16a-3346-9ef4" includeChildSelections="false"/>
+          </constraints>
+          <profiles>
+            <profile name="Psychic Scream" typeId="32fd-5cc9-6bd4-aadf" typeName="Psychic Ranged Weapon" hidden="false" id="3ac0-00ea-151b-4450">
+              <characteristics>
+                <characteristic name="R" typeId="2b15-ca43-8eb8-7fa7">18</characteristic>
+                <characteristic name="FP" typeId="2b24-1587-dfd1-36ae">1</characteristic>
+                <characteristic name="RS" typeId="2a18-c220-27bd-3f44">5</characteristic>
+                <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">3</characteristic>
+                <characteristic name="D" typeId="0936-8dbc-8733-6a03">1</characteristic>
+                <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Blast (3&quot;), Psychic Scream</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule name="Psychic Scream" id="ab45-11d8-1244-1801" hidden="false">
+              <description>If a Psyker was hit by this ability, they must take a Willpower check. If failed, randomly select one psychic power that unit knows. Until the end of the battle, that unit no longer knows that psychic power.</description>
+            </rule>
+          </rules>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup name="Heroic Traits" id="6098-fd6b-2057-b950" hidden="false" sortIndex="10"/>
+    <selectionEntryGroup name="Relics" id="d366-e306-7b1c-b68e" hidden="false" sortIndex="9"/>
   </sharedSelectionEntryGroups>
 </catalogue>
