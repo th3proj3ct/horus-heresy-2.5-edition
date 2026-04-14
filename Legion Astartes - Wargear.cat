@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue library="true" id="0ad0-7f34-68df-4f35" name="Legion Astartes - Wargear" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="2" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue library="true" id="0ad0-7f34-68df-4f35" name="Legion Astartes - Wargear" gameSystemId="sys-6b26-a652-2f51-d8fe" gameSystemRevision="1" revision="3" battleScribeVersion="2.03" type="catalogue" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Augury scanner" hidden="false" id="1b8a-7d3d-14df-50a0">
       <profiles>
@@ -175,6 +175,26 @@ A Model that has breacher charges selected as its Weapon always has a Combat Ini
           <characteristics>
             <characteristic name="Summary" typeId="fdcc-276a-cadb-7810"/>
             <characteristic name="Description" typeId="516b-bc6f-e52f-aced">A Model with a Corvid Pattern Jump Pack has their Movement Characteristic set to 14 and replaces any instance of the Bulky (X) Special Rule with Bulky (3). Each time a Dangerous Terrain test is made for a Model with a Corvid Pattern Jump Pack, that Test is automatically passed.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Assault Shield" hidden="false" id="24e8-5dee-d0cb-43e6">
+      <profiles>
+        <profile name="Assault Shield" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="e005-c7b3-67c8-909a">
+          <characteristics>
+            <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">Assault shields grant a variable Invulnerable Save, the Shield Trait and the Heavy Sub-Type.</characteristic>
+            <characteristic name="Description" typeId="516b-bc6f-e52f-aced">A Model with an assault shield gains a 6+ Invulnerable Save that is modified to 5+ against attacks made as part of a Volley Attack or Overwatch Reaction. In addition it gains the Shield Trait and the Heavy Sub-Type.</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Boarding Shield" hidden="false" id="e2c2-975e-4ffc-93a0">
+      <profiles>
+        <profile name="Boarding Shield" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="7153-4e1c-0eba-9d85">
+          <characteristics>
+            <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">&quot;Boarding shields grant a 5+ Invulnerable Save, the Shield Trait and the Heavy Sub-Type.&quot;</characteristic>
+            <characteristic name="Description" typeId="516b-bc6f-e52f-aced">A model with a boarding shield gains a 5+ Invulnerable Save. In addition it gains the Shield Trait and the Heavy Sub-Type.</characteristic>
           </characteristics>
         </profile>
       </profiles>

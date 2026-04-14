@@ -27,6 +27,7 @@
         <characteristicType name="Trigger" id="0a94-dd23-6e32-2b1b"/>
         <characteristicType name="Target" id="ca36-7d09-3e09-894b"/>
         <characteristicType name="Effect" id="e694-20ce-569a-42df"/>
+        <characteristicType name="Difficulty" id="0d68-ebd9-e4b9-0e05"/>
       </characteristicTypes>
     </profileType>
     <profileType name="Psychic Power" id="2419-f21d-c5b6-4c0e" hidden="false">
@@ -35,6 +36,7 @@
         <characteristicType name="Phase" id="dfad-1a80-d7a3-b97d"/>
         <characteristicType name="Target" id="223f-5d11-179d-da08"/>
         <characteristicType name="Effect" id="4d52-090c-e43b-9c4c"/>
+        <characteristicType name="Difficulty" id="5288-913f-e171-a871"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -49,7 +51,7 @@
                 <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Movement Phase</characteristic>
                 <characteristic name="Target" typeId="223f-5d11-179d-da08">One friendly Adeptus Astartes unit within 18&quot;</characteristic>
                 <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the end of the turn, you can re-roll charge rolls made for that unit, and add 1 to the Initiative characteristic of models in that unit.</characteristic>
-                <characteristic name="Difficulty" typeId="0a8f-2803-6463-22f8"/>
+                <characteristic name="Difficulty" typeId="5288-913f-e171-a871"/>
               </characteristics>
             </profile>
           </profiles>
@@ -65,7 +67,7 @@
                 <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Movement Phase</characteristic>
                 <characteristic name="Target" typeId="223f-5d11-179d-da08">One friendly Adeptus Astartes Infantry Character model within 12&quot;</characteristic>
                 <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the start of your next turn, that model gains a bonus of +2 to their Strength and Toughness Characteristics</characteristic>
-                <characteristic name="Difficulty" typeId="0a8f-2803-6463-22f8"/>
+                <characteristic name="Difficulty" typeId="5288-913f-e171-a871"/>
               </characteristics>
             </profile>
           </profiles>
@@ -81,7 +83,7 @@
                 <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Movement Phase</characteristic>
                 <characteristic name="Target" typeId="223f-5d11-179d-da08">Self</characteristic>
                 <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the start of your next turn, while a unit is within 6&quot; of this psyker, invulnerable saving throws cannot be made against that attack</characteristic>
-                <characteristic name="Difficulty" typeId="0a8f-2803-6463-22f8">1</characteristic>
+                <characteristic name="Difficulty" typeId="5288-913f-e171-a871"/>
               </characteristics>
             </profile>
           </profiles>
@@ -97,6 +99,7 @@
                 <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Shooting Phase</characteristic>
                 <characteristic name="Target" typeId="223f-5d11-179d-da08">One enemy unit within 18&quot; and visible to this Psyker</characteristic>
                 <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Roll a D6 and add it to this model&apos;s Willpower. Your opponent then rolls a D6 and adds it to that unit&apos;s Willpower. If your result is higher than your opponent&apos;s, the selected unit suffers D3+1 S8 AP2 D1 hits.</characteristic>
+                <characteristic name="Difficulty" typeId="5288-913f-e171-a871"/>
               </characteristics>
             </profile>
           </profiles>
@@ -114,7 +117,6 @@
                 <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">4</characteristic>
                 <characteristic name="D" typeId="0936-8dbc-8733-6a03">1</characteristic>
                 <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Panic (1), Template, Force (RS)</characteristic>
-                <characteristic name="Traits" typeId="ca2c-9a94-35a2-3b73">Ranged, Psychic</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -130,6 +132,7 @@
                 <characteristic name="Trigger" typeId="0a94-dd23-6e32-2b1b">This unit is selected as the target of a ranged attack</characteristic>
                 <characteristic name="Target" typeId="ca36-7d09-3e09-894b">Self</characteristic>
                 <characteristic name="Effect" typeId="e694-20ce-569a-42df">Until the end of the phase, models in this unit gain a 5+ Shrouded Damage Mitigation Test against any wounds inflicted during a Volley or Shooting Attack.</characteristic>
+                <characteristic name="Difficulty" typeId="0d68-ebd9-e4b9-0e05"/>
               </characteristics>
             </profile>
           </profiles>
@@ -149,6 +152,7 @@
                 <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Movement Phase</characteristic>
                 <characteristic name="Target" typeId="223f-5d11-179d-da08">Friendly unit within 18&quot; of this Psyker.</characteristic>
                 <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the start of your next turn, all Models in the Target Unit gain a 5+ Shrouded Damage Mitigation Test against any wounds inflicted during a Shooting Attack.</characteristic>
+                <characteristic name="Difficulty" typeId="5288-913f-e171-a871"/>
               </characteristics>
             </profile>
           </profiles>
@@ -164,6 +168,7 @@
                 <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Movement Phase</characteristic>
                 <characteristic name="Target" typeId="223f-5d11-179d-da08">One enemy unit within 18&quot; of this Psyker</characteristic>
                 <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the start of your next turn, subtract 1 from the Strength and Toughness characteristic of models in that unit.</characteristic>
+                <characteristic name="Difficulty" typeId="5288-913f-e171-a871"/>
               </characteristics>
             </profile>
           </profiles>
@@ -217,6 +222,7 @@
                 <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Movement Phase</characteristic>
                 <characteristic name="Target" typeId="223f-5d11-179d-da08">One friendly Death Guard Infantry unit within 18&quot; of this Psyker</characteristic>
                 <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the start of your next turn, add 1 to the Strength and Toughness characteristic of models in that unit.</characteristic>
+                <characteristic name="Difficulty" typeId="5288-913f-e171-a871"/>
               </characteristics>
             </profile>
           </profiles>
@@ -234,7 +240,6 @@
                 <characteristic name="AP" typeId="d98b-aa7a-adbc-0ddc">-</characteristic>
                 <characteristic name="D" typeId="0936-8dbc-8733-6a03">1</characteristic>
                 <characteristic name="Special Rules" typeId="462f-8459-6f44-0bd5">Phage (T)</characteristic>
-                <characteristic name="Traits" typeId="ca2c-9a94-35a2-3b73">Ranged, Psychic</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -258,6 +263,7 @@
                 <characteristic name="Phase" typeId="dfad-1a80-d7a3-b97d">Movement Phase</characteristic>
                 <characteristic name="Target" typeId="223f-5d11-179d-da08">One Death Guard unit within 18&quot;</characteristic>
                 <characteristic name="Effect" typeId="4d52-090c-e43b-9c4c">Until the start of your next turn, while an enemy unit is within 6&quot; of the target unit, reduce the Toughness Characteristic of models in that unit by 1.</characteristic>
+                <characteristic name="Difficulty" typeId="5288-913f-e171-a871"/>
               </characteristics>
             </profile>
           </profiles>
