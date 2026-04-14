@@ -4167,6 +4167,7 @@ were inflicted by a Melee Attack. If they do so, a single Leadership Check or Co
                     <entryLink import="true" name="Guard Officer Weapons" hidden="false" id="36b9-7333-0aad-7c4a" type="selectionEntryGroup" targetId="7469-5ce4-bf2c-0c47" flatten="true" sortIndex="5"/>
                     <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="2ded-c687-e5e7-4c78" type="selectionEntry" targetId="18ee-9059-2b48-7d52">
                       <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="1"/>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
@@ -4177,11 +4178,13 @@ were inflicted by a Melee Attack. If they do so, a single Leadership Check or Co
                     </entryLink>
                     <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="7d19-4486-b762-65bf" type="selectionEntry" targetId="45e2-5bd6-c7f6-03ba">
                       <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="1"/>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="fa4e-df54-0a11-cce5" type="selectionEntry" targetId="1dbb-809b-7ed0-3f04">
                       <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="2"/>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
@@ -4258,6 +4261,7 @@ were inflicted by a Melee Attack. If they do so, a single Leadership Check or Co
             </profile>
           </profiles>
           <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
             <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
           </costs>
           <constraints>
@@ -4300,16 +4304,19 @@ were inflicted by a Melee Attack. If they do so, a single Leadership Check or Co
                     </entryLink>
                     <entryLink import="true" name="Lasrifle w/ Bayonet" hidden="false" id="55e9-216b-58e6-dc18" type="selectionEntry" targetId="45e2-5bd6-c7f6-03ba" sortIndex="2">
                       <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="1"/>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="1"/>
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Lasrifle w/ Bayonet &amp; Blast-charger" hidden="false" id="d7e5-5e57-ffed-9dad" type="selectionEntry" targetId="1dbb-809b-7ed0-3f04" sortIndex="2">
                       <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="2"/>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
                     <entryLink import="true" name="Lasrifle w/ Blast-charger" hidden="false" id="b2e9-acb0-3e35-cf34" type="selectionEntry" targetId="18ee-9059-2b48-7d52" sortIndex="2">
                       <costs>
+                        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="2"/>
                         <cost name="Point(s)" typeId="9893-c379-920b-8982" value="2"/>
                       </costs>
                     </entryLink>
@@ -4413,6 +4420,218 @@ were inflicted by a Melee Attack. If they do so, a single Leadership Check or Co
       <categoryLinks>
         <categoryLink targetId="59ce-22c6-9dcc-66a0" id="da85-b6ea-5ffb-c1c1" primary="true" name="Command"/>
       </categoryLinks>
+    </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Baneblade Super-heavy Battle Tank" hidden="false" id="5524-47dc-5840-047c" defaultAmount="" sortIndex="90">
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Baneblade Super-heavy Battle Tank" hidden="false" id="6895-2203-d122-7b0d" sortIndex="1">
+          <profiles>
+            <profile name="Baneblade Super-heavy Battle Tank" typeId="bef6-befe-b729-c2db" typeName="Vehicle" hidden="false" id="b6f5-225c-b86b-d3f9">
+              <characteristics>
+                <characteristic name="Type" typeId="3646-a1e5-48f3-39ea">Vehicle (Super-heavy)</characteristic>
+                <characteristic name="M" typeId="e16d-5e4d-b689-54ee">10</characteristic>
+                <characteristic name="BS" typeId="5c14-5c7d-d525-1c7d">3</characteristic>
+                <characteristic name="Front Armour" typeId="b107-5398-ba70-264e">14</characteristic>
+                <characteristic name="Side Armour" typeId="c2e5-e62c-4ac0-28a1">13</characteristic>
+                <characteristic name="Rear Armour" typeId="78a9-c3a8-d1c3-c6f8">12</characteristic>
+                <characteristic name="HP" typeId="b123-d331-1d6f-8c5a">16</characteristic>
+                <characteristic name="Transport Capacity" typeId="d100-b938-fd3e-f054">-</characteristic>
+                <characteristic name="Access Points" typeId="9a8b-7ab0-4781-f034"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="fcd7-884c-e594-76d1" includeChildSelections="false"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="a597-fb8b-8d92-19c9" includeChildSelections="false"/>
+          </constraints>
+          <categoryLinks>
+            <categoryLink targetId="9e44-f90c-d951-96a5" id="b206-3277-7fdb-4f0d" primary="false" name="Vehicle Model Type"/>
+            <categoryLink targetId="9f6e-215c-e63d-ce59" id="727d-a972-f188-6c49" primary="false" name="Super-heavy Model Sub-Type"/>
+          </categoryLinks>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="520"/>
+            <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+            <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+            <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+            <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry type="upgrade" import="true" name="Baneblade Cannon" hidden="false" id="349c-a161-9cd8-a731">
+          <profiles>
+            <profile name="Baneblade Cannon" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="0c70-7418-e419-6ddb">
+              <characteristics>
+                <characteristic name="R" typeId="c686-829c-aef5-ccf2">82</characteristic>
+                <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+                <characteristic name="S" typeId="591a-4268-a46f-9af6">8</characteristic>
+                <characteristic name="AP" typeId="e137-b19a-087a-f2e7">3</characteristic>
+                <characteristic name="D" typeId="770e-2783-e159-33e6">2</characteristic>
+                <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Blast (7&quot;), Pinning (1)</characteristic>
+                <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Auto</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink name="Blast (X)" id="8576-a2cf-a951-324f" hidden="false" type="rule" targetId="8b6b-a464-227a-063a">
+              <modifiers>
+                <modifier type="set" value="Blast (7&quot;)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Pinning (X)" id="a206-708f-d531-f45d" hidden="false" type="rule" targetId="0f0a-c20a-e712-42b3">
+              <modifiers>
+                <modifier type="set" value="Pinning (1)" field="name"/>
+              </modifiers>
+            </infoLink>
+          </infoLinks>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="06ad-5846-eeb1-deae"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="0ca1-2f5a-aaac-b8e6"/>
+          </constraints>
+          <modifiers>
+            <modifier type="prepend" value="Turret Mounted" field="name"/>
+          </modifiers>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink import="true" name="Autocannon" hidden="false" id="211e-3614-67d6-b4ef" type="selectionEntry" targetId="6699-6af7-02a9-c440">
+          <modifiers>
+            <modifier type="prepend" value="Co-axial (Baneblade cannon) Mounted" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="4d5e-4e61-71a8-c917"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f377-bb41-fb9a-a1da"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Demolisher cannon" hidden="false" id="d6ac-f6bf-96e3-b618" type="selectionEntry" targetId="7cf5-7a9f-0515-0d03">
+          <modifiers>
+            <modifier type="prepend" value="Centreline Mounted" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="9d7c-38c7-4ef0-1fa5"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="617e-85d4-6f8e-5adb"/>
+          </constraints>
+        </entryLink>
+        <entryLink import="true" name="Twin heavy bolter" hidden="false" id="e769-5772-e3e9-d3db" type="selectionEntry" targetId="9fbf-51b0-22a6-1d2b">
+          <modifiers>
+            <modifier type="prepend" value="Hull (Front) Mounted" field="name"/>
+          </modifiers>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="728e-97bb-9425-03dc"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="7d9e-b73c-8c47-4fa3"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Options" id="1b5c-f7d7-331e-8f02" hidden="false">
+          <entryLinks>
+            <entryLink import="true" name="Auxilia Pintle Weapons" hidden="false" id="74ab-ff6f-da87-701f" type="selectionEntryGroup" targetId="0b06-b588-d55e-c10e" sortIndex="3"/>
+            <entryLink import="true" name="Hunter-killer missile" hidden="false" id="05bd-f2bc-bfd6-9e3c" type="selectionEntry" targetId="e75f-73ca-6c32-4dcb" sortIndex="4">
+              <modifiers>
+                <modifier type="set" value="Turret Mounted  hunter-killer missile" field="name"/>
+              </modifiers>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="d751-54ed-83fb-5800" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Searchlight" hidden="false" id="556b-62f5-211a-a062" type="selectionEntry" targetId="a0ef-4511-7160-73a1" sortIndex="5">
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f350-466f-4b5f-aed4" includeChildSelections="false"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="Sponsons" id="aa98-54f3-25cc-a573" hidden="false" sortIndex="1">
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted lascannon and two Sponson Mounted twin heavy bolters " hidden="false" id="281e-84e3-ef41-734b">
+                  <entryLinks>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="a81b-5af5-295a-dcc7" type="selectionEntry" targetId="b85f-d7bf-3a24-5817" sortIndex="1">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="2e38-b840-d2d5-fcb1"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="9818-4dc7-e003-d670"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Twin heavy bolter" hidden="false" id="c853-9107-8b81-ac6e" type="selectionEntry" targetId="9fbf-51b0-22a6-1d2b" sortIndex="2">
+                      <constraints>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e5d8-cc5e-e475-cf7a"/>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="56e6-9512-8571-84d9"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="40"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry type="upgrade" import="true" name="Two Sponson Mounted lascannon and two Sponson Mounted twin heavy flamers " hidden="false" id="5733-c85d-6dd6-ee64">
+                  <entryLinks>
+                    <entryLink import="true" name="Lascannon" hidden="false" id="fc0f-4491-7f3c-0497" type="selectionEntry" targetId="b85f-d7bf-3a24-5817">
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="ac0e-ba52-f715-2a3b"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="6d5b-95df-9ab3-d4ff"/>
+                      </constraints>
+                      <modifiers>
+                        <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+                      </modifiers>
+                    </entryLink>
+                    <entryLink import="true" name="Twin heavy flamer" hidden="false" id="9f43-dc19-40f3-2d3f" type="selectionEntry" targetId="8378-5ce2-0c28-a1cf">
+                      <modifiers>
+                        <modifier type="prepend" value="Two Sponson Mounted" field="name"/>
+                      </modifiers>
+                      <constraints>
+                        <constraint type="min" value="2" field="selections" scope="parent" shared="true" id="6c60-0740-cd92-420a"/>
+                        <constraint type="max" value="2" field="selections" scope="parent" shared="true" id="e35f-412e-6c64-679b"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="40"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="40"/>
+                    <cost name="Asset Point(s)" typeId="57e3-1031-7d4d-5ae3" value="0"/>
+                    <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
+                    <cost name="Auxilary Detachment(s)" typeId="3e8e-05ee-be52-12d6" value="0"/>
+                    <cost name="Apex Detachment(s)" typeId="159d-855c-533d-f592" value="0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e842-8ec3-1129-02ba"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <infoLinks>
+        <infoLink name="Smokescreen" id="8928-310a-3a7b-1bf9" hidden="false" type="rule" targetId="5b60-dd60-43da-eff3"/>
+      </infoLinks>
+      <profiles>
+        <profile name="Solar Auxilia" typeId="d5a9-9164-1e30-7a35" typeName="Traits" hidden="false" id="5c4c-9aad-9bad-79ba">
+          <characteristics>
+            <characteristic name="Description" typeId="d5eb-0b8b-0f26-6233"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <categoryLinks>
+        <categoryLink targetId="f15c-973e-a384-efe8" id="1c0b-8ad2-3f7d-4bfa" primary="true" name="Lord of War"/>
+      </categoryLinks>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="520"/>
+      </costs>
     </selectionEntry>
   </selectionEntries>
   <sharedRules>
