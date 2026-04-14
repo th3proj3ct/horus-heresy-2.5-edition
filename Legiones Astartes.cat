@@ -7231,6 +7231,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="1ae5-0185-c858-f48d" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="461b-c94c-eced-30f2" includeChildSelections="false"/>
           </constraints>
         </entryLink>
         <entryLink import="true" name="Augury scanner" hidden="false" id="3492-c6da-9a52-bd88" type="selectionEntry" targetId="1b8a-7d3d-14df-50a0" sortIndex="2">
@@ -7240,6 +7241,7 @@ If at any point there are only Rapier Carrier Models remaining in this Unit, tho
           </costs>
           <constraints>
             <constraint type="max" value="1" field="selections" scope="unit" shared="true" id="7d17-870f-19d6-7821" includeChildSelections="true"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="aca8-3534-6fdc-6025" includeChildSelections="false"/>
           </constraints>
         </entryLink>
       </entryLinks>

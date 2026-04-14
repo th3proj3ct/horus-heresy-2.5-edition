@@ -335,5 +335,15 @@ Note that a Unit Embarked on a Model with the Outflank Special Rule does not nee
       <description>&quot;Shrouded (X) is a Damage Mitigation Test that may be taken in addition to a Saving Throw.&quot;
 A model with the Shrouded (X) Special Rule gains a Shrouded Damage Mitigation Test that may be used in Step 9 of the Shooting Attack process to discard Wounds allocated to the Model. A Damage Mitigation Test may be made after and in addition to a Saving Throw. The Target Number for a Shrouded Damage Mitigation Test is the value of X attached to the specific variant of the Special Rule. A Shrouded Damage Mitigation Test may not be made against wounds inflicted by a Melee Weapon.</description>
     </rule>
+    <rule name="Critical Damage (X)" id="c870-27e7-d0aa-ae88" hidden="false">
+      <description>&quot;Attacks made with the Critical Damage (X) Special Rule can sometimes inflict an extra point of Damage&quot;
+When any Wound Test is made for an attack with the Critical Damage (X) Special Rule, if the result of the Dice roll, before any modifiers are applied, is equal to or greater than the value of X attached to this variant of the Critical Damage (X) Special Rule, then if a wound is inflicted by that Wound Test , the Damage of that wound is increased by 1. Note that the Critical Damage (X) Special Rule may only be triggered by a Wound Test and has no effect when making an Armour Penetration Test.</description>
+    </rule>
+    <rule name="Independent Fire" id="b6f1-332b-aefe-0ac7" hidden="false">
+      <description>&quot;A Model with this Special Rule can shoot at multiple targets at its full Ballistic Skill.&quot;
+
+
+When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Special Rule and the Vehicle Type does not have to make all attacks as Snap Shots.</description>
+    </rule>
   </sharedRules>
 </catalogue>
