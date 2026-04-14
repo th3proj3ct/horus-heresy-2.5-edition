@@ -345,5 +345,8 @@ When any Wound Test is made for an attack with the Critical Damage (X) Special R
 
 When making multiple Shooting Attacks in the same Shooting Phase, a Model with this Special Rule and the Vehicle Type does not have to make all attacks as Snap Shots.</description>
     </rule>
+    <rule name="Smokescreen" id="5b60-dd60-43da-eff3" hidden="false">
+      <description>This unit can use the Smokescreen reaction</description>
+    </rule>
   </sharedRules>
 </catalogue>

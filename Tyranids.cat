@@ -2462,7 +2462,7 @@ Precision (5+)</characteristic>
         <categoryLink targetId="59ce-22c6-9dcc-66a0" id="db6a-1ca7-c643-1ae1" primary="true" name="Command"/>
       </categoryLinks>
     </selectionEntry>
-    <selectionEntry type="upgrade" import="true" name="Ripper Swarms" hidden="false" id="2fd3-7cef-9611-1fad">
+    <selectionEntry type="upgrade" import="true" name="Ripper Swarms" hidden="false" id="2fd3-7cef-9611-1fad" sortIndex="81">
       <categoryLinks>
         <categoryLink targetId="18e7-244d-8b18-8fff" id="4c1c-8866-7973-c50d" primary="true" name="Fast Attack"/>
       </categoryLinks>
