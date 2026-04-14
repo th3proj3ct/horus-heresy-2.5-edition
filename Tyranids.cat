@@ -2462,6 +2462,95 @@ Precision (5+)</characteristic>
         <categoryLink targetId="59ce-22c6-9dcc-66a0" id="db6a-1ca7-c643-1ae1" primary="true" name="Command"/>
       </categoryLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Ripper Swarms" hidden="false" id="2fd3-7cef-9611-1fad">
+      <categoryLinks>
+        <categoryLink targetId="18e7-244d-8b18-8fff" id="4c1c-8866-7973-c50d" primary="true" name="Fast Attack"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup name="Ripper Swarm" id="e902-752f-26d7-9cd5" hidden="false">
+          <selectionEntries>
+            <selectionEntry type="upgrade" import="true" name="Ripper Swarm" hidden="false" id="fc79-01ee-0f29-027a">
+              <constraints>
+                <constraint type="min" value="3" field="selections" scope="parent" shared="true" id="d3d4-fc15-934c-6613" includeChildSelections="false"/>
+                <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="af88-f759-355d-e89f" includeChildSelections="false"/>
+              </constraints>
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+              </costs>
+              <categoryLinks>
+                <categoryLink targetId="004b-f7b9-8d86-ecf0" id="d23a-0f50-1736-7fa7" primary="false" name="Infantry Model Type"/>
+                <categoryLink targetId="1c58-b337-dacb-f43f" id="ca48-1ecf-a201-fd16" primary="false" name="Skirmish Model Sub-Type"/>
+                <categoryLink targetId="65da-4619-5544-e9b7" id="9440-5365-4980-ec14" primary="false" name="Light Sub-type"/>
+              </categoryLinks>
+              <selectionEntries>
+                <selectionEntry type="upgrade" import="true" name="Ripper Swarm" hidden="false" id="b866-5293-208c-acab">
+                  <profiles>
+                    <profile name="Ripper Swarm" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="331e-1416-b6e4-fa88">
+                      <characteristics>
+                        <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Skirmish, Light)</characteristic>
+                        <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">6</characteristic>
+                        <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">2</characteristic>
+                        <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">2</characteristic>
+                        <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">3</characteristic>
+                        <characteristic name="T" typeId="2303-39d8-5a6d-99b0">3</characteristic>
+                        <characteristic name="W" typeId="5d83-b210-acf7-2361">4</characteristic>
+                        <characteristic name="I" typeId="45f1-a353-bf92-e24d">2</characteristic>
+                        <characteristic name="A" typeId="f152-fc99-0cad-3056">4</characteristic>
+                        <characteristic name="LD" typeId="563f-b333-e8af-d093">5</characteristic>
+                        <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">7</characteristic>
+                        <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">4</characteristic>
+                        <characteristic name="IN" typeId="8855-af7b-d9c2-228f">2</characteristic>
+                        <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">6+</characteristic>
+                        <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">-</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c214-5a88-5228-1bbc" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="e71b-eee0-4515-1d3a" includeChildSelections="false"/>
+                  </constraints>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink import="true" name="Close combat weapon" hidden="false" id="7c4d-7440-7483-ad94" type="selectionEntry" targetId="4c0f-0ff7-b65e-40e5">
+                  <constraints>
+                    <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="c13c-3878-d025-eb75" includeChildSelections="false"/>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4a5c-784c-d7b7-8a73" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Spinefists" hidden="false" id="4f2c-6304-acd2-a657" type="selectionEntry" targetId="201d-c7a0-e602-a2e0">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="1"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="4635-0112-3e7a-4de1" includeChildSelections="false"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
+          <infoLinks>
+            <infoLink name="Bulky (X)" id="dca2-dd00-80ad-fcf9" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+              <comment>4</comment>
+              <modifiers>
+                <modifier type="set" value="Bulky (4)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Deep Strike" id="d948-6c6c-6bd1-ead0" hidden="false" type="rule" targetId="8444-d183-3984-f12a"/>
+            <infoLink name="Expendable (X)" id="a6fa-d692-d7a3-8ed6" hidden="false" type="rule" targetId="a1b7-e3d5-b8a0-298f">
+              <comment>2</comment>
+              <modifiers>
+                <modifier type="set" value="Expendable (2)" field="name"/>
+              </modifiers>
+            </infoLink>
+            <infoLink name="Instinctive Behavior (Feed)" id="e079-48be-7b95-08ed" hidden="false" type="rule" targetId="af6e-fee8-0e26-77d9"/>
+          </infoLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry type="upgrade" import="true" name="Monstrous scything talons" hidden="false" id="0008-fabe-9004-2828">
@@ -3145,6 +3234,7 @@ Precision (5+)</characteristic>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="3de1-6143-a5d2-4db0" targetId="a2f9-617e-a8d9-a2a6"/>
     <catalogueLink type="catalogue" name="New Catalogue (link)" id="b1f5-89f1-c5f4-9aa0" targetId="3ca8-a860-f80c-4eea"/>
+    <catalogueLink type="catalogue" name="New Catalogue (link)" id="8015-9c61-43c9-81b2" targetId="8647-090c-4f18-f6fd"/>
   </catalogueLinks>
   <sharedRules>
     <rule name="Synapse Creature (X)" id="414d-fed2-22f0-3874" hidden="false">
