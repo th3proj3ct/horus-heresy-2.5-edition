@@ -4069,6 +4069,29 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Volkite caliver" hidden="false" id="0a41-c317-a3bb-3984">
+      <profiles>
+        <profile name="Volkite caliver" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="ef6f-3229-e2bf-63e7" page="55" publicationId="a5ca-d2f8-fa5a-c120">
+          <characteristics>
+            <characteristic name="R" typeId="c686-829c-aef5-ccf2">30</characteristic>
+            <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">2</characteristic>
+            <characteristic name="S" typeId="591a-4268-a46f-9af6">6</characteristic>
+            <characteristic name="AP" typeId="e137-b19a-087a-f2e7">5</characteristic>
+            <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+            <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Deflagrate (6)</characteristic>
+            <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">Volkite</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Deflagrate (X)" id="c97b-bc62-cb08-e2ac" hidden="false" type="rule" targetId="65dd-0d69-6dea-78dc">
+          <comment>6</comment>
+          <modifiers>
+            <modifier type="set" value="Deflagrate (6)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="48bf-1c04-53d8-150a" targetId="a2f9-617e-a8d9-a2a6"/>
