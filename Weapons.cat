@@ -37,17 +37,22 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chainaxe" hidden="false" id="63e8-9b5a-a579-872b">
       <infoLinks>
-        <infoLink name="Shred" id="633e-dd09-7b91-21ce" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
+        <infoLink name="Critical Damage (X)" id="a275-66ac-e260-a03a" hidden="false" type="rule" targetId="c870-27e7-d0aa-ae88">
+          <comment>6</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Damage (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Chainaxe" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="4035-5534-fdf2-55ff" page="56" publicationId="a5ca-d2f8-fa5a-c120">
           <characteristics>
             <characteristic name="I" typeId="93cf-082c-7341-87f7">-1</characteristic>
-            <characteristic name="A" typeId="a356-7e7a-c37d-b824">User</characteristic>
+            <characteristic name="A" typeId="a356-7e7a-c37d-b824">+1</characteristic>
             <characteristic name="S" typeId="33a1-3481-5543-fce1">+1</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">5</characteristic>
             <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
-            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Shred</characteristic>
+            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Critical Damage (6+)</characteristic>
             <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Chain</characteristic>
           </characteristics>
         </profile>
@@ -55,17 +60,22 @@
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Chainsword" hidden="false" id="67d6-6fcb-dea3-6851">
       <infoLinks>
-        <infoLink name="Shred" id="8f53-f07f-935d-9428" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
+        <infoLink name="Critical Damage (X)" id="8f53-f07f-935d-9428" hidden="false" type="rule" targetId="c870-27e7-d0aa-ae88">
+          <comment>6</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Damage (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
       <profiles>
         <profile name="Chainsword" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="506f-7c19-7e90-b341" page="56" publicationId="a5ca-d2f8-fa5a-c120">
           <characteristics>
             <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
-            <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
+            <characteristic name="A" typeId="a356-7e7a-c37d-b824">+1</characteristic>
             <characteristic name="S" typeId="33a1-3481-5543-fce1">S</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">5</characteristic>
             <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
-            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Shred</characteristic>
+            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Critical Damage (6+)</characteristic>
             <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Chain</characteristic>
           </characteristics>
         </profile>
@@ -646,14 +656,19 @@
             <characteristic name="S" typeId="33a1-3481-5543-fce1">+4</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">2</characteristic>
             <characteristic name="D" typeId="3802-23d3-f9b9-863b">3</characteristic>
-            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Armourbane, Shred</characteristic>
+            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Armourbane, Critical Damage (6+)</characteristic>
             <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Chain</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
         <infoLink name="Armourbane" id="c65a-702f-f0cf-59bd" hidden="false" type="rule" targetId="afa7-db8e-5165-e08b"/>
-        <infoLink name="Shred" id="41bb-3b11-c849-3a59" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
+        <infoLink name="Critical Damage (X)" id="1f32-b490-d076-af8a" hidden="false" type="rule" targetId="c870-27e7-d0aa-ae88">
+          <comment>6</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Damage (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Power fist" hidden="false" id="d0da-7b41-cd84-89f2">
@@ -1436,33 +1451,46 @@
       <profiles>
         <profile name="Chain Bayonet" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="b693-c968-6de2-42ef">
           <characteristics>
-            <characteristic name="I" typeId="93cf-082c-7341-87f7">User</characteristic>
-            <characteristic name="A" typeId="a356-7e7a-c37d-b824">User</characteristic>
-            <characteristic name="S" typeId="33a1-3481-5543-fce1">User</characteristic>
+            <characteristic name="I" typeId="93cf-082c-7341-87f7">I</characteristic>
+            <characteristic name="A" typeId="a356-7e7a-c37d-b824">+1</characteristic>
+            <characteristic name="S" typeId="33a1-3481-5543-fce1">S</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">5</characteristic>
             <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
-            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Shred</characteristic>
+            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Critical Damage (6+)</characteristic>
             <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Bayonet, Chain</characteristic>
           </characteristics>
         </profile>
       </profiles>
+      <infoLinks>
+        <infoLink name="Critical Damage (X)" id="f339-4048-d714-dd10" hidden="false" type="rule" targetId="c870-27e7-d0aa-ae88">
+          <comment>6</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Damage (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy chainaxe" hidden="false" id="6d30-da15-dd7f-0ed5">
       <profiles>
         <profile name="Heavy chainsword" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="a0a2-edd0-36e4-f647">
           <characteristics>
             <characteristic name="I" typeId="93cf-082c-7341-87f7">-2</characteristic>
-            <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
+            <characteristic name="A" typeId="a356-7e7a-c37d-b824">+1</characteristic>
             <characteristic name="S" typeId="33a1-3481-5543-fce1">+3</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">4</characteristic>
             <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
-            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Shred</characteristic>
+            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Critical Damage (6+)</characteristic>
             <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Chain</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Shred" id="8fa9-3ebd-d253-6a14" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
+        <infoLink name="Critical Damage (X)" id="d3f3-216b-8713-2611" hidden="false" type="rule" targetId="c870-27e7-d0aa-ae88">
+          <comment>6</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Damage (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Heavy chainsword" hidden="false" id="1280-737f-7f37-3c4b">
@@ -1470,17 +1498,22 @@
         <profile name="Heavy chainsword" typeId="ff5e-5aa3-9076-d1ac" typeName="Melee Weapon" hidden="false" id="7372-b5f2-b987-1ec0">
           <characteristics>
             <characteristic name="I" typeId="93cf-082c-7341-87f7">-1</characteristic>
-            <characteristic name="A" typeId="a356-7e7a-c37d-b824">A</characteristic>
+            <characteristic name="A" typeId="a356-7e7a-c37d-b824">+1</characteristic>
             <characteristic name="S" typeId="33a1-3481-5543-fce1">+2</characteristic>
             <characteristic name="AP" typeId="a0d4-e1a3-618a-df27">4</characteristic>
             <characteristic name="D" typeId="3802-23d3-f9b9-863b">1</characteristic>
-            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Shred</characteristic>
+            <characteristic name="Special Rules" typeId="4dbd-3a95-e878-bd7f">Critical Damage (6+)</characteristic>
             <characteristic name="Traits" typeId="c52d-0513-f9bf-3b12">Chain</characteristic>
           </characteristics>
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink name="Shred" id="d687-b1c7-6fdb-a988" hidden="false" type="rule" targetId="7620-0487-d661-fff2"/>
+        <infoLink name="Critical Damage (X)" id="6cb6-82e0-8c84-e7de" hidden="false" type="rule" targetId="c870-27e7-d0aa-ae88">
+          <comment>6</comment>
+          <modifiers>
+            <modifier type="set" value="Critical Damage (6+)" field="name"/>
+          </modifiers>
+        </infoLink>
       </infoLinks>
     </selectionEntry>
     <selectionEntry type="upgrade" import="true" name="Charnabal Sabre" hidden="false" id="d2d7-ac23-553c-8c45">
