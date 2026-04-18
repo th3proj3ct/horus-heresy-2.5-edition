@@ -227,6 +227,19 @@
         <cost name="Reaction Point(s)" typeId="c9ba-097e-c47f-ecc2" value="0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Vigil Pattern Storm Shield" hidden="false" id="f6d6-3e74-2d19-85f2">
+      <profiles>
+        <profile name="Vigil Pattern Storm Shield" typeId="2c11-4ec5-60b9-9d46" typeName="Wargear" hidden="false" id="a2f8-eb80-1ef1-6e5e">
+          <characteristics>
+            <characteristic name="Summary" typeId="fdcc-276a-cadb-7810">A Model with a Vigil pattern storm shield has a 4+ invulnerable Save. In addition, it gains the Shield Trait and the Heavy Sub-Type.</characteristic>
+            <characteristic name="Description" typeId="516b-bc6f-e52f-aced"/>
+          </characteristics>
+        </profile>
+      </profiles>
+      <modifiers>
+        <modifier type="add" value="e20d-00cc-6f35-6d59" field="category" scope="parent"/>
+      </modifiers>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="eab7-e28c-54b3-4569" targetId="a2f9-617e-a8d9-a2a6"/>
@@ -241,4 +254,168 @@
       </categoryLinks>
     </entryLink>
   </entryLinks>
+  <selectionEntries>
+    <selectionEntry type="unit" import="true" name="Huscarl Terminator Retinue" hidden="false" id="0be2-5635-9218-1368" page="108" publicationId="5469-14da-d0a1-6092">
+      <costs>
+        <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="75"/>
+        <cost name="Point(s)" typeId="9893-c379-920b-8982" value="75"/>
+      </costs>
+      <selectionEntries>
+        <selectionEntry type="model" import="true" name="Huscarl Terminator" hidden="false" id="c771-21df-8b39-131e" page="108" publicationId="5469-14da-d0a1-6092" sortIndex="2">
+          <profiles>
+            <profile name="Huscarl Terminator" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="b5a3-8906-3be6-b6f6">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Heavy)</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">6</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">4</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">4</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">2</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">4</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">8</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">8</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">7</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">7</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="50"/>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="50"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="4" field="selections" scope="parent" shared="true" id="eb29-92a7-4859-90b9"/>
+            <constraint type="max" value="9" field="selections" scope="parent" shared="true" id="5856-e285-4ee4-a9a0"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Vigil Pattern Storm Shield" hidden="false" id="50eb-a316-45d9-9188" type="selectionEntry" targetId="f6d6-3e74-2d19-85f2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="df5a-6796-41fa-83f1"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="5258-3e87-4db9-a9d2"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May have its power weapon exchanged for " id="807b-96bf-46ff-a0e9" hidden="false">
+              <entryLinks>
+                <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="e2ea-09a6-46c5-82db" type="selectionEntry" targetId="e284-8c73-f5c8-d5b6" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="120e-e49c-4cab-a0dc"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="e32d-c100-e04c-df46" type="selectionEntryGroup" targetId="cdea-8bd4-8678-fcb1" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="30df-7e93-4ff4-b964"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="f531-6d7d-4ffa-9ad5"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="004b-f7b9-8d86-ecf0" id="3210-3902-e0c4-e2dd" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="e20d-00cc-6f35-6d59" id="8a5b-3a3c-269c-770f" primary="false" name="Heavy Model Sub-Type"/>
+          </categoryLinks>
+        </selectionEntry>
+        <selectionEntry type="model" import="true" name="Huscarl Terminator Sergeant" hidden="false" id="c726-3bff-d609-51ec" page="108" publicationId="5469-14da-d0a1-6092" sortIndex="1">
+          <profiles>
+            <profile name="Huscarl Terminator Sergeant" typeId="dbf0-3d90-5e03-9cca" typeName="Unit" hidden="false" id="63c1-eedc-8c87-9e0a">
+              <characteristics>
+                <characteristic name="Type" typeId="c6d3-582c-0125-3afd">Infantry (Sergeant, Heavy)</characteristic>
+                <characteristic name="M" typeId="d2c1-69ea-7ad8-0c75">6</characteristic>
+                <characteristic name="WS" typeId="f43d-b1a4-46cd-d291">5</characteristic>
+                <characteristic name="BS" typeId="d8f7-eb33-9afe-076e">4</characteristic>
+                <characteristic name="S" typeId="5611-7ba3-76ab-5d2a">4</characteristic>
+                <characteristic name="T" typeId="2303-39d8-5a6d-99b0">5</characteristic>
+                <characteristic name="W" typeId="5d83-b210-acf7-2361">2</characteristic>
+                <characteristic name="I" typeId="45f1-a353-bf92-e24d">4</characteristic>
+                <characteristic name="A" typeId="f152-fc99-0cad-3056">3</characteristic>
+                <characteristic name="LD" typeId="563f-b333-e8af-d093">9</characteristic>
+                <characteristic name="CL" typeId="97d7-864a-b4d6-bfbf">8</characteristic>
+                <characteristic name="WP" typeId="43aa-736e-7ab9-2fdd">7</characteristic>
+                <characteristic name="IN" typeId="8855-af7b-d9c2-228f">7</characteristic>
+                <characteristic name="SAV" typeId="6281-53b4-2f1a-d226">2+</characteristic>
+                <characteristic name="INV" typeId="7fef-b0ea-c53e-129c">4+</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="Point(s)" typeId="9893-c379-920b-8982" value="0"/>
+          </costs>
+          <constraints>
+            <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="93dd-1294-48d9-8f54"/>
+            <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="84f1-2825-495e-8c77"/>
+          </constraints>
+          <entryLinks>
+            <entryLink import="true" name="Vigil Pattern Storm Shield" hidden="false" id="42ee-e6ad-1444-6805" type="selectionEntry" targetId="f6d6-3e74-2d19-85f2" sortIndex="2">
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="bd53-6490-4e22-962b"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="9dfa-f342-4654-bd43"/>
+              </constraints>
+            </entryLink>
+            <entryLink import="true" name="Grenade harness" hidden="false" id="a68e-6baf-dfba-968c" type="selectionEntry" targetId="5651-1fcc-a91d-3492" sortIndex="3">
+              <costs>
+                <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="5"/>
+                <cost name="Point(s)" typeId="9893-c379-920b-8982" value="5"/>
+              </costs>
+              <constraints>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="b296-9e03-4712-8ab3"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <selectionEntryGroups>
+            <selectionEntryGroup name="May have its power weapon exchanged for " id="c489-feb7-46a1-9f37" hidden="false" sortIndex="1">
+              <entryLinks>
+                <entryLink import="true" name="Solarite Power Gauntlet" hidden="false" id="3d79-ea96-6d16-7178" type="selectionEntry" targetId="e284-8c73-f5c8-d5b6" sortIndex="2">
+                  <costs>
+                    <cost name="Points" typeId="64d7-ccd2-e4b7-b956" value="10"/>
+                    <cost name="Point(s)" typeId="9893-c379-920b-8982" value="10"/>
+                  </costs>
+                  <constraints>
+                    <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="19b6-1ba8-49ae-a2fa"/>
+                  </constraints>
+                </entryLink>
+                <entryLink import="true" name="Power Weapon" hidden="false" id="a03a-5dae-752d-222e" type="selectionEntryGroup" targetId="cdea-8bd4-8678-fcb1" sortIndex="1"/>
+              </entryLinks>
+              <constraints>
+                <constraint type="min" value="1" field="selections" scope="parent" shared="true" id="1777-ea39-4130-a2d4"/>
+                <constraint type="max" value="1" field="selections" scope="parent" shared="true" id="3b4c-e97c-4dd7-8ebc"/>
+              </constraints>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <categoryLinks>
+            <categoryLink targetId="004b-f7b9-8d86-ecf0" id="b20b-d78d-b3e3-8e4c" primary="false" name="Infantry Model Type"/>
+            <categoryLink targetId="523b-b451-d404-6b7c" id="80f6-b3de-c7b7-b396" primary="false" name="Sergeant Model Sub-Type"/>
+            <categoryLink targetId="e20d-00cc-6f35-6d59" id="eed8-723b-4a31-30aa" primary="false" name="Heavy Model Sub-Type"/>
+          </categoryLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <infoLinks>
+        <infoLink name="Bulky (X)" id="c022-9d11-4ea4-b36d" hidden="false" type="rule" targetId="84a9-7815-fcc6-bdcd">
+          <modifiers>
+            <modifier type="set" value="Bulky (2)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Implacable Advance" id="6310-fd71-4d5b-a118" hidden="false" type="rule" targetId="7fb3-6133-feb0-e764"/>
+        <infoLink name="Slow and Purposeful" id="4219-17a0-4ae0-a45c" hidden="false" type="rule" targetId="37f5-d5c4-d064-2bd9"/>
+        <infoLink name="Eternal Warrior (X)" id="b18f-573a-42ab-ad7e" hidden="false" type="rule" targetId="5ee0-9921-51da-aa91">
+          <modifiers>
+            <modifier type="set" value="Eternal Warrior (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+        <infoLink name="Deep Strike" id="dc3c-03e9-42cf-b2c1" hidden="false" type="rule" targetId="8444-d183-3984-f12a"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink targetId="59ce-22c6-9dcc-66a0" id="52a9-fb4d-cf1b-d86b" primary="true" name="Command"/>
+        <categoryLink targetId="27bb-b3f8-a434-91c2" id="f50e-7fd7-cf77-d55c" primary="false" name="Free Power Weapon"/>
+      </categoryLinks>
+    </selectionEntry>
+  </selectionEntries>
 </catalogue>

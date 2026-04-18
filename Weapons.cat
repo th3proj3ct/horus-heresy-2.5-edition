@@ -4069,6 +4069,35 @@
         </infoLink>
       </infoLinks>
     </selectionEntry>
+    <selectionEntry type="upgrade" import="true" name="Grenade harness" hidden="false" id="5651-1fcc-a91d-3492">
+      <profiles>
+        <profile name="Grenade harness" typeId="01fb-9d7a-f44d-cad4" typeName="Ranged Weapon" hidden="false" id="a767-65aa-71ba-cc22">
+          <characteristics>
+            <characteristic name="R" typeId="c686-829c-aef5-ccf2">6</characteristic>
+            <characteristic name="FP" typeId="c943-b9e0-1496-6fa7">1</characteristic>
+            <characteristic name="S" typeId="591a-4268-a46f-9af6">5</characteristic>
+            <characteristic name="AP" typeId="e137-b19a-087a-f2e7">6</characteristic>
+            <characteristic name="D" typeId="770e-2783-e159-33e6">1</characteristic>
+            <characteristic name="Special Rules" typeId="0dea-eed0-785e-5633">Blast (3&quot;), Limited (1)</characteristic>
+            <characteristic name="Traits" typeId="2dd7-8636-31c5-35a1">-</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink name="Blast (X)" id="0130-b0e4-3271-5606" hidden="false" type="rule" targetId="8b6b-a464-227a-063a">
+          <modifiers>
+            <modifier type="set" value="Blast (3&quot;)" field="name"/>
+          </modifiers>
+          <comment>3&quot;</comment>
+        </infoLink>
+        <infoLink name="Limited (X)" id="adac-5cd5-ef3c-9ffa" hidden="false" type="rule" targetId="8de6-fd11-5bfa-ddf6">
+          <comment>1</comment>
+          <modifiers>
+            <modifier type="set" value="Limited (1)" field="name"/>
+          </modifiers>
+        </infoLink>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <catalogueLinks>
     <catalogueLink type="catalogue" name="Special Rules" id="48bf-1c04-53d8-150a" targetId="a2f9-617e-a8d9-a2a6"/>
